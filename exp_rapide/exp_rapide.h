@@ -1,0 +1,1 @@
+double exp_rapide(int n, double x);
