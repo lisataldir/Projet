@@ -14,5 +14,15 @@ double exp_rapide(int n, double x)
 
 }
 
-
+//the naive form supposed to be the reference
+double exp_naive(int n, double x)
+{
+    double result = 1;
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        result *= x;
+    }
+    return result;
+}
 
