@@ -4,9 +4,8 @@ docker run -v $PWD:/workdir -it verificarlo/verificarlo bash
 verificarlo-c++ algo.cpp -o algo
 
 #2.7^30
-#3eme arg : on veut calculer le temps ? 0 = false, 1= true 
-VFC_BACKENDS="libinterflop_mca.so" ./algo 2.7 30 0
-
-#si on veut exploiter les résultats de 2.7^30 = Naif rapide realises avec SR 
 #pas sur si besoin --mode=rr
-VFC_BACKENDS="libinterflop_mca.so" ./algo 2.7 30 0 >> res.txt
+VFC_BACKENDS="libinterflop_mca.so" ./algo 2.7 30
+
+#si on veut exploiter les résultats de 2.7^30 avec exp realised avec SR 
+VFC_BACKENDS="libinterflop_mca.so" ./algo 2.7 30 >> res.txt
