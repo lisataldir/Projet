@@ -22,7 +22,7 @@ double exp_rapid_iter(double x, int n){
     }
     else if(n>0){
         
-        double exp_half =exp_rapide(x,n/2);
+        double exp_half =exp_rapid_iter(x,n/2);
         
         if (n & 1) {
             res = x * exp_half * exp_half;
@@ -30,7 +30,7 @@ double exp_rapid_iter(double x, int n){
         res = exp_half * exp_half;
     }
     else if(n<0) {
-        double exp_half =1/exp_rapide(x,-n/2);
+        double exp_half =1/exp_rapid_iters(x,-n/2);
         if (-n & 1) {
             res = (1/x) * exp_half * exp_half;
         }
