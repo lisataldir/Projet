@@ -1,10 +1,11 @@
-
+#executer docker
 docker run -v $PWD:/workdir -it verificarlo/verificarlo bash
-
-verificarlo-c++ algo.cpp -o algo
+#compiler avec verificarlo
+verificarlo-c++ main.cpp algo.cpp -o algo
 
 #2.7^30
 #pas sur si besoin --mode=rr
+#Normalement useless
 VFC_BACKENDS="libinterflop_mca.so" ./algo 2.7 30
 
 #si on veut exploiter les résultats de 2.7^30 avec exp realised avec SR 
