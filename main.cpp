@@ -32,7 +32,7 @@ int main(int argc, char *argv[]){
     //print
     printf("exp_rapid_iter de %f^%d est : %f \n", x,n,r1);
     printf("exp_naif_rec %f^%d est : %f \n", x,n,r2);
-    printf("exp_rapid_iter de %f^%d est : %f \n", x, n, r3);
+    printf("exp_rapid_rec de %f^%d est : %f \n", x, n, r3);
 
     return 0;
 }
