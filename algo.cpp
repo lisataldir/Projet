@@ -8,7 +8,12 @@ double exp_naif_rec(double x, int n){
 }
 
 double exp_naif_iter(double x, int n){
-    return 0;
+    double r = 1;
+    for(int i = 0; i < n; i++)
+    {
+        r *=x;
+    }
+    return r;
 }
 
 
