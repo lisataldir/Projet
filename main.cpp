@@ -1,4 +1,5 @@
 #include "algo.h"
+#define MAX 33
 
 int main(int argc, char *argv[]){
     
@@ -22,10 +23,8 @@ int main(int argc, char *argv[]){
     unsigned long millis2 = (end_r2 -  begin_r2) * 1000 / CLOCKS_PER_SEC;
             
     //print
-    printf("exp de %f^%d est : %f \n", x,n,r1);
-    printf("exp de %f^%d est bien : %f \n", x,n,r2);
-    printf("exp_rapid_iter done in %ld ms\n", millis1 );
-    printf("exp_naif_rec done in %ld ms\n", millis2 );
+    printf("exp_rapid_iter de %f^%d est : %f \n", x,n,r1);
+    printf("exp_naif_rec %f^%d est : %f \n", x,n,r2);
     
     return 0;
 }
