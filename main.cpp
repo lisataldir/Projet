@@ -16,7 +16,6 @@ int main(int argc, char *argv[]){
     clock_t begin_r1 = clock();
     double r1 = exp_naif_rec(x, n); 
     clock_t end_r1 = clock();
-    //Fin de calcul
 
     //latency for exp_naif_iter
     clock_t begin_r2 = clock();
@@ -33,7 +32,7 @@ int main(int argc, char *argv[]){
     double r4 = exp_rapid_iter(x, n); 
     clock_t end_r4 = clock();
 
-    //convertir en ms
+    //convert in  ns
     unsigned long long nano1 = (end_r1 -  begin_r1) * 1000000000/ CLOCKS_PER_SEC;
     unsigned long long nano2 = (end_r2 -  begin_r2) * 1000000000 / CLOCKS_PER_SEC;
     unsigned long long nano3 = (end_r3 -  begin_r3) * 1000000000 / CLOCKS_PER_SEC;
