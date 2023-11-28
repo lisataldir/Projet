@@ -34,16 +34,16 @@ int main(int argc, char *argv[]){
     clock_t end_r4 = clock();
 
     //convertir en ms
-    unsigned long millis1 = (end_r1 -  begin_r1) * 1000/ CLOCKS_PER_SEC;
-    unsigned long millis2 = (end_r2 -  begin_r2) * 1000 / CLOCKS_PER_SEC;
-    unsigned long millis3 = (end_r3 -  begin_r3) * 1000 / CLOCKS_PER_SEC;
-    unsigned long millis4 = (end_r4 -  begin_r4) * 1000 / CLOCKS_PER_SEC;
+    unsigned long long nano1 = (end_r1 -  begin_r1) * 1000000000/ CLOCKS_PER_SEC;
+    unsigned long long nano2 = (end_r2 -  begin_r2) * 1000000000 / CLOCKS_PER_SEC;
+    unsigned long long nano3 = (end_r3 -  begin_r3) * 1000000000 / CLOCKS_PER_SEC;
+    unsigned long long nano4 = (end_r4 -  begin_r4) * 1000000000 / CLOCKS_PER_SEC;
             
     //print
-    printf("exp_naif_rec pour x = %f et n = %d donne %f\n", x, n, r1);
-    printf("exp_naif_iter pour x = %f et n = %d donne %f\n", x, n, r2);
-    printf("exp_rapid_rec pour x = %f et n = %d donne %f\n", x, n, r3);
-    printf("exp_rapid_iter pour x = %f et n = %d donne %f\n", x, n, r4);
+    printf("exp_naif_rec pour x = %f et n = %d donne %f et met %llu ns\n", x, n, r1, nano1);
+    printf("exp_naif_iter pour x = %f et n = %d donne %f et met %llu ns\n", x,n,r2, nano2);
+    printf("exp_rapid_rec pour x = %f et n = %d donne %f et met %llu ns\n", x, n, r3, nano3);
+    printf("exp_rapid_iter pour x = %f et n = %d donne %f et met %llu ns\n", x, n, r4, nano4);
 
     return 0;
 }
