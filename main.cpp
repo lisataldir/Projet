@@ -2,6 +2,12 @@
 #define MAX 33
 
 int main(int argc, char *argv[]){
+
+    if (argc < 3){
+        printf("usage: %s [x] [n]\n", argv[0]);
+        return 1;
+    }
+
     
     double x = atof(argv[1]);
     int n = atoi(argv[2]);
