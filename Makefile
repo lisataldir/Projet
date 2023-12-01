@@ -1,4 +1,4 @@
-CC = clang
+CC = g++
 CFLAGS = -O0
 
 all:algo
@@ -13,5 +13,6 @@ main.o: algo.h
 algo.o: algo.h
 
 clean :
-	rm -f *.o
+	rm -f *.o algo 
+
 .PHONY: clean
