@@ -5,7 +5,7 @@ mkdir results
 
 sudo docker pull verificarlo/verificarlo
 
-for i in {1..20}
+for i in {1..5}
 do
     echo "# Creating folder output$i.dat inside results"
     touch results/output$i.dat
