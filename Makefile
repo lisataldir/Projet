@@ -1,9 +1,12 @@
 CC = clang
 CFLAGS = -O0
 
-all:algo
+all:algo test
 
 algo : main.o algo.o
+	$(CC) -Wall -g -o $@ $^
+
+test : test.o algo.o
 	$(CC) -Wall -g -o $@ $^
 
 %.o : %.c
@@ -11,6 +14,7 @@ algo : main.o algo.o
 	
 main.o: algo.h
 algo.o: algo.h
+test.o: algo.h
 
 clean :
 	rm -f *.o
