@@ -1,9 +1,9 @@
 CC=gcc
 
-all: main
+all: reference
 
-main: main.c 
-	$(CC) -g $< -o $@
+reference: reference.c 
+	$(CC) $< -o $@
 
 clean:
-	rm -rf main
+	rm -rf reference
