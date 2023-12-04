@@ -2,8 +2,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <time.h>
 
 double exp_naif_iter(double x, int n){
     double r = 1;
@@ -16,13 +14,19 @@ double exp_naif_iter(double x, int n){
 
 int main(int argc, char** argv){
 
-    //on intialise y en fonction des valeurs de x dans main.c
-    double y = 0.25496529753085473;
+    if (argc < 2){
+        printf("%s usage : [x]", argv[0]);
+    }
+
+    //on intialise y en fonction des valeurs de x
+    char *endptr;
+    double y = strtod(argv[1], &endptr);
     double tmp;
 
+    //calcul de y^n, on garde les 32 premieres décimales (double précision)
     for (int n = 0; n < 31; n++){
         tmp = exp_naif_iter(y, n);
-        printf("%.17f\n", tmp);
+        printf("%.32f\n", tmp);
     }
 
     return 0;
