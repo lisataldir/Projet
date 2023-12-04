@@ -1,0 +1,333 @@
+Start testing: Dec 04 23:22 CET
+----------------------------------------------------------
+1/4 Testing: ExpNaifRec.BasicTest
+1/4 Test: ExpNaifRec.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpNaifRec.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpNaifRec.BasicTest" start time: Dec 04 23:22 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpNaifRec.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpNaifRec
+[ RUN      ] ExpNaifRec.BasicTest
+/Users/zhaoyutainazir/Projet/test.cpp:22: Failure
+Expected equality of these values:
+  exp_naif_rec(18.9, 50)
+    Which is: 6.6541135651774884e+63
+  6.654113565177510421577318780E+63
+    Which is: 6.6541135651775103e+63
+
+/Users/zhaoyutainazir/Projet/test.cpp:23: Failure
+Expected equality of these values:
+  exp_naif_rec(18.9, 100)
+    Which is: 4.4277227338279084e+127
+  4.427722733827935823332452113E+127
+    Which is: 4.4277227338279354e+127
+
+/Users/zhaoyutainazir/Projet/test.cpp:27: Failure
+Expected equality of these values:
+  exp_naif_rec(42.73, 13)
+    Which is: 1.5831702002545758e+21
+  1583170200254577181707.135195
+    Which is: 1.5831702002545771e+21
+
+/Users/zhaoyutainazir/Projet/test.cpp:28: Failure
+Expected equality of these values:
+  exp_naif_rec(42.73, 74)
+    Which is: 4.7231753415107133e+120
+  4.723175341510737834585004112E+120
+    Which is: 4.7231753415107379e+120
+
+/Users/zhaoyutainazir/Projet/test.cpp:29: Failure
+Expected equality of these values:
+  exp_naif_rec(42.73, 80)
+    Which is: 2.8749574761878416e+130
+  2.874957476187858031702928023E+130
+    Which is: 2.8749574761878578e+130
+
+/Users/zhaoyutainazir/Projet/test.cpp:33: Failure
+Expected equality of these values:
+  exp_naif_rec(111.111, 8)
+    Which is: 23230387281484236
+  23228714744613044.99127806738
+    Which is: 23228714744613044
+
+/Users/zhaoyutainazir/Projet/test.cpp:34: Failure
+Expected equality of these values:
+  exp_naif_rec(111.111, 26)
+    Which is: 1.5476881696738331e+53
+  1.547326051020008050918811072E+53
+    Which is: 1.547326051020008e+53
+
+/Users/zhaoyutainazir/Projet/test.cpp:35: Failure
+Expected equality of these values:
+  exp_naif_rec(111.111, 47)
+    Which is: 1.4144306037109636e+96
+  1.413832422799774447851093906E+96
+    Which is: 1.4138324227997745e+96
+
+/Users/zhaoyutainazir/Projet/test.cpp:40: Failure
+Expected equality of these values:
+  exp_naif_rec(6543.2, 32)
+    Which is: 1.274342730486401e+122
+  1.274342730486402163714005007E+122
+    Which is: 1.2743427304864022e+122
+
+[  FAILED  ] ExpNaifRec.BasicTest (0 ms)
+[----------] 1 test from ExpNaifRec (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExpNaifRec.BasicTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"ExpNaifRec.BasicTest" end time: Dec 04 23:22 CET
+"ExpNaifRec.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: ExpNaifIter.BasicTest
+2/4 Test: ExpNaifIter.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpNaifIter.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpNaifIter.BasicTest" start time: Dec 04 23:22 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpNaifIter.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpNaifIter
+[ RUN      ] ExpNaifIter.BasicTest
+/Users/zhaoyutainazir/Projet/test.cpp:56: Failure
+Expected equality of these values:
+  exp_naif_iter(9.35, 45)
+    Which is: 4.8587269044655547e+43
+  4.858726904465562552874833479E+43
+    Which is: 4.8587269044655626e+43
+
+/Users/zhaoyutainazir/Projet/test.cpp:57: Failure
+Expected equality of these values:
+  exp_naif_iter(9.35, 102)
+    Which is: 1.0538633684347752e+99
+  1.053863368434778806899625158E+99
+    Which is: 1.0538633684347789e+99
+
+/Users/zhaoyutainazir/Projet/test.cpp:62: Failure
+Expected equality of these values:
+  exp_naif_iter(37.73, 41)
+    Which is: 4.4071619846690277e+64
+  4.407161984669042426002508666E+64
+    Which is: 4.4071619846690423e+64
+
+/Users/zhaoyutainazir/Projet/test.cpp:63: Failure
+Expected equality of these values:
+  exp_naif_iter(37.73, 73)
+    Which is: 1.2535359099456767e+115
+  1.253535909945684693361719728E+115
+    Which is: 1.2535359099456848e+115
+
+/Users/zhaoyutainazir/Projet/test.cpp:67: Failure
+Expected equality of these values:
+  exp_naif_iter(278.4, 16)
+    Which is: 1.3022899679072406e+39
+  1.302289967907242436280054817E+39
+    Which is: 1.3022899679072424e+39
+
+/Users/zhaoyutainazir/Projet/test.cpp:68: Failure
+Expected equality of these values:
+  exp_naif_iter(278.4, 59)
+    Which is: 1.7198264559184745e+144
+  1.719826455918482835475818666E+144
+    Which is: 1.7198264559184828e+144
+
+/Users/zhaoyutainazir/Projet/test.cpp:73: Failure
+Expected equality of these values:
+  exp_naif_iter(2946.33, 32)
+    Which is: 1.0399307277694314e+111
+  1.039930727769432173680477071E+111
+    Which is: 1.0399307277694322e+111
+
+[  FAILED  ] ExpNaifIter.BasicTest (0 ms)
+[----------] 1 test from ExpNaifIter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExpNaifIter.BasicTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"ExpNaifIter.BasicTest" end time: Dec 04 23:22 CET
+"ExpNaifIter.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: ExpRapidRec.BasicTest
+3/4 Test: ExpRapidRec.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpRapidRec.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpRapidRec.BasicTest" start time: Dec 04 23:22 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpRapidRec.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpRapidRec
+[ RUN      ] ExpRapidRec.BasicTest
+/Users/zhaoyutainazir/Projet/test.cpp:89: Failure
+Expected equality of these values:
+  exp_rapid_rec(5.6, 17)
+    Which is: 5238373480538.9551
+  5238373480538.962014409966223
+    Which is: 5238373480538.9619
+
+/Users/zhaoyutainazir/Projet/test.cpp:90: Failure
+Expected equality of these values:
+  exp_rapid_rec(5.6, 99)
+    Which is: 1.1765616097704257e+74
+  1.176561609770433870981098576E+74
+    Which is: 1.176561609770434e+74
+
+/Users/zhaoyutainazir/Projet/test.cpp:91: Failure
+Expected equality of these values:
+  exp_rapid_rec(5.6, 211)
+    Which is: 7.3735002329937849e+157
+  7.373500232993888558154812999E+157
+    Which is: 7.3735002329938886e+157
+
+/Users/zhaoyutainazir/Projet/test.cpp:96: Failure
+Expected equality of these values:
+  exp_rapid_rec(13.47, 34)
+    Which is: 2.5032155880031117e+38
+  2.503215588003104140459358746E+38
+    Which is: 2.5032155880031041e+38
+
+/Users/zhaoyutainazir/Projet/test.cpp:97: Failure
+Expected equality of these values:
+  exp_rapid_rec(13.47, 80)
+    Which is: 2.2356697873648761e+90
+  2.235669787364866791222843352E+90
+    Which is: 2.2356697873648666e+90
+
+/Users/zhaoyutainazir/Projet/test.cpp:102: Failure
+Expected equality of these values:
+  exp_rapid_rec(432.1, 22)
+    Which is: 9.6128874794288299e+57
+  9.612887479428813190896052182E+57
+    Which is: 9.6128874794288132e+57
+
+/Users/zhaoyutainazir/Projet/test.cpp:103: Failure
+Expected equality of these values:
+  exp_rapid_rec(432.1, 53)
+    Which is: 4.8525063736399798e+139
+  4.852506373639965268640929079E+139
+    Which is: 4.852506373639965e+139
+
+[  FAILED  ] ExpRapidRec.BasicTest (0 ms)
+[----------] 1 test from ExpRapidRec (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExpRapidRec.BasicTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"ExpRapidRec.BasicTest" end time: Dec 04 23:22 CET
+"ExpRapidRec.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: ExpRapidIter.BasicTest
+4/4 Test: ExpRapidIter.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpRapidIter.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpRapidIter.BasicTest" start time: Dec 04 23:22 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpRapidIter.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpRapidIter
+[ RUN      ] ExpRapidIter.BasicTest
+/Users/zhaoyutainazir/Projet/test.cpp:124: Failure
+Expected equality of these values:
+  exp_rapid_iter(6.9, 22)
+    Which is: 2.8489183085523712e+18
+  2848918308552366654.279494538
+    Which is: 2.8489183085523666e+18
+
+/Users/zhaoyutainazir/Projet/test.cpp:125: Failure
+Expected equality of these values:
+  exp_rapid_iter(6.9, 67)
+    Which is: 1.5954716051592812e+56
+  1.595471605159272689397698504E+56
+    Which is: 1.5954716051592727e+56
+
+/Users/zhaoyutainazir/Projet/test.cpp:126: Failure
+Expected equality of these values:
+  exp_rapid_iter(6.9, 100)
+    Which is: 7.6720084716913686e+83
+  7.672008471691308321071066627E+83
+    Which is: 7.6720084716913082e+83
+
+/Users/zhaoyutainazir/Projet/test.cpp:132: Failure
+Expected equality of these values:
+  exp_rapid_iter(44.44, 55)
+    Which is: 4.2420205178485638e+90
+  4.242020517848571061491720321E+90
+    Which is: 4.242020517848571e+90
+
+/Users/zhaoyutainazir/Projet/test.cpp:137: Failure
+Expected equality of these values:
+  exp_rapid_iter(233.33, 17)
+    Which is: 1.8009426274416377e+40
+  1.800942627441636132917616671E+40
+    Which is: 1.800942627441636e+40
+
+/Users/zhaoyutainazir/Projet/test.cpp:138: Failure
+Expected equality of these values:
+  exp_rapid_iter(233.33, 32)
+    Which is: 5.9574251346099849e+75
+  5.957425134609974387278684542E+75
+    Which is: 5.9574251346099745e+75
+
+/Users/zhaoyutainazir/Projet/test.cpp:144: Failure
+Expected equality of these values:
+  exp_rapid_iter(1111.567, 31)
+    Which is: 2.654636101578365e+94
+  2.654636101578362092619526221E+94
+    Which is: 2.654636101578362e+94
+
+[  FAILED  ] ExpRapidIter.BasicTest (0 ms)
+[----------] 1 test from ExpRapidIter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExpRapidIter.BasicTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"ExpRapidIter.BasicTest" end time: Dec 04 23:22 CET
+"ExpRapidIter.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 04 23:22 CET

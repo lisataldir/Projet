@@ -1,5 +1,4 @@
 #include "algo.h"
-#include "gtest/gtest.h"
 
 double exp_naif_rec(double x, int n){
     if (n==0){

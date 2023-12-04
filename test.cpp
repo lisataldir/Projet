@@ -3,7 +3,7 @@
 #include "gtest/gtest.h" //include the google test framework
 
 //we include directly .cpp files to execute the tests
-#include "algo.cpp"
+#include "algo.h"
 
 // compared with "real" values calculated from python
 
