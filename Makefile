@@ -1,4 +1,4 @@
-CC = g++
+CC = g++ -std=c++14
 CFLAGS = -O0
 
 all:algo test

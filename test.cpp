@@ -1,7 +1,6 @@
 // unit tests for 4 algorithms
 
 #include "gtest/gtest.h" //include the google test framework
-/* problem: gtest to be installed */
 
 //we include directly .cpp files to execute the tests
 #include "algo.cpp"
@@ -58,7 +57,7 @@ TEST(ExpNaifIter, BasicTest)
     EXPECT_DOUBLE_EQ(exp_naif_iter(9.35, 102), 1.053863368434778806899625158E+99);
 
     EXPECT_DOUBLE_EQ(exp_naif_iter(37.73, 0), 1.0);
-    EXPECT_DOUBLE_EQ(exp_naif_iter(37,73, 1), 37.73);
+    EXPECT_DOUBLE_EQ(exp_naif_iter(37.73, 1), 37.73);
     EXPECT_DOUBLE_EQ(exp_naif_iter(37.73, 9), 154946313105250.9584543825746);
     EXPECT_DOUBLE_EQ(exp_naif_iter(37.73, 41), 4.407161984669042426002508666E+64);
     EXPECT_DOUBLE_EQ(exp_naif_iter(37.73, 73), 1.253535909945684693361719728E+115);
