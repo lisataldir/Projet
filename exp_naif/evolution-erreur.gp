@@ -1,21 +1,6 @@
-plot "output1.dat", 
-    "output2.dat",
-    "output3.dat",
-    "output4.dat",
-    "output5.dat",
-    "output6.dat",
-    "output7.dat",
-    "output8.dat",
-    "output9.dat",
-    "output10.dat",
-    "output11.dat",
-    "output12.dat",
-    "output13.dat",
-    "output14.dat",
-    "output15.dat",
-    "output16.dat",
-    "output17.dat",
-    "output18.dat",
-    "output19.dat",
-    "output20.dat"
+# Set titles based on the second line of each file
+title(i) = system(sprintf("sed -n '2p' results/output%d.dat", i))
+
+plot for [i=1:5] sprintf("erreur%d.dat", i) title sprintf("x = %s", title(i)) with lines
+
 pause -1
