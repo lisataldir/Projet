@@ -1,4 +1,5 @@
 #include "algo.h"
+#include "gtest/gtest.h"
 #define MAX 33
 
 int main(int argc, char *argv[]){
