@@ -35,14 +35,13 @@ double exp_rapid_rec(double x, int n)
 
 double exp_rapid_iter(double x, int n){
     double r=1;
-    double a=x;//a temporaire
 
     while(n!=0){
         
         if((n&1)==1){
-            r = r*a;
+            r = r*x;
         }
-        a =a*a;
+        x =x*x;
         n = n >> 1;
     }
     return r;

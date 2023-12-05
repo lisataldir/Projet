@@ -1,12 +1,6 @@
-Start testing: Dec 05 22:37 CET
-----------------------------------------------------------
-1/4 Testing: ExpNaifRec.BasicTest
-1/4 Test: ExpNaifRec.BasicTest
-Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpNaifRec.BasicTest" "--gtest_also_run_disabled_tests"
-Directory: /Users/zhaoyutainazir/Projet/build
-"ExpNaifRec.BasicTest" start time: Dec 05 22:37 CET
-Output:
-----------------------------------------------------------
+Test project /Users/zhaoyutainazir/Projet/build
+    Start 1: ExpNaifRec.BasicTest
+1/4 Test #1: ExpNaifRec.BasicTest .............***Failed    0.01 sec
 Note: Google Test filter = ExpNaifRec.BasicTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -85,21 +79,9 @@ Expected equality of these values:
 [  FAILED  ] ExpNaifRec.BasicTest
 
  1 FAILED TEST
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Failed.
-"ExpNaifRec.BasicTest" end time: Dec 05 22:37 CET
-"ExpNaifRec.BasicTest" time elapsed: 00:00:00
-----------------------------------------------------------
 
-2/4 Testing: ExpNaifIter.BasicTest
-2/4 Test: ExpNaifIter.BasicTest
-Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpNaifIter.BasicTest" "--gtest_also_run_disabled_tests"
-Directory: /Users/zhaoyutainazir/Projet/build
-"ExpNaifIter.BasicTest" start time: Dec 05 22:37 CET
-Output:
-----------------------------------------------------------
+    Start 2: ExpNaifIter.BasicTest
+2/4 Test #2: ExpNaifIter.BasicTest ............***Failed    0.01 sec
 Note: Google Test filter = ExpNaifIter.BasicTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -164,21 +146,9 @@ Expected equality of these values:
 [  FAILED  ] ExpNaifIter.BasicTest
 
  1 FAILED TEST
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Failed.
-"ExpNaifIter.BasicTest" end time: Dec 05 22:37 CET
-"ExpNaifIter.BasicTest" time elapsed: 00:00:00
-----------------------------------------------------------
 
-3/4 Testing: ExpRapidRec.BasicTest
-3/4 Test: ExpRapidRec.BasicTest
-Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpRapidRec.BasicTest" "--gtest_also_run_disabled_tests"
-Directory: /Users/zhaoyutainazir/Projet/build
-"ExpRapidRec.BasicTest" start time: Dec 05 22:37 CET
-Output:
-----------------------------------------------------------
+    Start 3: ExpRapidRec.BasicTest
+3/4 Test #3: ExpRapidRec.BasicTest ............***Failed    0.01 sec
 Note: Google Test filter = ExpRapidRec.BasicTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -243,21 +213,9 @@ Expected equality of these values:
 [  FAILED  ] ExpRapidRec.BasicTest
 
  1 FAILED TEST
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Failed.
-"ExpRapidRec.BasicTest" end time: Dec 05 22:37 CET
-"ExpRapidRec.BasicTest" time elapsed: 00:00:00
-----------------------------------------------------------
 
-4/4 Testing: ExpRapidIter.BasicTest
-4/4 Test: ExpRapidIter.BasicTest
-Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpRapidIter.BasicTest" "--gtest_also_run_disabled_tests"
-Directory: /Users/zhaoyutainazir/Projet/build
-"ExpRapidIter.BasicTest" start time: Dec 05 22:37 CET
-Output:
-----------------------------------------------------------
+    Start 4: ExpRapidIter.BasicTest
+4/4 Test #4: ExpRapidIter.BasicTest ...........***Failed    0.01 sec
 Note: Google Test filter = ExpRapidIter.BasicTest
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -316,18 +274,20 @@ Expected equality of these values:
 [----------] 1 test from ExpRapidIter (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 1 test, listed below:
 [  FAILED  ] ExpRapidIter.BasicTest
 
  1 FAILED TEST
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Failed.
-"ExpRapidIter.BasicTest" end time: Dec 05 22:37 CET
-"ExpRapidIter.BasicTest" time elapsed: 00:00:00
-----------------------------------------------------------
 
-End testing: Dec 05 22:37 CET
+
+0% tests passed, 4 tests failed out of 4
+
+Total Test time (real) =   0.05 sec
+
+The following tests FAILED:
+	  1 - ExpNaifRec.BasicTest (Failed)
+	  2 - ExpNaifIter.BasicTest (Failed)
+	  3 - ExpRapidRec.BasicTest (Failed)
+	  4 - ExpRapidIter.BasicTest (Failed)
