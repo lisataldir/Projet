@@ -1,7 +1,7 @@
 #include "exp_rapide.h"
 
 //recursive function
-double exp_rapide(int n, double x)
+float exp_rapide(int n, float x)
 {
     if(n == 0)
         return 1;
@@ -15,9 +15,9 @@ double exp_rapide(int n, double x)
 }
 
 //the naive form supposed to be the reference
-double exp_naive(int n, double x)
+float exp_naive(int n, float x)
 {
-    double result = 1;
+    float result = 1;
     int i;
     for(i = 0; i < n; i++)
     {
