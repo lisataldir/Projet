@@ -1,0 +1,5 @@
+ExpNaifRec.BasicTest 1 0.00569555
+ExpNaifIter.BasicTest 2 0.00374665
+ExpRapidRec.BasicTest 2 0.00319265
+ExpRapidIter.BasicTest 2 0.00261584
+---
