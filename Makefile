@@ -1,4 +1,4 @@
-CC = g++ -std=c++14
+CC = gcc -std=c++14
 CFLAGS = -O0
 CXXFLAGS += -I//Users/yangyizhi/googletest/googletest/include/gtest/internal/custom/gtest.h
 

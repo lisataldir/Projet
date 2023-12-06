@@ -1,0 +1,107 @@
+Start testing: Dec 05 22:54 CET
+----------------------------------------------------------
+1/4 Testing: ExpNaifRec.BasicTest
+1/4 Test: ExpNaifRec.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpNaifRec.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpNaifRec.BasicTest" start time: Dec 05 22:54 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpNaifRec.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpNaifRec
+[ RUN      ] ExpNaifRec.BasicTest
+[       OK ] ExpNaifRec.BasicTest (0 ms)
+[----------] 1 test from ExpNaifRec (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ExpNaifRec.BasicTest" end time: Dec 05 22:54 CET
+"ExpNaifRec.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: ExpNaifIter.BasicTest
+2/4 Test: ExpNaifIter.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpNaifIter.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpNaifIter.BasicTest" start time: Dec 05 22:54 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpNaifIter.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpNaifIter
+[ RUN      ] ExpNaifIter.BasicTest
+[       OK ] ExpNaifIter.BasicTest (0 ms)
+[----------] 1 test from ExpNaifIter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ExpNaifIter.BasicTest" end time: Dec 05 22:54 CET
+"ExpNaifIter.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: ExpRapidRec.BasicTest
+3/4 Test: ExpRapidRec.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpRapidRec.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpRapidRec.BasicTest" start time: Dec 05 22:54 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpRapidRec.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpRapidRec
+[ RUN      ] ExpRapidRec.BasicTest
+[       OK ] ExpRapidRec.BasicTest (0 ms)
+[----------] 1 test from ExpRapidRec (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ExpRapidRec.BasicTest" end time: Dec 05 22:54 CET
+"ExpRapidRec.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: ExpRapidIter.BasicTest
+4/4 Test: ExpRapidIter.BasicTest
+Command: "/Users/zhaoyutainazir/Projet/build/algo_test" "--gtest_filter=ExpRapidIter.BasicTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/zhaoyutainazir/Projet/build
+"ExpRapidIter.BasicTest" start time: Dec 05 22:54 CET
+Output:
+----------------------------------------------------------
+Note: Google Test filter = ExpRapidIter.BasicTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpRapidIter
+[ RUN      ] ExpRapidIter.BasicTest
+[       OK ] ExpRapidIter.BasicTest (0 ms)
+[----------] 1 test from ExpRapidIter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ExpRapidIter.BasicTest" end time: Dec 05 22:54 CET
+"ExpRapidIter.BasicTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 05 22:54 CET

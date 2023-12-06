@@ -1,5 +1,4 @@
 #include "algo.h"
-#include "gtest/gtest.h"
 
 double exp_naif_rec(double x, int n){
     if (n==0){
@@ -35,27 +34,15 @@ double exp_rapid_rec(double x, int n)
 }
 
 double exp_rapid_iter(double x, int n){
-    double res=0;
-    
-    if(n==0){
-        return 1;
-    }
-    else if(n>0){
+    double r=1;
+
+    while(n!=0){
         
-        double exp_half =exp_rapid_iter(x,n/2);
-        
-        if (n & 1) {
-            res = x * exp_half * exp_half;
+        if((n&1)==1){
+            r = r*x;
         }
-        res = exp_half * exp_half;
+        x =x*x;
+        n = n >> 1;
     }
-    else if(n<0) {
-        double exp_half =1/exp_rapid_iters(x,-n/2);
-        if (-n & 1) {
-            res = (1/x) * exp_half * exp_half;
-        }
-        res = exp_half * exp_half;
-        
-    }
-    return res;
+    return r;
 }
