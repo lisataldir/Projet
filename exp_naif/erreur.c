@@ -21,7 +21,7 @@ int main() {
 
 
         if (output == NULL || ref == NULL) {
-            perror("Erreur lors de l'ouverture des fichiers");
+            perror("open");
             return 1;
         }
 
@@ -31,7 +31,8 @@ int main() {
         // On prend la valeur absolue de la différence entre les colonnes des deux fichiers pour calculer notre erreur
         while (fscanf(output, "%lf ", &value1) == 1 && fscanf(ref, "%lf ", &value2) == 1) {
             resultValue = fabs(value1 - value2);
-            fprintf(erreur, "%.17lf\n", resultValue);
+            // simple précision
+            fprintf(erreur, "%.16lf\n", resultValue);
         }
         rewind(output);
         rewind(ref);

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <time.h>
 
 double exp_naif_iter(double x, int n){
@@ -21,7 +20,8 @@ int main(int argc, char** argv){
     double tmp;
     for (int n = 0; n < 31; n++){
         tmp = exp_naif_iter(x, n);
-        printf("%.17f\n", tmp);
+        // calcul en simple précision
+        printf("%.16f\n", tmp);
     }
     return 0;
 }

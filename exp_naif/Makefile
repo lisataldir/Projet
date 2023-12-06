@@ -1,9 +1,9 @@
 CC=gcc
 
-all: reference
+all: erreur
 
-reference: reference.c 
-	$(CC) $< -o $@
+erreur: erreur.c 
+	$(CC) -g $^ -o $@
 
 clean:
-	rm -rf reference
+	rm -rf erreur
