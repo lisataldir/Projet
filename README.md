@@ -1,6 +1,6 @@
 # PPN : Arrondi stochastique pour le calcul scientifique
 
-## Usage
+## Usage test
 
 Pour obtenir le fichier exp_naif/graphe-err.png suivre les étapes suivantes :
 
