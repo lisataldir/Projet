@@ -91,7 +91,7 @@ int main(int argc, char ** argv) {
     rewind(UR1);
     rewind(ref1);
     fclose(UR1);
-    fclose(errSR1);
+    fclose(errUR1);
 
     while (fscanf(ref2, "%f ", &ref_val2) == 1 && fscanf(UR2, "%f ", &val_ur2) == 1) {
         err_ur2_val = fabs(val_ur2 - ref_val2);
@@ -100,7 +100,7 @@ int main(int argc, char ** argv) {
     rewind(UR2);
     rewind(ref2);
     fclose(UR2);
-    fclose(errSR2);
+    fclose(errUR2);
 
     while (fscanf(ref3, "%f ", &ref_val3) == 1 && fscanf(UR3, "%f ", &val_ur3) == 1) {
         err_ur3_val = fabs(val_ur3 - ref_val3);
