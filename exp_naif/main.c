@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 float exp_naif_iter(float x, int n){
     float r = 1;
