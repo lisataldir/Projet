@@ -2,14 +2,14 @@
 
 gcc sr.c -o sr
 x=$(2)
-echo "# Creating folder results/ref_x_$x.dat"
-./reference "$x" >> results/ref_x_$x.dat
+echo "# Creating folder results/ref_x_2.dat"
+./reference "$x" >> results/ref_x_2.dat
 rm -rf sr.o sr
 
 gcc sr.c -o sr
 y=$(0.5)
-echo "# Creating folder results/ref_x_$y.dat"
-./reference "$y" >> results/ref_x_$y.dat
+echo "# Creating folder results/ref_x_0_5.dat"
+./reference "$y" >> results/ref_x_0_5.dat
 rm -rf sr.o sr
 
 gcc sr.c -o sr
