@@ -70,6 +70,8 @@ $u^{n+1}i = u^n_i-a\dfrac{\Delta t}{2\Delta x} (u^n{i+1} - u^n_{i-1}) + a^2 \dfr
 \section{Conclusion}
 (pour aller plus loin, on pourait faire d'autres expériences, proposer d'autres hypothèses, d'autres possibilité selon les docs etc ...)
 
+\mewpage
+
 \section{Annexes}
 (on met ce qu'on a lu ...)
 
