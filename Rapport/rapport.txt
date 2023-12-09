@@ -62,7 +62,11 @@ $u^{n+1}i = u^n_i-a\dfrac{\Delta t}{2\Delta x} (u^n{i+1} - u^n_{i-1}) + a^2 \dfr
 
 
 \section{Implémentation et graphiques obtenus}
+
+\subsection{Algorithme naif}
 (ici on décrit comment on a programmé, comment on a fait pour obtenir les graphiques, comment on a lancé les tests etc ...)
+
+\subsection{Algorithme rapide}
 
 \section{Interprétation et analyse}
 (on essaye d'expliquer pourquoi on aurait les erreurs de telle allure et les facteurs d'influences, et/ou hypothèse d'indépendance pas vraie etc ...)
