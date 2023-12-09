@@ -1,6 +1,4 @@
 #ifndef EXP_RAPIDE_H
-#define EXP_RAPIDE_H
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,13 +6,15 @@
 
 #include "exp_rapide.h"
 
+#define EXP_RAPIDE_H
+#endif
 
-int n = 100;
-double x = 3.14;
+int n = 100000000;
+float x = 314.314;
 
 int main()
 {
-    double err = fabs(exp_rapide(n, x) - exp_naive(n, x));
+    float err = fabs(exp_rapide(n, x) - exp_naive(n, x));
     printf("Error: %f\n", err);
     return 0;
 }
