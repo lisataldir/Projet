@@ -53,8 +53,6 @@ Posons maintenant p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \r
 Commençons par regarder $fl(x^{n})$ puis $\mathbb{E}[fl(x^{n})]$.
 \\
 Montrons que pour tout $n \in \mathbb{N}$, $\mathbb{E}[fl(x^{n})] = x^{n}$. 
-
-$u^{n+1}i = u^n_i-a\dfrac{\Delta t}{2\Delta x} (u^n{i+1} - u^n_{i-1}) + a^2 \dfrac{\Delta t^2}{2\Delta x^2}(u^n_{i+1}-2u^n_i+u^n_{i-1})$
 \\
 (ici on rajoute aussi les démos)
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zhaoyutainazir/Projet/algo_lib
+# Install script for directory: /Users/yangyizhi/Projet/algo_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
