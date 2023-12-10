@@ -49,18 +49,72 @@ Introduire une brève introduction sur l'arrondi stochastique où on raconte que
 
 Posons maintenant p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \rfloor}$ et supposons que nos variables aléatoires sont indépendantes. 
 
-\subsection{Algorithme naif}
-Commençons par regarder $fl(x^{n})$ puis $\mathbb{E}[fl(x^{n})]$.
-\\
-Montrons que pour tout $n \in \mathbb{N}$, $\mathbb{E}[fl(x^{n})] = x^{n}$. 
-\\
-(ici on rajoute aussi les démos)
 
-\subsection{Algorithme rapide}
+Supposons que pour tout $i$, $\delta_i$ sont des variables aléatoires avec $\mathbb{E}[\delta_i] = 0$ et que pour tout $i, j$, $\delta_i$ et $\delta_j$ sont non corrélées.(i.e. ${\forall} i,j \in \mathbb{N}^*$,$i,j\in[1,n-1]$,Cov($\delta_i$,$\delta_j$)=0).
+
+Nous savons que fl(x $\circ$ y)=(x $\circ$ y)$\cdot$(1+$\delta$ ).
+
+Nous voulons démontrer que $\mathbb{E}[fl(x^{n})] = x^{n}$. 
+
+
+
+\subsection{Algorithme naif}
+
+\begin{align*}
+\text{fl}(x^2) &= x^2 \cdot (1 + \delta_1) \\
+\text{fl}(x^3) &= x \cdot \text{fl}(x^2) \cdot (1+ \delta_2) \\
+              &= x \cdot x^2 \cdot (1+\delta_1) \cdot (1+\delta_2) \\
+              &= x^3 \cdot (1+\delta_1) \cdot (1+\delta_2) \\
+\implies \text{fl}(x^n) &= x^n \cdot \prod_{i=1}^{n-1}(1+ \delta_i) \\
+Cov(\delta_i, \delta_j) &= \mathbb{E}[(\delta_i - \mathbb{E}[\delta_i]) \cdot (\delta_j - \mathbb{E}[\delta_j])] \\
+&= \mathbb{E}[\delta_i\delta_j - \delta_j\mathbb{E}[\delta_i]-\delta_i\mathbb{E}[\delta_j]+\mathbb{E}[\delta_i]\mathbb{E}[\delta_j]] \\
+&= \mathbb{E}[\delta_i\delta_j] - \mathbb{E}[\delta_j\mathbb{E}[\delta_i]]-\mathbb{E}[\delta_i\mathbb{E}[\delta_j]]+\mathbb{E}[\mathbb{E}[\delta_i]\mathbb{E}[\delta_j]] \\
+&= \mathbb{E}[\delta_i\delta_j] - \mathbb{E}[\delta_i]\mathbb{E}[\delta_j]-\mathbb{E}[\delta_j]\mathbb{E}[\delta_i]+\mathbb{E}[\delta_i]\mathbb{E}[\delta_j] \\
+&= \mathbb{E}[\delta_i\delta_j] - \mathbb{E}[\delta_i]\mathbb{E}[\delta_j]\\
+&= 0\\
+\end{align*}
+Calculons son esperance : 
+$$\mathbb{E}[\text{fl}(x^n)] = \mathbb{E}[x^n \cdot \prod_{i=1}^{n-1}(1+ \delta_i)] $$
+Par linearite de l'esperance : 
+$$\mathbb{E}[\text{fl}(x^n)]=\mathbb{E}[x^n] \cdot \mathbb{E}[\prod_{i=1}^{n-1}(1+ \delta_i)]$$
+car $ x^n $ est une constante :
+$$\mathbb{E}[\text{fl}(x^n)]=x^n \cdot \mathbb{E}[\prod_{i=1}^{n-1}(1+ \delta_i)]$$
+Par non-correlation des $delta$ : 
+\begin{align*}
+\mathbb{E}[\text{fl}(x^n)] &= x^n \cdot \prod_{i=1}^{n-1} \mathbb{E}([ (1+\delta_i)])\\
+&= x^n \cdot \prod_{i=1}^{n-1} (\mathbb{E}[1]+\mathbb{E}[ \delta_i ])\\
+&= x^n \cdot \prod_{i=1}^{n-1} (1+0)\\
+&= x^n \\
+\end{align*}
 
 
 \section{Implémentation et graphiques obtenus}
-
+Transfomons d'abord l'exposant $n$ en representation binaire et stockons chaque bit $x_{i}$. Nous avons ainsi :
+\\
+\begin{align*}
+  \begin{cases}
+    n = 2^{n-1}x_{1} + 2^{n-2}x_{2} + ... + x_{n-1} \\
+    \forall i \in [0,n],  x_i \in \{0,1\} \\
+  \end{cases}
+\end{align*}
+\\
+\\
+Posons ensuite la somme $U_i = \sum_{k=i+1}^{n} 2^{n-k}x_k$ et $r \in \mathbb{N}$ valant le nombre de 1 dans la representation binaire de $n$
+\\
+\\
+Nous pouvons remarquer que (à demontrer par recurrence ?) : 
+$$fl(x^n) = x^n \cdot \prod_{i=1}^{n-1} (1+\delta_i)^{U_i} \cdot \prod_{i=n}^{n+r-1} (1+\delta_i) $$
+Calculons son esperance : 
+$$\mathbb{E}[fl(x^{n})] = \mathbb{E}[x^n \cdot \prod_{i=1}^{n-1} (1+\delta_i)^{U_i} \cdot \prod_{i=n}^{n+r-1} (1+\delta_i)] $$
+Par linearite de l'esperance : 
+$$\mathbb{E}[fl(x^{n})] = x^n \cdot \mathbb{E}[ \prod_{i=1}^{n-1} (1+\delta_i)^{U_i} \cdot \prod_{i=n}^{n+r-1} (1+\delta_i)] $$
+Par non-correlation des $delta$ : 
+\begin{align*}
+\mathbb{E}[fl(x^{n})] &= x^n \cdot \prod_{i=1}^{n-1} \mathbb{E}[ (1+\delta_i)]^{U_i} \cdot \prod_{i=n}^{n+r-1} \mathbb{E}[(1+\delta_i)] \\
+&= x^n \cdot \prod_{i=1}^{n-1} (\mathbb{E}[1]+\mathbb{E}[\delta_i])^{U_i} \cdot \prod_{i=n}^{n+r-1} (\mathbb{E}[1]+\mathbb{E}[\delta_i]) \\
+ &= x^n \cdot  \prod_{i=1}^{n-1} (1)^{U_i} \cdot \prod_{i=n}^{n+r-1} (1) \\
+ &= x^n 
+\end{align*}
 \subsection{Algorithme naif}
 (ici on décrit comment on a programmé, comment on a fait pour obtenir les graphiques, comment on a lancé les tests etc ...)
 
@@ -78,3 +132,6 @@ Montrons que pour tout $n \in \mathbb{N}$, $\mathbb{E}[fl(x^{n})] = x^{n}$.
 (on met ce qu'on a lu ...)
 
 \end{document}
+
+
+
