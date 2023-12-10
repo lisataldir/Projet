@@ -2,7 +2,7 @@
 # default precision is 28 digits
 
 from decimal import Decimal, getcontext
-getcontext().prec = 50
+getcontext().prec = 17
 # to define a precision of 50 digits
 
 r1 = Decimal('2.0') ** 39
