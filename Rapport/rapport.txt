@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[french]{babel}
+
+\begin{document}
+
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparsep}{0pt}
+
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{\includegraphics[scale=0.22]{logo_uvsq.jpeg}}
+\fancyhead[R]{22 décembre 2023}
+
+\hspace{10cm}
+
+\begin{center}
+        
+    \huge
+    Projet de Programmation Numérique
+    \vspace{2.0cm}
+
+    \huge 
+    \textbf {ARRONDI STOCHASTIQUE POUR LE CALCUL SCIENTIFIQUE} \\
+
+    \vspace{1.0cm}
+
+    \normalsize
+    Par Yizhi Yang, Chun Qi, Yutai Zhao et Lisa Taldir \\ Sous l'encadrement de Pablo Oliveira, El Medhi El Arar et Devan Sohier \\ 
+       
+\end{center}
+    
+\vspace{1cm}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Introduire une brève introduction sur l'arrondi stochastique où on raconte que fl(x) = $\lfloor x \rfloor$ avec proba p et $\lceil x \rceil$ avec proba 1-p (où p est défini ci-dessous). 
+
+\section{Etude de l'algorithme d'exponentiation}
+
+Posons maintenant p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \rfloor}$ et supposons que nos variables aléatoires sont indépendantes. 
+
+\subsection{Algorithme naif}
+Commençons par regarder $fl(x^{n})$ puis $\mathbb{E}[fl(x^{n})]$.
+\\
+Montrons que pour tout $n \in \mathbb{N}$, $\mathbb{E}[fl(x^{n})] = x^{n}$. 
+\\
+(ici on rajoute aussi les démos)
+
+\subsection{Algorithme rapide}
+
+
+\section{Implémentation et graphiques obtenus}
+
+\subsection{Algorithme naif}
+(ici on décrit comment on a programmé, comment on a fait pour obtenir les graphiques, comment on a lancé les tests etc ...)
+
+\subsection{Algorithme rapide}
+
+\section{Interprétation et analyse}
+(on essaye d'expliquer pourquoi on aurait les erreurs de telle allure et les facteurs d'influences, et/ou hypothèse d'indépendance pas vraie etc ...)
+
+\section{Conclusion}
+(pour aller plus loin, on pourait faire d'autres expériences, proposer d'autres hypothèses, d'autres possibilité selon les docs etc ...)
+
+\mewpage
+
+\section{Annexes}
+(on met ce qu'on a lu ...)
+
+\end{document}

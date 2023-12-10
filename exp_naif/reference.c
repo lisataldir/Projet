@@ -1,4 +1,4 @@
-//Ce fichier sert à calculer la valeur de x^n en double précision sans verificarlo, afin d'avoir une valeur de référence pour le calcul d'erreur
+//Ce fichier sert à calculer la valeur de x^n en double précision, afin d'avoir une valeur de référence pour le calcul d'erreur
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,15 +18,11 @@ int main(int argc, char** argv){
         printf("%s usage : [x]", argv[0]);
     }
 
-    //on intialise y en fonction des valeurs de x
-    char *endptr;
-    double y = strtod(argv[1], &endptr);
+    double x = atof(argv[1]);
     double tmp;
-
-    //calcul de y^n, on garde les 32 premieres décimales (double précision)
-    for (int n = 0; n < 31; n++){
-        tmp = exp_naif_iter(y, n);
-        printf("%.32f\n", tmp);
+    for (int n = 0; n < 54; n++){
+        tmp = exp_naif_iter(x, n);
+        printf("%lf\n", tmp);
     }
 
     return 0;

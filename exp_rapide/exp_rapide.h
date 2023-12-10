@@ -1,2 +1,2 @@
-double exp_rapide(int n, double x);
-double exp_naive(int n, double x);
+float exp_rapide(int n, float x);
+float exp_naive(int n, float x);
