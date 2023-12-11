@@ -1,7 +1,7 @@
 #include "exp_rapide.h"
 
 //recursive version
-float exp_rapide_rec(int n, float x)
+TYPE exp_rapide_rec(int n, TYPE x)
 {
     if(n == 0)
         return 1;
@@ -15,9 +15,9 @@ float exp_rapide_rec(int n, float x)
 }
 
 //iterative version
-float exp_rapide_iter(int n, float x)
+TYPE exp_rapide_iter(int n, TYPE x)
 {
-    float res = 1;
+    TYPE res = 1;
     while(n > 0)
     {
         if(n % 2 == 0)
