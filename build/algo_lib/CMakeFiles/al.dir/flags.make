@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/zhaoyutainazir/Projet/algo_lib
+CXX_INCLUDES = -I/Users/yangyizhi/Projet/algo_lib
 
-CXX_FLAGS = -fvisibility=hidden -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
+CXX_FLAGS = -fvisibility=hidden -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7
 

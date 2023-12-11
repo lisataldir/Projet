@@ -1,28 +1,36 @@
 #include "exp_rapide.h"
 
-//recursive function
-double exp_rapide(int n, double x)
+//recursive version
+TYPE exp_rapide_rec(int n, TYPE x)
 {
     if(n == 0)
         return 1;
     else if(n == 1)
         return x;
     else if(n % 2 == 0)
-        return exp_rapide(n/2, x) * exp_rapide(n/2, x);
+        return exp_rapide_rec(n/2, x) * exp_rapide_rec(n/2, x);
     else
-        return x * exp_rapide(n/2, x) * exp_rapide(n/2, x);
+        return x * exp_rapide_rec(n/2, x) * exp_rapide_rec(n/2, x);
 
 }
 
-//the naive form supposed to be the reference
-double exp_naive(int n, double x)
+//iterative version
+TYPE exp_rapide_iter(int n, TYPE x)
 {
-    double result = 1;
-    int i;
-    for(i = 0; i < n; i++)
+    TYPE res = 1;
+    while(n > 0)
     {
-        result *= x;
+        if(n % 2 == 0)
+        {
+            x = x * x;
+            n = n / 2;
+        }
+        else
+        {
+            res = res * x;
+            x = x * x;
+            n = (n - 1) / 2;
+        }
     }
-    return result;
+    return res;
 }
-

@@ -2,7 +2,7 @@
 # default precision is 28 digits
 
 from decimal import Decimal, getcontext
-getcontext().prec = 9
+getcontext().prec = 17
 # to define a precision of 50 digits
 
 r1 = Decimal('2.0') ** 39
@@ -33,7 +33,7 @@ r11 = Decimal('111.11') ** 47
 
 print("111.11 ^ 8 = ", r9)
 print("111.11 ^ 26 = ", r10)
-print("111.11 ^47 = ", r11)
+print("111.11 ^ 47 = ", r11)
 
 r12 = Decimal('6543.2') ** 10
 r13 = Decimal('6543.2') ** 32

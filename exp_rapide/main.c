@@ -1,6 +1,4 @@
 #ifndef EXP_RAPIDE_H
-#define EXP_RAPIDE_H
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,13 +6,19 @@
 
 #include "exp_rapide.h"
 
+#define EXP_RAPIDE_H
+#endif
 
-int n = 100;
-double x = 3.14;
+
 
 int main()
 {
-    double err = fabs(exp_rapide(n, x) - exp_naive(n, x));
-    printf("Error: %f\n", err);
+    TYPE x = 0.5;
+    int i = 0;
+    for(i = 0; i <= 53; i ++)
+    {
+        printf("recursive x = %f n = %d result =\t%f\t", x, i, exp_rapide_rec(i, x));
+        printf("iterative x = %f n = %d result =\t%f\n", x, i, exp_rapide_iter(i, x));
+    }
     return 0;
 }
