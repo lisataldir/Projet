@@ -13,7 +13,7 @@
 
 int main()
 {
-    TYPE x = 2.0;
+    TYPE x = 0.5;
     int i = 0;
     for(i = 0; i <= 53; i ++)
     {
