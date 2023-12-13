@@ -9,12 +9,16 @@
 #define EXP_RAPIDE_H
 #endif
 
-int n = 100000000;
-float x = 314.314;
+
 
 int main()
 {
-    float err = fabs(exp_rapide(n, x) - exp_naive(n, x));
-    printf("Error: %f\n", err);
+    TYPE x = 0.5;
+    int i = 0;
+    for(i = 0; i <= 53; i ++)
+    {
+        printf("recursive x = %f n = %d result =\t%f\t", x, i, exp_rapide_rec(i, x));
+        printf("iterative x = %f n = %d result =\t%f\n", x, i, exp_rapide_iter(i, x));
+    }
     return 0;
 }
