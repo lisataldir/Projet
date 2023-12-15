@@ -13,12 +13,11 @@
 
 int main()
 {
-    TYPE x = 0.5;
+    TYPE x = 1.11;
     int i = 0;
-    for(i = 0; i <= 53; i ++)
+    for(i = 0; i <= 6801; i ++)
     {
-        printf("recursive x = %f n = %d result =\t%f\t", x, i, exp_rapide_rec(i, x));
-        printf("iterative x = %f n = %d result =\t%f\n", x, i, exp_rapide_iter(i, x));
+        printf("%d\t%f\t%f\n", i, exp_rapide_rec(i, x), exp_rapide_iter(i, x));
     }
     return 0;
 }
