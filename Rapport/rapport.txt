@@ -43,18 +43,26 @@
 
 \section{Introduction}
 
-Introduire une brève introduction sur l'arrondi stochastique où on raconte que fl(x) = $\lfloor x \rfloor$ avec proba p et $\lceil x \rceil$ avec proba 1-p (où p est défini ci-dessous). 
+Bien que des machines permettant de réaliser des calculs de plus en plus complexes se développent, la taille de la mantisse reste limitée, et donc bien souvent le résultat ces calculs doit être arrondi. Alors comment faire le meilleur choix d'arrondi ? \\
+
+Pour répondre à cette question, nous nous interesserons ici à l'arrondi stochastique et nous comparerons ses résultats avec ceux de l’arrondi déterministe au plus près, pour différents algorithmes d'exponentiations : une version naîve et une version rapide. \\
+
+Le principe de l'arrondi stochastique est le suivant : soit x la valeur exacte et fl(x) sa valeur approchée, on pose fl(x) = $\lfloor x \rfloor$ avec une probabilité de p et $\lceil x \rceil$ avec une probabilité de 1-p où \\ p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \rfloor}$. Il est alors interessant de remarquer que 
+\begin{center}
+    $\mathbb{E}[fl(x)]$ = $\lfloor x \rfloor \times p$ + $\lceil x \rceil \times (1-p)$ = $x$
+\end{center}
+Ainsi, cet arrondi permet en moyenne de retomber sur la valeur exacte x.
+
+L’arrondi déterministe au plus près, quant à lui, choisit le flottant représentable le plus proche du résultat. Par exemple, le nombre 0.56 se voit arrondi à 0.6. C'est l'arrondi choisit par défaut.
+
 
 \section{Etude de l'algorithme d'exponentiation}
 
-Posons maintenant p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \rfloor}$ et supposons que nos variables aléatoires sont indépendantes. 
+Dans toute cette partie, nous allons poser p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \rfloor}$ et supposer que nos variables aléatoires sont indépendantes. (ici on rajoute les démos)
 
 \subsection{Algorithme naif}
-Commençons par regarder $fl(x^{n})$ puis $\mathbb{E}[fl(x^{n})]$.
-\\
-Montrons que pour tout $n \in \mathbb{N}$, $\mathbb{E}[fl(x^{n})] = x^{n}$. 
-\\
-(ici on rajoute aussi les démos)
+
+Montrons que pour l'algorithme d'exponentiation naif, on a $\mathbb{E}[fl(x^{n})] = x^{n}$ pour tout $n \in \mathbb{N}$.
 
 \subsection{Algorithme rapide}
 
@@ -71,8 +79,6 @@ Montrons que pour tout $n \in \mathbb{N}$, $\mathbb{E}[fl(x^{n})] = x^{n}$.
 
 \section{Conclusion}
 (pour aller plus loin, on pourait faire d'autres expériences, proposer d'autres hypothèses, d'autres possibilité selon les docs etc ...)
-
-\mewpage
 
 \section{Annexes}
 (on met ce qu'on a lu ...)
