@@ -69,8 +69,13 @@ Montrons que pour l'algorithme d'exponentiation naif, on a $\mathbb{E}[fl(x^{n})
 
 \section{Implémentation et graphiques obtenus}
 
-\subsection{Algorithme naif}
 (ici on décrit comment on a programmé, comment on a fait pour obtenir les graphiques, comment on a lancé les tests etc ...)
+
+\subsection{Algorithme naif}
+
+\includegraphics[]{exp_naif_iteratif.png}
+
+\includegraphics[]{exp_naif_recursif.png}
 
 \subsection{Algorithme rapide}
 
