@@ -10,6 +10,13 @@ float exp_naif_iter(float x, int n){
     return r;
 }
 
+float exp_naif_recursif(float x, int n){
+    if (n==0) {
+        return 1;
+    }
+    return x*exp_naif_recursif(x, n-1);
+}
+
 int main(int argc, char** argv){
 
     if (argc < 2) {
