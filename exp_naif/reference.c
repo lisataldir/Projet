@@ -20,7 +20,7 @@ int main(int argc, char** argv){
 
     double x = atof(argv[1]);
     double tmp;
-    for (int n = 0; n < 54; n++){
+    for (int n = 0; n < 101; n++){
         tmp = exp_naif_iter(x, n);
         printf("%lf\n", tmp);
     }
