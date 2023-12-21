@@ -7,9 +7,9 @@ echo "# Creating folder results/UR_x_2.dat"
 rm -rf main.o main
 
 gcc main.c -o main
-y=0.995
-echo "# Creating folder results/UR_x_0_995.dat"
-./main "$y" > results/UR_x_0_995.dat
+y=3.995
+echo "# Creating folder results/UR_x_3_995.dat"
+./main "$y" > results/UR_x_3_995.dat
 rm -rf main.o main
 
 gcc main.c -o main

@@ -1,15 +1,15 @@
 #!bin/bash
 
 gcc reference.c -o reference
-x=2
+x=2.0
 echo "# Creating folder results/ref_x_2.dat"
 ./reference "$x" > results/ref_x_2.dat
 rm -rf reference.o reference
 
 gcc reference.c -o reference
-y=0.995
-echo "# Creating folder results/ref_x_0_995.dat"
-./reference "$y" > results/ref_x_0_995.dat
+y=3.995
+echo "# Creating folder results/ref_x_3_995.dat"
+./reference "$y" > results/ref_x_3_995.dat
 rm -rf reference.o reference
 
 gcc reference.c -o reference
