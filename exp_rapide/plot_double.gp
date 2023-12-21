@@ -1,11 +1,11 @@
 set terminal png   
-set output 'UR_rap_iter_1.34907566301_log.png'   
+set output 'SR_rap_rec_0.995_log.png'   
 
-set title 'rapid recursive method: x = 1.34907566301'    
+set title 'rapid recursive method: x = 0.995'    
 set xlabel 'power n'         
 set ylabel 'log(error)'      
 
 
 set logscale y 10
 
-plot 'error_iter_1.34907566301_double.dat' with points pointtype 7 pointsize 0.4
+plot 'error_rec_0.995_SR.dat' with points pointtype 7 pointsize 0.4
