@@ -1,5 +1,6 @@
 set size square
 set logscale y 10
+set grid
 
-plot for [i=1:10] "results/errSR_x_2_".i.".dat" with points pointtype 7 pointsize 0.4 title sprintf("Test %d", i)
+plot "results/errSR_x_2stat.dat" using 0:1:2 with yerrorbars linecolor rgb "red"
 pause -1
