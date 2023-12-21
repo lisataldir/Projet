@@ -9,7 +9,7 @@ int main(int argc, char ** argv) {
     FILE *ref1, *ref2, *ref3;
     float ref_val1, ref_val2, ref_val3;
     ref1 = fopen("results/ref_x_2.dat", "r");
-    ref2 = fopen("results/ref_x_0_995.dat", "r");
+    ref2 = fopen("results/ref_x_3_995.dat", "r");
     ref3 = fopen("results/ref_x_rand.dat", "r");
     // On vérifie que les ouvertures se sont bien passées
     if (ref1 == NULL || ref2 == NULL || ref3 == NULL) {
@@ -28,7 +28,7 @@ int main(int argc, char ** argv) {
         SR1 = fopen(tmp1, "r");
 
         char tmp2[50];
-        sprintf(tmp2, "results/SR_x_0_995_%d.dat", i);
+        sprintf(tmp2, "results/SR_x_3_995_%d.dat", i);
         SR2 = fopen(tmp2, "r");
 
         char tmp3[50];
@@ -49,7 +49,7 @@ int main(int argc, char ** argv) {
         errSR1 = fopen(etmp1, "w");
 
         char etmp2[50];
-        sprintf(etmp2, "results/errSR_x_0_995_%d.dat", i);
+        sprintf(etmp2, "results/errSR_x_3_995_%d.dat", i);
         errSR2 = fopen(etmp2, "w");
 
         char etmp3[50];
@@ -91,7 +91,7 @@ int main(int argc, char ** argv) {
     FILE *UR1, *UR2, *UR3;
     float val_ur1, val_ur2, val_ur3;
     UR1 = fopen("results/UR_x_2.dat", "r");
-    UR2 = fopen("results/UR_x_0_995.dat", "r");
+    UR2 = fopen("results/UR_x_3_995.dat", "r");
     UR3 = fopen("results/UR_x_rand.dat", "r");
     if (UR1 == NULL || UR2 == NULL || UR3 == NULL) {
         perror("open");
@@ -102,7 +102,7 @@ int main(int argc, char ** argv) {
     FILE *errUR1, *errUR2, *errUR3;
     float err_ur1_val, err_ur2_val, err_ur3_val;
     errUR1 = fopen("results/errUR_x_2.dat", "w");
-    errUR2 = fopen("results/errUR_x_0_995.dat", "w");
+    errUR2 = fopen("results/errUR_x_3_995.dat", "w");
     errUR3 = fopen("results/errUR_x_rand.dat", "w");
 
     // Calcul de la valeur absolue de la différence entre les colonnes de ref et UR
