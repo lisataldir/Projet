@@ -55,7 +55,6 @@ Ainsi, cet arrondi permet en moyenne de retomber sur la valeur exacte x.
 
 L’arrondi déterministe au plus près, quant à lui, choisit le flottant représentable le plus proche du résultat. Par exemple, le nombre 0.56 se voit arrondi à 0.6. C'est l'arrondi choisit par défaut.
 
-
 \section{Etude de l'algorithme d'exponentiation}
 
 Dans toute cette partie, nous allons poser p = $\frac{\lceil x \rceil - x}{\lceil x \rceil - \lfloor x \rfloor}$ et supposer que nos variables aléatoires sont indépendantes. (ici on rajoute les démos)
@@ -76,6 +75,12 @@ Montrons que pour l'algorithme d'exponentiation naif, on a $\mathbb{E}[fl(x^{n})
 \includegraphics[]{exp_naif_iteratif.png}
 
 \includegraphics[]{exp_naif_recursif.png}
+
+\includegraphics[scale=0.5]{SR_x_2_log.png}
+
+\includegraphics[scale=0.75]{SR_x_rand_log.png}
+
+\includegraphics[scale=0.75]{UR_x_rand_log.png}
 
 \subsection{Algorithme rapide}
 
