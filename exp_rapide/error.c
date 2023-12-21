@@ -4,29 +4,29 @@
 
 int main() 
 {
-    FILE *file1 = fopen("rapid_1.11_SR.dat", "r");
+    FILE *file1 = fopen("rapid_0.995_UR.dat", "r");
     if (file1 == NULL) 
     {
-        perror("Error opening rapid_1.11_SR.dat");
+        perror("Error opening rapid_0.995_UR.dat");
         return 1;
     }
 
     //printf("File1 opened successfully.\n");
 
-    FILE *file2 = fopen("reference_data_py/1.11_default.dat", "r");
+    FILE *file2 = fopen("reference_data_py/0.995_default.dat", "r");
     if (file2 == NULL)
     {
-        perror("Error opening 1.11_default.dat");
+        perror("Error opening 0.995_default.dat");
         fclose(file1);
         return 1;
     }
 
     //printf("File2 opened successfully.\n");
 
-    FILE *file3 = fopen("error_iter_1.11_double_SR.dat", "w");
+    FILE *file3 = fopen("error_iter_0.995_default_UR.dat", "w");
     if (file3 == NULL) 
     {
-        perror("Error opening error_iter_1.11_double_SR.dat");
+        perror("Error opening error_iter_0.995_default_UR.dat");
         fclose(file1);
         fclose(file2);
         return 1;
