@@ -13,9 +13,9 @@
 
 int main()
 {
-    TYPE x = 1.11;
+    TYPE x = 0.995;
     int i = 0;
-    for(i = 0; i <= 6801; i ++)
+    for(i = 0; i <= 100; i ++)
     {
         printf("%d\t%f\t%f\n", i, exp_rapide_rec(i, x), exp_rapide_iter(i, x));
     }
