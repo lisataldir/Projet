@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main() 
+int main(int argc, char ** argv) 
 {
     FILE *file1 = fopen("rapid_0.995_UR.dat", "r");
     if (file1 == NULL) 

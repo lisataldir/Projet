@@ -11,11 +11,17 @@
 
 
 
-int main()
+int main(int argc, char *argv[])
 {
-    TYPE x = 0.995;
+    if (argc < 2) 
+    {
+        printf("Usage: %s [x]\n", argv[0]);
+        return 1;
+    }
+
+    TYPE x = atof(argv[1]);
     int i = 0;
-    for(i = 0; i <= 100; i ++)
+    for(i = 0; i <= 200; i ++)
     {
         printf("%d\t%f\t%f\n", i, exp_rapide_rec(i, x), exp_rapide_iter(i, x));
     }
