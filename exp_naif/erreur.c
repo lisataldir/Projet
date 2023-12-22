@@ -57,27 +57,27 @@ int main(int argc, char ** argv) {
         errSR3 = fopen(etmp3, "w");
 
         // Calcul de la valeur absolue de la différence entre les colonnes de ref et SR
-        while (fscanf(ref1, "%f ", &ref_val1) == 1 && fscanf(SR1, "%f ", &val_sr1) == 1) {
-            err_sr1_val = fabs(val_sr1 - ref_val1);
-            fprintf(errSR1, "%f\n", err_sr1_val);
+        while (fscanf(ref1, "%g ", &ref_val1) == 1 && fscanf(SR1, "%g ", &val_sr1) == 1) {
+            err_sr1_val = fabs(val_sr1 - ref_val1)/fabs(ref_val1);
+            fprintf(errSR1, "%g\n", err_sr1_val);
         }
         rewind(SR1);
         rewind(ref1);
         fclose(SR1);
         fclose(errSR1);
 
-        while (fscanf(ref2, "%f ", &ref_val2) == 1 && fscanf(SR2, "%f ", &val_sr2) == 1) {
-            err_sr2_val = fabs(val_sr2 - ref_val2);
-            fprintf(errSR2, "%f\n", err_sr2_val);
+        while (fscanf(ref2, "%g ", &ref_val2) == 1 && fscanf(SR2, "%g ", &val_sr2) == 1) {
+            err_sr2_val = fabs(val_sr2 - ref_val2)/fabs(ref_val2);
+            fprintf(errSR2, "%g\n", err_sr2_val);
         }
         rewind(SR2);
         rewind(ref2);
         fclose(SR2);
         fclose(errSR2);
 
-        while (fscanf(ref3, "%f ", &ref_val3) == 1 && fscanf(SR3, "%f ", &val_sr3) == 1) {
-            err_sr3_val = fabs(val_sr3 - ref_val3);
-            fprintf(errSR3, "%f\n", err_sr3_val);
+        while (fscanf(ref3, "%g ", &ref_val3) == 1 && fscanf(SR3, "%g ", &val_sr3) == 1) {
+            err_sr3_val = fabs(val_sr3 - ref_val3)/fabs(ref_val3);
+            fprintf(errSR3, "%g\n", err_sr3_val);
         }
         rewind(SR3);
         rewind(ref3);
@@ -106,25 +106,25 @@ int main(int argc, char ** argv) {
     errUR3 = fopen("results/errUR_x_rand.dat", "w");
 
     // Calcul de la valeur absolue de la différence entre les colonnes de ref et UR
-    while (fscanf(ref1, "%f ", &ref_val1) == 1 && fscanf(UR1, "%f ", &val_ur1) == 1) {
-        err_ur1_val = fabs(val_ur1 - ref_val1);
-        fprintf(errUR1, "%f\n", err_ur1_val);
+    while (fscanf(ref1, "%g ", &ref_val1) == 1 && fscanf(UR1, "%g ", &val_ur1) == 1) {
+        err_ur1_val = fabs(val_ur1 - ref_val1)/fabs(ref_val1);
+        fprintf(errUR1, "%g\n", err_ur1_val);
     }
     rewind(UR1);
     rewind(ref1);
     fclose(UR1);
     fclose(errUR1);
-    while (fscanf(ref2, "%f ", &ref_val2) == 1 && fscanf(UR2, "%f ", &val_ur2) == 1) {
-        err_ur2_val = fabs(val_ur2 - ref_val2);
-        fprintf(errUR2, "%f\n", err_ur2_val);
+    while (fscanf(ref2, "%g ", &ref_val2) == 1 && fscanf(UR2, "%g ", &val_ur2) == 1) {
+        err_ur2_val = fabs(val_ur2 - ref_val2)/fabs(ref_val2);
+        fprintf(errUR2, "%g\n", err_ur2_val);
     }
     rewind(UR2);
     rewind(ref2);
     fclose(UR2);
     fclose(errUR2);
-    while (fscanf(ref3, "%f ", &ref_val3) == 1 && fscanf(UR3, "%f ", &val_ur3) == 1) {
-        err_ur3_val = fabs(val_ur3 - ref_val3);
-        fprintf(errUR3, "%f\n", err_ur3_val);
+    while (fscanf(ref3, "%g ", &ref_val3) == 1 && fscanf(UR3, "%g ", &val_ur3) == 1) {
+        err_ur3_val = fabs(val_ur3 - ref_val3)/fabs(ref_val3);
+        fprintf(errUR3, "%g\n", err_ur3_val);
     }
     rewind(UR3);
     rewind(ref3);
