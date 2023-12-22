@@ -12,6 +12,13 @@ double exp_naif_iter(double x, int n){
     return r;
 }
 
+double exp_naif_recursif(double x, int n){
+    if (n==0) {
+        return 1;
+    }
+    return x*exp_naif_recursif(x, n-1);
+}
+
 int main(int argc, char** argv){
 
     if (argc < 2){
@@ -21,7 +28,7 @@ int main(int argc, char** argv){
     double x = atof(argv[1]);
     double tmp;
     for (int n = 0; n < 101; n++){
-        tmp = exp_naif_iter(x, n);
+        tmp = exp_naif_recursif(x, n);
         printf("%lf\n", tmp);
     }
 

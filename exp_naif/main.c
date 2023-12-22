@@ -27,7 +27,7 @@ int main(int argc, char** argv){
     float x = atof(argv[1]);
     float tmp;
     for (int n = 0; n < 101; n++){
-        tmp = exp_naif_iter(x, n);
+        tmp = exp_naif_recursif(x, n);
         printf("%f\n", tmp);
     }
 
