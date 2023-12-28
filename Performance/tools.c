@@ -3,12 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "tools.h"
-//
-void print_f64(f64 a, u64 n)
-{
-  for (u64 i = 0; i < n; i++)
-      printf("%lf \n", a);
-}
 
 //
 f64 init_f64()
