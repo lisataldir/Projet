@@ -1,8 +1,27 @@
 # PPN : Arrondi stochastique pour le calcul scientifique
 
-## Usage test
+## Organisation 
 
-Pour obtenir les graphes présents dans le fichier exp_naif faire :
+Ce dépot github est organisé en plusieurs dossiers : Algo&Tests, Performance, algo_lib, exp_naif, exp_rapide et test_data_Yizhi, dont le contenu puis l'utilisation pour chaque sera détaillée ci-dessous.
+
+### Algo&Tests
+
+### Performance
+
+### algo_lib
+
+### exp_naif
+
+Ce dossier contient les algorithmes (dans le fichier main.c) et les résultats pour l'algorithme d'exponentation naïf récursif (dans results_recursif/) et itératif (dans results_iteratif/). 
+
+### exp_rapide
+
+### test_data_Yizhi
+
+
+## Usage
+
+Pour obtenir les graphes présents dans le dossier exp_naif/ faire :
 
 ```bash
 $ cd exp_naif
