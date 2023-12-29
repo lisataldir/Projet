@@ -21,6 +21,14 @@ Ce dossier contient les algorithmes (dans le fichier main.c) et les résultats p
 
 ## Usage
 
+### Algo&Tests
+
+### Performance
+
+### algo_lib
+
+### exp_naif
+
 Pour obtenir les graphes présents dans le dossier exp_naif/ faire :
 
 ```bash
@@ -62,3 +70,6 @@ $ gnuplot plot-UR-x-2.gp
 $ gnuplot plot-UR-x-rand.gp
 ```
 
+### exp_rapide
+
+### test_data_Yizhi
