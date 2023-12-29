@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libal.a CMakeFiles/al.dir/algo.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libal.a
