@@ -1,8 +1,38 @@
 # PPN : Arrondi stochastique pour le calcul scientifique
 
-## Usage test
 
-Pour obtenir les graphes présents dans le fichier exp_naif faire :
+Ce projet a été réalisé par Yutai Zhao, Lisa Taldir, Chun Qi et Yizhi Yang.
+Il est organisé en plusieurs dossiers : Algo&Tests, Performance, algo_lib, exp_naif, exp_rapide et test_data_Yizhi, dont le contenu puis l'utilisation sera détaillé ci-dessous.
+
+## Organisation 
+
+
+### Algo&Tests
+
+### Performance
+
+### algo_lib
+
+### exp_naif
+
+Ce dossier contient les algorithmes (dans le fichier main.c) et les résultats pour l'algorithme d'exponentation naïf récursif (dans results_recursif/) et itératif (dans results_iteratif/). 
+
+### exp_rapide
+
+### test_data_Yizhi
+
+
+## Usage
+
+### Algo&Tests
+
+### Performance
+
+### algo_lib
+
+### exp_naif
+
+Pour obtenir les graphes présents dans le dossier exp_naif/ faire :
 
 ```bash
 $ cd exp_naif
@@ -43,3 +73,6 @@ $ gnuplot plot-UR-x-2.gp
 $ gnuplot plot-UR-x-rand.gp
 ```
 
+### exp_rapide
+
+### test_data_Yizhi
