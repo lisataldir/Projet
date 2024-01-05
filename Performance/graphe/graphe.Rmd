@@ -8,14 +8,14 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
 ```{r}
-data1 <- read.table("../clang/naif_ite_10/clang10naif_ite_med_mbps_allflags.txt")
-data2 <- read.table("../clang/naif_rec_10/clang10naif_rec_med_mbps_allflags.txt")
-data3 <- read.table("../clang/rapi_ite_10/clang10rapi_ite_med_mbps_allflags.txt")
-data4 <- read.table("../clang/rapi_rec_10/clang10rapi_rec_med_mbps_allflags.txt")
-write.csv(data1, "clang_naif_ite_10_mbps.csv")
-write.csv(data2, "clang_naif_rec_10_mbps.csv")
-write.csv(data3, "clang_rapi_ite_10_mbps.csv")
-write.csv(data4, "clang_rapi_rec_10_mbps.csv")
+data1 <- read.table("../gcc/naif_ite_10/gcc10naif_ite_med_mean_allflags.txt")
+data2 <- read.table("../gcc/naif_rec_10/gcc10naif_rec_med_mean_allflags.txt")
+data3 <- read.table("../gcc/rapi_ite_10/gcc10rapi_ite_med_mean_allflags.txt")
+data4 <- read.table("../gcc/rapi_rec_10/gcc10rapi_rec_med_mean_allflags.txt")
+write.csv(data1, "gcc_naif_ite_10_mean.csv")
+write.csv(data2, "gcc_naif_rec_10_mean.csv")
+write.csv(data3, "gcc_rapi_ite_10_mean.csv")
+write.csv(data4, "gcc_rapi_rec_10_mean.csv")
 data1m <-as.matrix(data1)
 data2m <-as.matrix(data2)
 data3m <-as.matrix(data3)
@@ -34,25 +34,24 @@ rownames(data) <-  c("-O0", "-O1","-O2","-O3","-Ofast")
 ```{r}
 
 
-barplot(t(as.matrix(data)), beside = TRUE, col = terrain.colors(2), xlab = "Flags d'optimisation", ylab = "Mbps", ylim =c(0,3000)) 
+barplot(t(as.matrix(data)), beside = TRUE, col = terrain.colors(4), xlab = "Flags", ylab = "mean(ns)", ylim =c(0,90)) 
 
-title("les performances de 4 algorithms calculant x^n")
-legend("topleft", colnames(data), cex = 0.5, bty = "n", fill = terrain.colors(2))
+title("mean (gcc)")
+legend("topleft", colnames(data), cex = 0.5, bty = "n", fill = terrain.colors(4))
 
 
  
 ```
 
-
 ```{r}
-data1 <- read.table("../gcc/naif_ite_10/gcc10naif_ite_med_mbps_allflags.txt")
-data2 <- read.table("../gcc/naif_rec_10/gcc10naif_rec_med_mbps_allflags.txt")
-data3 <- read.table("../gcc/rapi_ite_10/gcc10rapi_ite_med_mbps_allflags.txt")
-data4 <- read.table("../gcc/rapi_rec_10/gcc10rapi_rec_med_mbps_allflags.txt")
-write.csv(data1, "gcc_naif_ite_10_mbps.csv")
-write.csv(data2, "gcc_naif_rec_10_mbps.csv")
-write.csv(data3, "gcc_rapi_ite_10_mbps.csv")
-write.csv(data4, "gcc_rapi_rec_10_mbps.csv")
+data1 <- read.table("../gcc/naif_ite_10/gcc10naif_ite_med_mean_allflags.txt")
+data2 <- read.table("../gcc/naif_rec_10/gcc10naif_rec_med_mean_allflags.txt")
+data3 <- read.table("../gcc/rapi_ite_10/gcc10rapi_ite_med_mean_allflags.txt")
+data4 <- read.table("../gcc/rapi_rec_10/gcc10rapi_rec_med_mean_allflags.txt")
+write.csv(data1, "gcc_naif_ite_10_mean.csv")
+write.csv(data2, "gcc_naif_rec_10_mean.csv")
+write.csv(data3, "gcc_rapi_ite_10_mean.csv")
+write.csv(data4, "gcc_rapi_rec_10_mean.csv")
 data1m <-as.matrix(data1)
 data2m <-as.matrix(data2)
 data3m <-as.matrix(data3)
@@ -62,15 +61,20 @@ data <- cbind(data1m,data2m,data3m,data4m)
 
 ```
 
+
 ```{r}
 colnames(data) <-  c("naif_ite","naif_rec","rapi_ite","rapi_rec")
 rownames(data) <-  c("-O0", "-O1","-O2","-O3","-Ofast")
 ```
 
 ```{r}
-barplot(t(as.matrix(data)), beside = TRUE, col = terrain.colors(2), xlab = "Flags d'optimisation", ylab = "Mbps", ylim =c(0,3000)) 
 
-title("les performances de 4 algorithms calculant x^n")
-legend("topleft", colnames(data), cex = 0.5, bty = "n", fill = terrain.colors(2))
+
+barplot(t(as.matrix(data)), beside = TRUE, col = terrain.colors(4), xlab = "Flags", ylab = "mean(ns)", ylim =c(0,90)) 
+
+title("mean (gcc)")
+legend("topleft", colnames(data), cex = 0.5, bty = "n", fill = terrain.colors(4))
+
+
  
 ```

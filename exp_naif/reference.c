@@ -3,8 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 double exp_naif_iter(double x, int n){
-    double r = 1;
+    float r = 1;
     for(int i = 0; i < n; i++)
     {
         r *=x;
@@ -21,16 +22,24 @@ double exp_naif_recursif(double x, int n){
 
 int main(int argc, char** argv){
 
-    if (argc < 2){
-        printf("%s usage : [x]", argv[0]);
+    if (argc < 3){
+        printf("%s usage : [x], [ind]", argv[0]);
+        return 1;
     }
 
     double x = atof(argv[1]);
-    double tmp;
-    for (int n = 0; n < 101; n++){
-        tmp = exp_naif_recursif(x, n);
-        printf("%lf\n", tmp);
+    int ind = atoi(argv[2]);
+
+    if (ind == 0) {
+        for (int n = 0; n < 101; n++){
+            printf("%lf\n", exp_naif_iter(x, n));
+        }
+    } else {
+        for (int n = 0; n < 101; n++){
+            printf("%lf\n", exp_naif_recursif(x, n));
+        }
     }
+    
 
     return 0;
 }
