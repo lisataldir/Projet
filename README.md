@@ -69,8 +69,10 @@ $ make
 gcc -g erreur.c -o erreur
 $ ./erreur
 $ bash build_err.sh
-$ gnuplot plot-x-3-995.gp
-$ gnuplot plot-x-rand.gp
+$ gnuplot plot-x-3-995-it.gp
+$ gnuplot plot-x-rand-it.gp
+$ gnuplot plot-x-3-995-rec.gp
+$ gnuplot plot-x-rand-rec.gp
 ```
 
 ### exp_rapide
