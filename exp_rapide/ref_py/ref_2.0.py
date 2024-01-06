@@ -4,5 +4,5 @@
 from decimal import Decimal
 
 for n in range(0, 201):
-    print(n, Decimal('1.11') ** n)
+    print(n, Decimal('2.0') ** n)
 
