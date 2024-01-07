@@ -2,10 +2,18 @@
 
 
 Ce projet a été réalisé par Yutai Zhao, Lisa Taldir, Chun Qi et Yizhi Yang.
-Il est organisé en plusieurs dossiers : Algo&Tests, Performance, algo_lib, exp_naif, exp_rapide et test_data_Yizhi, dont le contenu puis l'utilisation sera détaillé ci-dessous.
+Il est organisé en plusieurs dossiers : 
+
+```bash
+├──Algo&Tests
+├──Performance
+├──exp_naif
+├──exp_rapide
+└──verificarlo
+```
+dont le contenu puis l'utilisation sera détaillé ci-dessous.
 
 ## Organisation 
-
 
 ### Algo&Tests
 
