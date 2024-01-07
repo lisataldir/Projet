@@ -46,13 +46,39 @@ Ce dossier contient tous les fichiers du depot github de verificarlo
 
 ### Algo&Tests
 
+Assurer d'abord que : 
+1. le répertoire `Algo&Tests/build/` soit vide 
+2. le repertoire de travail (working directory) est `Algo&Tests/build/`
+Pour les caluls d'exponentation (x^n) faire :
+```bash
+$ cmake ..
+$ make
+$ ./algo [x] [n]
+```
+
 ### Performance
 
-### algo_lib
+Pour obtenir les resultats présents dans les dossiers `gcc/` et `clang/` faire :
+
+```bash
+$ cd Performance
+$ ./exe.sh
+$ ./pars.sh
+```
+
+Pour obtenir les graphes faire :
+
+```bash
+$ cd Performance/graphe
+$ open graphe.Rmd
+``` 
+Puis `Run All`
+
+### exp_rapide
 
 ### exp_naif
 
-Pour obtenir les graphes présents dans le dossier exp_naif/ faire :
+Pour obtenir les graphes présents dans le dossier `exp_naif/` faire :
 
 ```bash
 $ cd exp_naif
@@ -96,5 +122,3 @@ $ gnuplot plot-x-rand-rec.gp
 ```
 
 ### exp_rapide
-
-### test_data_Yizhi
