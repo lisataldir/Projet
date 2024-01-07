@@ -37,8 +37,8 @@ int main(int argc, char ** argv)
             double err_rec = fabs( (res_rec - ref) / ref );
 
             // Write the absolute difference to the output file
-            fprintf(error_i, "%d\t%lf\n", nb, err_iter);
-            fprintf(error_r, "%d\t%lf\n", nb, err_rec);
+            fprintf(error_i, "%d\t%g\n", nb, err_iter);
+            fprintf(error_r, "%d\t%g\n", nb, err_rec);
         } 
         else 
         {
