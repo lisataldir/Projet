@@ -49,6 +49,8 @@ Ce dossier contient tous les fichiers du depot github de verificarlo
 Assurer d'abord que : 
 1. le répertoire `Algo&Tests/build/` soit vide 
 2. le repertoire de travail (working directory) est `Algo&Tests/build/`
+
+
 Pour les caluls d'exponentation (x^n) faire :
 ```bash
 $ cmake ..
@@ -65,7 +67,6 @@ $ cd Performance
 $ ./exe.sh
 $ ./pars.sh
 ```
-
 
 Pour obtenir les graphes faire :
 
