@@ -66,6 +66,7 @@ $ ./exe.sh
 $ ./pars.sh
 ```
 
+
 Pour obtenir les graphes faire :
 
 ```bash
@@ -73,8 +74,6 @@ $ cd Performance/graphe
 $ open graphe.Rmd
 ``` 
 Puis `Run All`
-
-### exp_rapide
 
 ### exp_naif
 
