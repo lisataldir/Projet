@@ -38,6 +38,9 @@ Ce dossier contient les algorithmes (dans le fichier `main.c`) et les résultats
 
 ### exp_rapide
 
+### verificarlo
+
+Ce dossier contient tous les fichiers du depot github de verificarlo
 
 ## Usage
 
