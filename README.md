@@ -96,7 +96,9 @@ $ ./erreur
 $ bash build_err.sh
 ```
 
-pour générer les données. Puis faire :
+pour générer les données. 
+
+Puis faire :
 
 ```bash
 $ gnuplot plot-x-3-995-it.gp
