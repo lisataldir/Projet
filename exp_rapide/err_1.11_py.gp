@@ -14,8 +14,8 @@ set title 'SR x = 1.11 iter vs py'
 set yrang [1e-17 : 3e-7]
 
 plot for [i=1:20] './error_py/SR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './error_py/SR_1.11_err_iter.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './error_py/SR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
@@ -25,8 +25,8 @@ set title 'SR x = 1.11 rec vs py'
 set yrang [1e-17 : 3e-7]
 
 plot for [i=1:20] './error_py/SR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './error_py/SR_1.11_err_rec.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './error_py/SR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
@@ -36,8 +36,8 @@ set title 'UR x = 1.11 iter vs py'
 set yrang [1e-9 : 3e-6]
 
 plot for [i=1:20] './error_py/UR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './error_py/UR_1.11_err_iter.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './error_py/UR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
@@ -47,5 +47,5 @@ set title 'UR x = 1.11 rec vs py'
 set yrang [1e-9 : 3e-6]
 
 plot for [i=1:20] './error_py/UR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './error_py/UR_1.11_err_rec.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './error_py/UR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'

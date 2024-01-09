@@ -14,8 +14,8 @@ set title 'SR x = 1.11 iter vs double in C'
 set yrang [1e-19 : 1e-13]
 
 plot for [i=1:20] './results/SR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/SR_1.11_err_iter.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './results/SR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
@@ -25,8 +25,8 @@ set title 'SR x = 1.11 rec vs double in C'
 set yrang [1e-19 : 1e-13]
 
 plot for [i=1:20] './results/SR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/SR_1.11_err_rec.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './results/SR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
@@ -36,8 +36,8 @@ set title 'UR x = 1.11 iter vs double in C'
 set yrang [8e-8 : 4e-6]
 
 plot for [i=1:20] './results/UR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/UR_1.11_err_iter.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './results/UR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
@@ -47,5 +47,5 @@ set title 'UR x = 1.11 rec vs double in C'
 set yrang [8e-8 : 4e-6]
 
 plot for [i=1:20] './results/UR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/UR_1.11_err_rec.dat' using 1:2:3 with linespoints pointsize 0.3 title 'Mean', \
-     '' using 1:2:3 with yerrorbars pointsize 0.3 title 'Error Bars' lc rgb 'red'
+      './results/UR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+     '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
