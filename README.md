@@ -43,6 +43,17 @@ Ce dossier contient :
 
 ### exp_rapide
 
+Ce répertoire a été créé pour le but d'implémenter les méthodes rapides itérative et récursive et d'analyser les erreurs relatives pour l'arrondi usuel et l'arrondi stochastique. 
+ - les algorithmes sont dans les fichiers `exp_rapide.h` et `exp_rapide.c`.
+ - le fichier `main.c` permet de réaliser les calculs de l'exponentiel en simple et double précision, pour les bases différentes (0.995, 1.11, 1.34907566307 et 2.0) de puissance n varie de 0 à 200, avec résultats stockés dans `results/`.
+ - le répertoire `ref_py/` stocke les données `*.dat` des mêmes calculs en utilisant les bibliothèques de Python, une référence alternative pour les calculs des erreurs.
+ - `error.c` calcule les erreurs relatives des résultats en simple précision par rapport à ceux en double précision (calculés en C); `err_py.c` calcule celles par rapport aux résultats obtenus en Python.
+ - `stat.c` donne la moyenne empirique et l'écart-type des erreurs.
+ - les données des erreurs sont dans `error_c/` et `error_py/` 
+ - `Makefile` pour la compilation de tous les fichiers `*.c`.
+ - les scripts pour exécuter les programmes : `UR_*.sh` sont à lancer dans le bash, `SR_*.sh` sont à lancer à l'intérieur de Docker image `verificarlo`.
+ - les `*.gp` pour tracer les graphiques, ce qui sont stockés dans `reletive_err_graph/`.
+
 ### verificarlo
 
 Ce dossier contient tous les fichiers du depot github de verificarlo
@@ -109,3 +120,56 @@ $ gnuplot plot-x-rand-rec.gp
 pour générer les graphes.
 
 ### exp_rapide
+```bash
+$ cd exp_rapide
+```
+
+Pour calculer les résultats et les erreurs :
+
+Utiliser TYPE float dans `exp_rapide.h`
+```bash
+$ make
+$ ./UR_float.sh
+$ make clean
+```
+Utiliser TYPE double dans `exp_rapide.h`
+```bash
+$ make
+$ ./UR_double.sh
+$ ./UR_error.sh
+$ ./UR_err_py.sh
+$ make clean
+```
+Dans l'environnement Docker :
+```bash
+$ ./SR_double.sh
+```
+Utiliser TYPE float dans `exp_rapide.h`
+Dans l'environnement Docker :
+```bash
+$ ./SR_float.sh
+$ ./SR_error.sh
+$ ./SR_err_py.sh
+```
+Pour la moyenne et l'écart-type :
+Modifier les paramètre dans `stat.sh` pour UR
+```bash
+$ ./stat.sh
+```
+Modifier les paramètre dans `stat.sh` pour SR
+Dans l'environnement Docker :
+```bash
+$ ./stat.sh
+```
+
+Pour les graphiques :
+```bash
+$ gnuplot err_0.995_c.gp
+$ gnuplot err_0.995_py.gp
+$ gnuplot err_1.11_c.gp
+$ gnuplot err_1.11_py.gp
+$ gnuplot err_1.34907566301_c.gp
+$ gnuplot err_1.34907566301_py.gp
+$ gnuplot err_2.0_c.gp
+$ gnuplot err_2.0_py.gp
+```
