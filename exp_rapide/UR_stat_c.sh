@@ -26,39 +26,39 @@ make stat
 iter2=$(echo ./"$c"/"${a}"_1.11_err_iter_{1..20}.dat ./"$c"/"${a}"_1.11_err_iter.dat)
 echo "Files to be used as arguments: $iter2"
 ./stat $iter2
-make 
+make clean
 
 
 make stat
 rec2=$(echo ./"$c"/"${a}"_1.11_err_rec_{1..20}.dat ./"$c"/"${a}"_1.11_err_rec.dat)
 echo "Files to be used as arguments: $rec2"
 ./stat $rec2
-make 
+make clean
 
 
 make stat
 iter3=$(echo ./"$c"/"${a}"_1.34907566301_err_iter_{1..20}.dat ./"$c"/"${a}"_1.34907566301_err_iter.dat)
 echo "Files to be used as arguments: $iter3"
 ./stat $iter3
-make 
+make clean
 
 
 make stat
 rec3=$(echo ./"$c"/"${a}"_1.34907566301_err_rec_{1..20}.dat ./"$c"/"${a}"_1.34907566301_err_rec.dat)
 echo "Files to be used as arguments: $rec3"
 ./stat $rec3
-make 
+make clean
 
 
 make stat
 iter4=$(echo ./"$c"/"${a}"_2.0_err_iter_{1..20}.dat ./"$c"/"${a}"_2.0_err_iter.dat)
 echo "Files to be used as arguments: $iter4"
 ./stat $iter4
-make 
+make clean
 
 
 make stat
 rec4=$(echo ./"$c"/"${a}"_2.0_err_rec_{1..20}.dat ./"$c"/"${a}"_2.0_err_rec.dat)
 echo "Files to be used as arguments: $rec4"
 ./stat $rec4
-make 
+make clean
