@@ -8,7 +8,7 @@ set format y '%.0t × 10^%T'
 set key below
 
 
-set output './plot/SR_1.34907566301_iter_py.png'
+set output './relative_err_graph/SR_1.34907566301_iter_py.png'
 set title 'SR x = 1.34907566301 iter vs py'
 
 #set yrang [1e-17 : 3e-7]
@@ -19,7 +19,7 @@ plot for [i=1:20] './error_py/SR_1.34907566301_err_iter_'.i.'.dat' with points p
 
 
 
-set output './plot/SR_1.34907566301_rec_py.png'
+set output './relative_err_graph/SR_1.34907566301_rec_py.png'
 set title 'SR x = 1.34907566301 rec vs py'
 
 #set yrang [1e-17 : 3e-7]
@@ -30,7 +30,7 @@ plot for [i=1:20] './error_py/SR_1.34907566301_err_rec_'.i.'.dat' with points po
 
 
 
-set output './plot/UR_1.34907566301_iter_py.png'
+set output './relative_err_graph/UR_1.34907566301_iter_py.png'
 set title 'UR x = 1.34907566301 iter vs py'
 
 #set yrang [1e-8 : 1e-5]
@@ -41,7 +41,7 @@ plot for [i=1:20] './error_py/SR_1.34907566301_err_iter_'.i.'.dat' with points p
 
 
 
-set output './plot/UR_1.34907566301_rec_py.png'
+set output './relative_err_graph/UR_1.34907566301_rec_py.png'
 set title 'UR x = 1.34907566301 rec vs py'
 
 #set yrang [1e-8 : 1e-5]

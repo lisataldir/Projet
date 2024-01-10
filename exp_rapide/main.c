@@ -23,8 +23,7 @@ int main(int argc, char *argv[])
     int i = 0;
     for(i = 0; i <= 200; i ++)
     {
-        //printf("%d\t%f\t%f\n", i, exp_rapide_rec(i, x), exp_rapide_iter(i, x));
-        printf("%d\t%lf\t%lf\n", i, exp_rapide_rec(i, x), exp_rapide_iter(i, x));
+        printf("%d\t%g\t%g\n", i, exp_rapide_rec(i, x), exp_rapide_iter(i, x));
     }
     return 0;
 }

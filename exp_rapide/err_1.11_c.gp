@@ -8,44 +8,44 @@ set format y '%.0t × 10^%T'
 set key below
 
 
-set output './plot/SR_1.11_iter_c.png'
+set output './relative_err_graph/SR_1.11_iter_c.png'
 set title 'SR x = 1.11 iter vs double in C'
 
-set yrang [1e-19 : 1e-13]
+#set yrang [1e-19 : 1e-13]
 
-plot for [i=1:20] './results/SR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/SR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+plot for [i=1:20] './error_c/SR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
+      './error_c/SR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'pink', \
      '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
-set output './plot/SR_1.11_rec_c.png'
+set output './relative_err_graph/SR_1.11_rec_c.png'
 set title 'SR x = 1.11 rec vs double in C'
 
-set yrang [1e-19 : 1e-13]
+#set yrang [1e-19 : 1e-13]
 
-plot for [i=1:20] './results/SR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/SR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+plot for [i=1:20] './error_c/SR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
+      './error_c/SR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'pink', \
      '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
-set output './plot/UR_1.11_iter_c.png'
+set output './relative_err_graph/UR_1.11_iter_c.png'
 set title 'UR x = 1.11 iter vs double in C'
 
-set yrang [8e-8 : 4e-6]
+#set yrang [8e-8 : 4e-6]
 
-plot for [i=1:20] './results/UR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/UR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+plot for [i=1:20] './error_c/UR_1.11_err_iter_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
+      './error_c/UR_1.11_err_iter.dat' using 1:2:3 with lines title 'Mean' lc rgb 'pink', \
      '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
 
 
 
-set output './plot/UR_1.11_rec_c.png'
+set output './relative_err_graph/UR_1.11_rec_c.png'
 set title 'UR x = 1.11 rec vs double in C'
 
-set yrang [8e-8 : 4e-6]
+#set yrang [8e-8 : 4e-6]
 
-plot for [i=1:20] './results/UR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
-      './results/UR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'black', \
+plot for [i=1:20] './error_c/UR_1.11_err_rec_'.i.'.dat' with points pointtype 7 pointsize 0.3 title i, \
+      './error_c/UR_1.11_err_rec.dat' using 1:2:3 with lines title 'Mean' lc rgb 'pink', \
      '' using 1:2:3 with yerrorbars title 'Error Bars' lc rgb 'magenta'
