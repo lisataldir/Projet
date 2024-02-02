@@ -7,7 +7,7 @@ set ylabel 'relative errors'
 set key top left
 
 set style data yerrorbars
-set style fill transparent solid 0.1 noborder
+set style fill solid 0.1
 
 plot 'UR_1.01_err.dat' using 1:2:3 with yerrorbars title 'naive iterative', \
     '' using 1:4:5 with yerrorbars title 'naive recursive', \
@@ -25,7 +25,7 @@ set ylabel 'relative errors'
 set key top left
 
 set style data yerrorbars
-set style fill transparent solid 0.1 noborder
+set style fill solid 0.1
 
 plot 'SR_1.01_err.dat' using 1:2:3 with yerrorbars title 'naive iterative', \
     '' using 1:4:5 with yerrorbars title 'naive recursive', \
@@ -42,10 +42,10 @@ set xlabel 'n'
 set ylabel 'log relative errors'
 set logscale y 10 
 set yrang [1e-20 : 1e-3]
-set key top left
+set key below left
 
 set style data yerrorbars
-set style fill transparent solid 0.1 noborder
+set style fill solid 0.1
 
 plot 'UR_1.01_err.dat' using 1:2:3 with yerrorbars title 'naive iterative', \
     '' using 1:4:5 with yerrorbars title 'naive recursive', \
@@ -62,10 +62,10 @@ set xlabel 'n'
 set ylabel 'log relative errors'
 set logscale y 10
 set yrang [1e-20 : 1e-3]
-set key top left
+set key below left
 
 set style data yerrorbars
-set style fill transparent solid 0.1 noborder
+set style fill solid 0.1
 
 plot 'SR_1.01_err.dat' using 1:2:3 with yerrorbars title 'naive iterative', \
     '' using 1:4:5 with yerrorbars title 'naive recursive', \
