@@ -66,7 +66,7 @@ int main(int argc, char * argv[])
         int valid_values = 0;
         for (int i = 0; i < NUM_FILES; ++ i) 
         {
-            if (sscanf(line[i], "%d %lf", &nb, &err_ni[i]) == 2) 
+            if (sscanf(line[i], "%d %lf %lf %lf %lf", &nb, &err_ni[i], &err_nr[i], &err_ri[i], &err_rr[i]) == 5) 
             {
                 valid_values ++;
             }
