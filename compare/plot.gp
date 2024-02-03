@@ -41,7 +41,7 @@ set title 'UR x = 1.01'
 set xlabel 'n'
 set ylabel 'log relative errors'
 set logscale y 10 
-set yrang [1e-20 : 1e-3]
+set yrang [1e-8 : 1e-3]
 set key below left
 
 set style data yerrorbars
@@ -61,7 +61,7 @@ set title 'SR x = 1.01'
 set xlabel 'n'
 set ylabel 'log relative errors'
 set logscale y 10
-set yrang [1e-20 : 1e-3]
+set yrang [1e-8 : 1e-3]
 set key below left
 
 set style data yerrorbars
