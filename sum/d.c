@@ -33,20 +33,21 @@ double multi_rapid_rec(double x, int n)
     {
         return x + multi_rapid_rec(x, n - 1);
     }
-    return multi_naif_rec(x, n / 2) + multi_naif_rec(x, n / 2);
+    n = n >> 1;
+    return multi_naif_rec(x, n) + multi_naif_rec(x, n);
     
 }
 
 double multi_rapid_iter(double x, int n)
 {
     double r = 0;    
-    while(n != 0) 
+    while(n > 0) 
     {    
-        if(( n & 1) == 1) 
+        if((n & 1) == 1) 
         {
             r = r + x;
         }
-        x =x + x;
+        x = x + x;
         n = n >> 1;
     }
     return r;

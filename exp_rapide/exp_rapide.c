@@ -11,7 +11,6 @@ TYPE exp_rapide_rec(int n, TYPE x)
         return exp_rapide_rec(n/2, x) * exp_rapide_rec(n/2, x);
     else
         return x * exp_rapide_rec(n/2, x) * exp_rapide_rec(n/2, x);
-
 }
 
 //iterative version

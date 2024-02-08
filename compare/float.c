@@ -33,7 +33,8 @@ float exp_rapid_rec(float x, int n)
     {
         return x * exp_rapid_rec(x, n - 1);
     }
-    return exp_naif_rec(x, n / 2) * exp_naif_rec(x, n / 2);
+    n = n >> 1;
+    return exp_naif_rec(x, n) * exp_naif_rec(x, n);
     
 }
 
@@ -42,11 +43,11 @@ float exp_rapid_iter(float x, int n)
     float r = 1;    
     while(n != 0) 
     {    
-        if(( n & 1) == 1) 
+        if((n & 1) == 1) 
         {
             r = r * x;
         }
-        x =x * x;
+        x = x * x;
         n = n >> 1;
     }
     return r;

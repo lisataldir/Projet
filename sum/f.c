@@ -33,7 +33,8 @@ float multi_rapid_rec(float x, int n)
     {
         return x + multi_rapid_rec(x, n - 1);
     }
-    return multi_naif_rec(x, n / 2) + multi_naif_rec(x, n / 2);
+    n = n >> 1;
+    return multi_naif_rec(x, n) + multi_naif_rec(x, n);
     
 }
 
@@ -46,7 +47,7 @@ float multi_rapid_iter(float x, int n)
         {
             r = r + x;
         }
-        x =x + x;
+        x = x + x;
         n = n >> 1;
     }
     return r;
