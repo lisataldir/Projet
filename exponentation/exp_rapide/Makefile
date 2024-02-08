@@ -1,0 +1,34 @@
+CC = gcc
+CFLAGS3 = -g -Wall -O3 
+
+rapid: main.o exp_rapide.o
+	$(CC) $(CFLAGS3) -o rapid main.o exp_rapide.o
+
+main.o: main.c exp_rapide.h
+	$(CC) $(CFLAGS3) -c -o $@ $<
+
+exp_rapide.o: exp_rapide.c exp_rapide.h
+	$(CC) $(CFLAGS3) -c -o $@ $<
+
+err_c: err_c.o
+	$(CC) $(CFLAGS3) -o err_c err_c.o
+
+err_c.o: err_c.c
+	$(CC) $(CFLAGS3) -c -o $@ $<
+
+err_py: err_py.o
+	$(CC) $(CFLAGS3) -o err_py err_py.o
+
+err_py.o: err_py.c
+	$(CC) $(CFLAGS3) -c -o $@ $<
+
+stat: stat.o
+	$(CC) $(CFLAGS3) -o stat stat.o
+
+stat.o: stat.c
+	$(CC) $(CFLAGS3) -c -o $@ $<
+
+clean:
+	rm -f *.o rapid err_c err_py stat
+
+.PHONY: clean
