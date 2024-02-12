@@ -40,7 +40,7 @@ awk '{
     mean = sum / (NF / 2);
     stdev = sqrt(sumsq / (NF / 2) - (mean^2));
     print mean, stdev;
-}' results/rapide_rec/SR.dat > results/rapide_recr/SRstat.dat
+}' results/rapide_rec/SR.dat > results/rapide_rec/SR_stat.dat
 
 paste $(for i in {1..10}; do echo -n "results/rapide_iter/SR_$i.dat "; done) > results/rapide_iter/SR.dat
 awk '{
