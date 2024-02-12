@@ -22,32 +22,30 @@ double ref_exp_nr(double x, int n)
 double ref_exp_rr(double x, int n)
 {
     double tmp;
-    if(n == 0){
-        return 1;
-    } else if(n == 1) {
-        return x;
-    } else if(n % 2 == 0) {
-        tmp = ref_exp_rr(n>>1, x);
+    if(n == 0) return 1;
+
+    if(n % 2 == 0) {
+        tmp = exp_rr(x, n/2);
         return tmp * tmp;
     } else {
-        tmp = ref_exp_rr(n>>1, x);
+        tmp = exp_rr(x, (n-1)/2);
         return x * tmp * tmp;
     }
 }
 
 double ref_exp_ri(double x, int n)
 {
-    double res = 1;
-    while(n > 0)
-    {
-        if(n & 1 == 1)
-        {
-            res = res * x;
+    double r=1;
+
+    while(n!=0){
+        
+        if((n&1)==1){
+            r = r*x;
         }
-    x = x * x;
-    n = n >> 1;
+        x =x*x;
+        n = n >> 1;
     }
-    return res;
+    return r;
 }
 
 // version float
@@ -73,30 +71,28 @@ float exp_nr(float x, int n)
 float exp_rr(float x, int n)
 {
     float tmp;
-    if(n == 0){
-        return 1;
-    } else if(n == 1) {
-        return x;
-    } else if(n % 2 == 0) {
-        tmp = exp_rr(n>>1, x);
+     if(n == 0) return 1;
+
+    if(n % 2 == 0) {
+        tmp = exp_rr(x, n/2);
         return tmp * tmp;
     } else {
-        tmp = exp_rr(n>>1, x);
+        tmp = exp_rr(x, (n-1)/2);
         return x * tmp * tmp;
     }
 }
 
 float exp_ri(float x, int n)
 {
-    float res = 1;
-    while(n > 0)
-    {
-        if(n & 1 == 1)
-        {
-            res = res * x;
+    float r=1;
+
+    while(n!=0){
+        
+        if((n&1)==1){
+            r = r*x;
         }
-    x = x * x;
-    n = n >> 1;
+        x =x*x;
+        n = n >> 1;
     }
-    return res;
+    return r;
 }

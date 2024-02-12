@@ -9,33 +9,34 @@ int main(int argc, char** argv){
 
     double x = atof(argv[1]);
     int ind = atoi(argv[2]);
+    int N = 151;
 
     float err_nr, err_ni, err_rr, err_ri;
     float tmp;
 
     if (ind == 0) {
-        for (int n = 0; n < 101; n++){
+        for (int n = 0; n < N; n++){
             tmp = ref_exp_nr(x, n);
             err_nr = fabs((tmp - exp_nr(x, n)) / tmp);
-            printf("%.8f\n", err_nr);
+            printf("%f\n", err_nr);
         }
     } else if (ind == 1) {
-        for (int n = 0; n < 101; n++){
-            tmp = ref_exp_ni(x, n);
+        for (int n = 0; n < N; n++){
+            tmp = ref_exp_nr(x, n);
             err_ni = fabs((tmp - exp_ni(x, n)) / tmp);
-            printf("%.8f\n", err_ni);
+            printf("%f\n", err_ni);
         }
     } else if (ind == 2) {
-        for (int n = 0; n < 101; n++){
-            tmp = ref_exp_rr(x, n);
+        for (int n = 0; n < N; n++){
+            tmp = ref_exp_nr(x, n);
             err_rr = fabs((tmp - exp_rr(x, n)) / tmp);
-            printf("%.8f\n", err_rr);
+            printf("%f\n", err_rr);
         }
     } else if (ind == 3) {
-        for (int n = 0; n < 101; n++){
-            tmp = ref_exp_ri(x, n);
+        for (int n = 0; n < N; n++){
+            tmp = ref_exp_nr(x, n);
             err_ri = fabs((tmp - exp_ri(x, n))/ tmp);
-            printf("%.8f\n", err_ri);
+            printf("%f\n", err_ri);
         }
     }
 
