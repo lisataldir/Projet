@@ -77,25 +77,25 @@ int main(int argc, char** argv){
     float tmp;
 
     if (ind == 0) {
-        for (int n = 0; n < N; n++){
+        for (int n = 0; n < N; n+=5){
             tmp = ref_exp(x, n);
             err_nr = fabs((tmp - exp_nr(x, n)) / tmp);
             printf("%f\n", err_nr);
         }
     } else if (ind == 1) {
-        for (int n = 0; n < N; n++){
+        for (int n = 0; n < N; n+=5){
             tmp = ref_exp(x, n);
             err_ni = fabs((tmp - exp_ni(x, n)) / tmp);
             printf("%f\n", err_ni);
         }
     } else if (ind == 2) {
-        for (int n = 0; n < N; n++){
+        for (int n = 0; n < N; n+=5){
             tmp = ref_exp(x, n);
             err_rr = fabs((tmp - exp_rr(x, n)) / tmp);
             printf("%f\n", err_rr);
         }
     } else if (ind == 3) {
-        for (int n = 0; n < N; n++){
+        for (int n = 0; n < N; n+=5){
             tmp = ref_exp(x, n);
             err_ri = fabs((tmp - exp_ri(x, n))/ tmp);
             printf("%f\n", err_ri);
