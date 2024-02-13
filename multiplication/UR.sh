@@ -1,5 +1,10 @@
 #!/bin/bash
 
+mkdir -p results/naif_rec
+mkdir -p results/naif_iter
+mkdir -p results/rapide_rec
+mkdir -p results/rapide_iter
+
 x=0.1
 
 make
