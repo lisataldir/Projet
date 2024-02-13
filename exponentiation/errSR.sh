@@ -9,7 +9,7 @@ awk '{
         sum += $i;
     }
     mean = sum / NF;
-    print mean;
+    print (NR-1)*5, mean;
 }' results/naif_rec/SR.dat > results/naif_rec/SR_stat.dat
 
 paste $(for i in {1..10}; do echo -n "results/naif_iter/SR_$i.dat "; done) > results/naif_iter/SR.dat
@@ -19,7 +19,7 @@ awk '{
         sum += $i;
     }
     mean = sum / NF;
-    print mean;
+    print (NR-1)*5, mean;
 }' results/naif_iter/SR.dat > results/naif_iter/SR_stat.dat
 
 paste $(for i in {1..10}; do echo -n "results/rapide_rec/SR_$i.dat "; done) > results/rapide_rec/SR.dat
@@ -29,7 +29,7 @@ awk '{
         sum += $i;
     }
     mean = sum / NF;
-    print mean;
+    print (NR-1)*5, mean;
 }' results/rapide_rec/SR.dat > results/rapide_rec/SR_stat.dat
 
 paste $(for i in {1..10}; do echo -n "results/rapide_iter/SR_$i.dat "; done) > results/rapide_iter/SR.dat
@@ -39,5 +39,5 @@ awk '{
         sum += $i;
     }
     mean = sum / NF;
-    print mean;
+    print (NR-1)*5, mean;
 }' results/rapide_iter/SR.dat > results/rapide_iter/SR_stat.dat
