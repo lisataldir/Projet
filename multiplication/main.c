@@ -9,7 +9,7 @@ int main(int argc, char** argv){
 
     double x = atof(argv[1]);
     int ind = atoi(argv[2]);
-    int N = 151;
+    int N = 1001;
 
     float err_nr, err_ni, err_rr, err_ri;
     float tmp;

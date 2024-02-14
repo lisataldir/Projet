@@ -27,18 +27,14 @@ double ref_multi_rr(double x, int n)
     {
         return 0;
     } 
-    else if(n == 1) 
-    {
-        return x;
-    } 
     else if(n % 2 == 0) 
     {
-        tmp = ref_multi_rr(n>>1, x);
+        tmp = ref_multi_rr(x, n / 2);
         return tmp + tmp;
     } 
     else 
     {
-        tmp = ref_multi_rr(n>>1, x);
+        tmp = ref_multi_rr(x, (n - 1) / 2);
         return x + tmp + tmp;
     }
 }
@@ -48,7 +44,7 @@ double ref_multi_ri(double x, int n)
     double res = 0;
     while(n > 0)
     {
-        if(n & 1 == 1)
+        if(n % 2 == 1)
         {
             res = res + x;   
         }
@@ -85,18 +81,14 @@ float multi_rr(float x, int n)
     {
         return 0;
     } 
-    else if(n == 1) 
-    {
-        return x;
-    } 
     else if(n % 2 == 0) 
     {
-        tmp = multi_rr(n>>1, x);
-        return tmp * tmp;
+        tmp = multi_rr(x, n / 2);
+        return tmp + tmp;
     } 
     else 
     {
-        tmp = multi_rr(n>>1, x);
+        tmp = multi_rr(x, (n - 1) / 2);
         return x + tmp + tmp;
     }
 }
@@ -106,7 +98,7 @@ float multi_ri(float x, int n)
     float res = 0;
     while(n > 0)
     {
-        if(n & 1 == 1)
+        if(n % 2 == 1)
         {
             res = res + x;   
         }
