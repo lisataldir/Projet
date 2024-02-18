@@ -1,9 +1,9 @@
 #include "algo.h"
 
-// version float
-float multi_ni(float x, int n)
+// version double
+double multi_ni(double x, int n)
 {
-    float r = 0;
+    double r = 0;
     for(int i = 0; i < n; i++)
     {
         r += x;
@@ -11,7 +11,7 @@ float multi_ni(float x, int n)
     return r;
 }
 
-float multi_nr(float x, int n)
+double multi_nr(double x, int n)
 {
     if (n == 0) 
     {
@@ -20,9 +20,9 @@ float multi_nr(float x, int n)
     return x + multi_nr(x, n-1);
 }
 
-float multi_rr(float x, int n)
+double multi_rr(double x, int n)
 {
-    float tmp;
+    double tmp;
     if(n == 0)
     {
         return 0;
@@ -39,9 +39,9 @@ float multi_rr(float x, int n)
     }
 }
 
-float multi_ri(float x, int n)
+double multi_ri(double x, int n)
 {
-    float res = 0;
+    double res = 0;
     while(n > 0)
     {
         if(n % 2 == 1)
