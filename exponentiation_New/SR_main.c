@@ -3,18 +3,19 @@
 int main(int argc, char **argv)
 {
 
-    if (argc < 4)
+    if (argc < 5)
     {
-        printf("%s usage : [x], [n max], [algo]", argv[0]);
+        printf("%s usage : [x] [N] [n] [algo]", argv[0]);
         return 1;
     }
 
     float x = atof(argv[1]);
     int N = atoi(argv[2]);
-    int ind = atoi(argv[3]);
+    int h = atoi(argv[3]);
+    int ind = atoi(argv[4]);
 
 
-    for (int n = 0; n < N; n+=10)
+    for (int n = 0; n < N; n+=h)
     {
         float val;
         switch (ind)

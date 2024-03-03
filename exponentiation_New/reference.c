@@ -25,10 +25,10 @@ double ref_exp_rr(double x, int n)
     if(n == 0) return 1;
 
     if(n % 2 == 0) {
-        tmp = exp_rr(x, n/2);
+        tmp = ref_exp_rr(x, n/2);
         return tmp * tmp;
     } else {
-        tmp = exp_rr(x, (n-1)/2);
+        tmp = ref_exp_rr(x, (n-1)/2);
         return x * tmp * tmp;
     }
 }
