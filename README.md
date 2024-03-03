@@ -32,27 +32,47 @@ Ce dossier contient :
 - les resultats des performances des 4 algorithmes, les resultats sont obtenus en faisant varier les compilateurs gcc (dans `gcc/`) clang (dans `clang/`).
 - les scripts : un script pour la generation des resultats de performance (`exe.sh`), un script pour trier les resultats (`pars.sh`), un script pour la réalisation des graphes (dans `graphe/graphee.Rmd`).
 
-### exp_naif
+### exponentiation_New
 
-Ce dossier contient :
- - les algorithmes d'exponentiation naif itératif et récursif (dans le fichier `main.c` on retrouve une implémentation en simple précision, dans le fichier 'reference.c' on retrouve une implémentation en double précision).
- - trois scripts pour générer les résultats (référence, SR et UR).
- - un fichier 'erreur.c' qui calcule la différence entre les résultats de 'reference.c' et les résultats de 'main.c'.
- - un Makefile pour compiler le fichier 'erreur.c'.
- - les résultats (graphes) pour l'algorithme d'exponentation naïf récursif (dans `results_recursif/`) et itératif (dans `results_iteratif/`). 
+Ce dossier contient principalement: 
 
-### exp_rapide
+```bash
+├──ref_main.c (calcul des valeurs ref)
+├──SR_main.c (calcul des valeurs exp en SR)
+└──UR_main.c (calcul des valeurs exp en UR)
+```
 
-Ce répertoire a été créé pour le but d'implémenter les méthodes rapides itérative et récursive et d'analyser les erreurs relatives pour l'arrondi usuel et l'arrondi stochastique. 
- - les algorithmes sont dans les fichiers `exp_rapide.h` et `exp_rapide.c`.
- - le fichier `main.c` permet de réaliser les calculs de l'exponentiel en simple et double précision, pour les bases différentes (0.995, 1.11, 1.34907566307 et 2.0) de puissance n varie de 0 à 200, avec résultats stockés dans `results/`.
- - le répertoire `ref_py/` stocke les données `*.dat` des mêmes calculs en utilisant les bibliothèques de Python, une référence alternative pour les calculs des erreurs.
- - `error.c` calcule les erreurs relatives des résultats en simple précision par rapport à ceux en double précision (calculés en C); `err_py.c` calcule celles par rapport aux résultats obtenus en Python.
- - `stat.c` donne la moyenne empirique et l'écart-type des erreurs.
- - les données des erreurs sont dans `error_c/` et `error_py/` 
- - `Makefile` pour la compilation de tous les fichiers `*.c`.
- - les scripts pour exécuter les programmes : `UR_*.sh` sont à lancer dans le bash, `SR_*.sh` sont à lancer à l'intérieur de Docker image `verificarlo`.
- - les `*.gp` pour tracer les graphiques, ce qui sont stockés dans `reletive_err_graph/`.
+Permmettant de calculer x^n, ces programmes prennent 4 parametres :
+1. x : la base
+2. N : la puissance maximale
+3. n : l'ecart entre chaque puissance 
+4. algo : un nombre representant l'algo choisi
+
+
+```bash
+├──algo.h
+├──reference.c (algo en double precision)
+└──experience.c (algo en simple precision)
+```
+
+Contenant les 4 algorithmes : ni,nr,ri,rr
+
+```bash
+└──erreur.c
+```
+
+Permmettant de calculer des erreurs relatifs entre les valeurs ref et les valeurs exp
+
+```bash
+├──Makefile
+├──run.sh
+└──plot
+    └──plot.gp
+```
+
+ce sont des scripts facilitant l'obtention des resultats :  
+ - `run.sh` fait la ccompilation, execute les programmmes faisant les caluls des exponentiations et des erreurs, enfin il calcule la moyenne des erreurs. Tous les donnees sont stockés dans le dossier `results/`.
+ - `plot.gp` trace les graphes, stockés dans le meme dossier `plot/`.
 
 ### verificarlo
 
@@ -90,86 +110,22 @@ Pour obtenir les graphes faire :
 $ cd Performance/graphe
 $ open graphe.Rmd
 ``` 
-Puis `Run All`
+Puis cliquer sur `Run All`
 
-### exp_naif
+### exponentiation_New
 
-Pour obtenir les graphes présents dans le dossier `exp_naif/` faire :
+Pour obtenir les graphes présents dans le dossier `exponentiation_New/plot/` faire :
 
 ```bash
-$ cd exp_naif
-$ bash build_SR.sh
-$ bash build_UR.sh
-$ bash build_reference.sh
-$ make
-gcc -g erreur.c -o erreur
-$ ./erreur
-$ bash build_err.sh
+$ cd exponentiation_New
+$ run.sh
 ```
-
 pour générer les données. 
 
 Puis faire :
 
 ```bash
-$ gnuplot plot-x-3-995-it.gp
-$ gnuplot plot-x-rand-it.gp
-$ gnuplot plot-x-3-995-rec.gp
-$ gnuplot plot-x-rand-rec.gp
+$ cd plot
+$ gnuplot plot.gp
 ```
 pour générer les graphes.
-
-### exp_rapide
-```bash
-$ cd exp_rapide
-```
-
-Pour calculer les résultats et les erreurs :
-
-Utiliser TYPE float dans `exp_rapide.h`
-```bash
-$ make
-$ ./UR_float.sh
-$ make clean
-```
-Utiliser TYPE double dans `exp_rapide.h`
-```bash
-$ make
-$ ./UR_double.sh
-$ ./UR_error.sh
-$ ./UR_err_py.sh
-$ make clean
-```
-Dans l'environnement Docker :
-```bash
-$ ./SR_double.sh
-```
-Utiliser TYPE float dans `exp_rapide.h`
-Dans l'environnement Docker :
-```bash
-$ ./SR_float.sh
-$ ./SR_error.sh
-$ ./SR_err_py.sh
-```
-Pour la moyenne et l'écart-type :
-Modifier les paramètre dans `stat.sh` pour UR
-```bash
-$ ./stat.sh
-```
-Modifier les paramètre dans `stat.sh` pour SR
-Dans l'environnement Docker :
-```bash
-$ ./stat.sh
-```
-
-Pour les graphiques :
-```bash
-$ gnuplot err_0.995_c.gp
-$ gnuplot err_0.995_py.gp
-$ gnuplot err_1.11_c.gp
-$ gnuplot err_1.11_py.gp
-$ gnuplot err_1.34907566301_c.gp
-$ gnuplot err_1.34907566301_py.gp
-$ gnuplot err_2.0_c.gp
-$ gnuplot err_2.0_py.gp
-```
