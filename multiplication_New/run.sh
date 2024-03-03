@@ -9,12 +9,12 @@ mkdir -p results/naif_iter results/naif_rec results/rapide_iter results/rapide_r
 make 
 
 x=0.1
-N=1000
-n=5
+N=100000
+n=100
 
 #CALCUL n*x pour tout n=0...(N-1)
 
-for i in {1..50}
+for i in {1..6}
 do
 echo "# Creating folder results//naif_rec/SR_$i.dat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca.so" verificarlo/verificarlo ./SR_main "$x" "$N" "$n" 0 > results/naif_rec/SR_$i.dat
@@ -42,7 +42,7 @@ sleep 2
 
 #CALCUL D'ERREURS
 
-for i in {1..50}
+for i in {1..6}
 do
 echo "# Creating folders for SR errors ：naif_iter"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./erreur "naif_iter" "$i" > results/naif_iter/err_$i.dat
@@ -83,7 +83,7 @@ for algo in "results/naif_iter" "results/naif_rec" "results/rapide_rec" "results
 do
 output_file="$algo/SR_stat.dat"
 
-paste -d '\t' $(for i in {1..50}; do echo -n "$algo/err_$i.dat "; done) > "$algo/SR.dat"
+paste -d '\t' $(for i in {1..6}; do echo -n "$algo/err_$i.dat "; done) > "$algo/SR.dat"
 
 line_number=0
 while IFS=$'\t' read -r -a line; do
