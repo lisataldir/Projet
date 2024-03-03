@@ -19,14 +19,16 @@ f64 exp_naif_iter(f64 x, u64 n){
 
 f64 exp_rapid_rec(f64 x, u64 n)
 {
-    if(n == 0){
-        return 1;
+    f64 tmp;
+    if(n == 0) return 1;
+
+    if(n % 2 == 0) {
+        tmp = exp_rapid_rec(x, n/2);
+        return tmp * tmp;
+    } else {
+        tmp = exp_rapid_rec(x, (n-1)/2);
+        return x * tmp * tmp;
     }
-    if(n%2 ==1){
-        return x * exp_rapid_rec(x,n-1);
-    }
-    return exp_naif_rec(x,n/2)*exp_naif_rec(x,n/2);
-    
 }
 
 f64 exp_rapid_iter(f64 x, u64 n){
