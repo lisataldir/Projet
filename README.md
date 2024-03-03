@@ -7,8 +7,7 @@ Il est organisé en plusieurs dossiers :
 ```bash
 ├──Algo&Tests
 ├──Performance
-├──exp_naif
-├──exp_rapide
+├──exponentiation_New
 └──verificarlo
 ```
 dont le contenu puis l'utilisation sera détaillé ci-dessous.
