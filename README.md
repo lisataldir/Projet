@@ -89,7 +89,7 @@ Puis cliquer sur `Run All`
 
 ### Exponentiation
 
-Pour obtenir les graphes présents dans le dossier `exponentiation/plot/` faire :
+Pour obtenir les graphes présents dans le dossier `exponentiation/plot/` faire, en se plaçant dans le répertoire `exponentiation/`:
 
 ```bash
 $ make
