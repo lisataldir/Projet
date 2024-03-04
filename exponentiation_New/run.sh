@@ -96,3 +96,6 @@ paste "$output_file" "$algo/UR_err.dat" > "$algo/temp.dat" && mv "$algo/temp.dat
 
 echo "Mean values calculated and saved to '$output_file'."
 done
+
+
+rm -Rf *.o erreur *_main

@@ -55,3 +55,6 @@ echo "# Creating folders for rapide_iter stat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat "rapide_iter" "$N" > results/rapide_iter/stat.dat
 echo "# Creating folders for rapide_rec stat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat "rapide_rec" "$N" > results/rapide_rec/stat.dat
+
+
+rm -Rf *.o erreur *_main stat
