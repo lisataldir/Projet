@@ -82,8 +82,7 @@ Concernant le code, on a :
  - `errSR.sh` : calcule la moyenne des résultats obtenus après `run.sh`
  - `algo.c` : fonctions calculant $x^{n}$ en simple précision
  - `reference.c` : fonction calculant $x^{n}$ en double précision (on a choisi de garder l'algorithme naïf itératif comme référence pour nos calculs d'erreurs)
- - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs, prenant en argument, dans l'ordre, [x] : valeur pour laquelle on va calculer $x^{n}$ et [ind] = 0 : indicateur pour savoir quelle version de la fonction d'exponentiation exécuter.
-
+ - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs, prenant en argument, dans l'ordre, [x] : valeur pour laquelle on va calculer $x^{n}$ et [ind] = 0 : indicateur pour savoir quelle version de la fonction d'exponentiation exécuter.  
 ind = 0 pour choisir la version naïve récursive  
 ind = 1 pour choisir la version naïve itérative  
 ind = 2 pour choisir la version rapide récursive  
