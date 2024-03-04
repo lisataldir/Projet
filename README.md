@@ -34,7 +34,7 @@ Ce dossier contient :
 
 ### Exponentiation
 
-Ce dossier contient nos travaux autour de l'algorithme d'exponentation (i.e calcul de $x^{n}$ pour n allant de 0 à 300).
+Ce dossier contient nos travaux autour de l'algorithme d'exponentation (i.e calcul de $x^{n}$ pour n allant de 0 à 300 et trois valeurs différentes de x comprises entre 1 et 2).
 Il est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
 
 Concernant le code, on a :
@@ -51,7 +51,7 @@ ind = 3 pour choisir la version rapide itérative
 
 ### Verificarlo
 
-Ce dossier contient tous les fichiers du depot github de verificarlo.
+Ce dossier contient tous les fichiers du dépot github de verificarlo.
 
 ## Usage
 
@@ -62,7 +62,7 @@ Assurer d'abord que :
 2. le repertoire de travail (working directory) est `Algo&Tests/build/`
 
 
-Pour les caluls d'exponentation (x^n) faire :
+Pour les caluls d'exponentation ($x^{n}$) faire :
 ```bash
 $ cmake ..
 $ make
@@ -92,7 +92,6 @@ Puis cliquer sur `Run All`
 Pour obtenir les graphes présents dans le dossier `exponentiation/plot/` faire, en se plaçant dans le répertoire `exponentiation/`:
 
 ```bash
-$ make
 $ ./run.sh
 $ ./errSR.sh
 ```
