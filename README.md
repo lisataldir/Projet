@@ -75,14 +75,18 @@ ce sont des scripts facilitant l'obtention des resultats :
 
 ### exponentiation
 
-Ce dossier est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier contenant les graphes obtenus et un dossier contenant les résultats bruts.
+Ce dossier est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
 
 Concernant le code, on a :
  - `run.sh` : exécute le main sur 50 itérations pour une valeur de x fixée et stocke les données dans le dossier `results/`
  - `errSR.sh` : calcule la moyenne des résultats obtenus après `run.sh`
- - `algo.c` : fonctions calculant l'exponentation en simple précision
- - `reference.c` : fonction calculant l'exponentiation en double précision (on a choisi de garder l'algorithme naïf itératif comme référence pour nos calculs d'erreurs)
- - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs
+ - `algo.c` : fonctions calculant $x^{n}$ en simple précision
+ - `reference.c` : fonction calculant $x^{n}$ en double précision (on a choisi de garder l'algorithme naïf itératif comme référence pour nos calculs d'erreurs)
+ - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs, prenant en argument, dans l'ordre, [x] : valeur pour laquelle on va calculer $x^{n}$ et [ind] = 0 : indicateur pour savoir quelle version de la fonction d'exponentiation exécuter.
+ind = 0 pour choisir la version naïve récursive
+ind = 1 pour choisir la version naïve itérative
+ind = 2 pour choisir la version rapide récursive
+ind = 3 pour choisir la version rapide itérative
 
 ### verificarlo
 
