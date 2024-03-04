@@ -1,5 +1,6 @@
 #include "algo.h"
 
+
 // version float
 float exp_ni(float x, int n)
 {
