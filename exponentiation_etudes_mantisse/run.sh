@@ -9,7 +9,7 @@ mkdir -p results/naif_iter results/naif_rec results/rapide_iter results/rapide_r
 sleep 3
 make
 
-x=1.34907566301
+x=1.1
 n=100
 N=10000
 sleep 3
