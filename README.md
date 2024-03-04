@@ -32,7 +32,7 @@ Ce dossier contient :
 - les scripts : un script pour la generation des resultats de performance (`exe.sh`), un script pour trier les resultats (`pars.sh`), un script pour la réalisation des graphes (dans `graphe/graphee.Rmd`).
 
 
-### exponentiation
+### Exponentiation
 
 Ce dossier contient nos travaux autour de l'algorithme d'exponentation (i.e calcul de $x^{n}$ pour n allant de 0 à 300).
 Il est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
@@ -49,7 +49,7 @@ ind = 2 pour choisir la version rapide récursive
 ind = 3 pour choisir la version rapide itérative
  - `plot/plot.gp` : trace les graphes
 
-### verificarlo
+### Verificarlo
 
 Ce dossier contient tous les fichiers du depot github de verificarlo.
 
