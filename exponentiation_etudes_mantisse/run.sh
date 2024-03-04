@@ -9,7 +9,7 @@ mkdir -p results/naif_iter results/naif_rec results/rapide_iter results/rapide_r
 sleep 3
 make
 
-x=1.34907566301
+x=1.1
 n=100
 N=10000
 sleep 3
@@ -55,3 +55,6 @@ echo "# Creating folders for rapide_iter stat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat "rapide_iter" "$N" > results/rapide_iter/stat.dat
 echo "# Creating folders for rapide_rec stat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat "rapide_rec" "$N" > results/rapide_rec/stat.dat
+
+
+rm -Rf *.o erreur *_main stat
