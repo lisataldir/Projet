@@ -9,13 +9,13 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    double x = atof(argv[1]);
+    float x = atof(argv[1]);
     int ind = atoi(argv[2]);
     int N = 151;
 
     for (int n = 0; n < N; n += 5)
     {
-        double ref = ref_exp_ni(x, n);
+        double ref = ref_exp(x, n);
         float val;
 
         switch (ind)
