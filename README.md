@@ -31,51 +31,11 @@ Ce dossier contient :
 - les résultats des performances des 4 algorithmes, les résultats sont obtenus en faisant varier les compilateurs gcc (dans `gcc/`) clang (dans `clang/`).
 - les scripts : un script pour la generation des resultats de performance (`exe.sh`), un script pour trier les resultats (`pars.sh`), un script pour la réalisation des graphes (dans `graphe/graphee.Rmd`).
 
-### exponentiation_New
-
-Ce dossier contient principalement: 
-
-```bash
-├──ref_main.c (calcul des valeurs ref)
-├──SR_main.c (calcul des valeurs exp en SR)
-└──UR_main.c (calcul des valeurs exp en UR)
-```
-
-Permmettant de calculer x^n, ces programmes prennent 4 parametres :
-1. x : la base
-2. N : la puissance maximale
-3. n : l'ecart entre chaque puissance 
-4. algo : un nombre representant l'algo choisi
-
-
-```bash
-├──algo.h
-├──reference.c (algo en double precision)
-└──experience.c (algo en simple precision)
-```
-
-Contenant les 4 algorithmes : ni,nr,ri,rr
-
-```bash
-└──erreur.c
-```
-
-Permmettant de calculer des erreurs relatifs entre les valeurs ref et les valeurs exp
-
-```bash
-├──Makefile
-├──run.sh
-└──plot
-    └──plot.gp
-```
-
-ce sont des scripts facilitant l'obtention des resultats :  
- - `run.sh` fait la ccompilation, execute les programmmes faisant les caluls des exponentiations et des erreurs, enfin il calcule la moyenne des erreurs. Tous les donnees sont stockés dans le dossier `results/`.
- - `plot.gp` trace les graphes, stockés dans le meme dossier `plot/`.
 
 ### exponentiation
 
-Ce dossier est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
+Ce dossier contient nos travaux autour de l'algorithme d'exponentation (i.e calcul de $x^{n}$ pour n allant de 0 à 300).
+Il est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
 
 Concernant le code, on a :
  - `run.sh` : exécute le main sur 50 itérations pour une valeur de x fixée et stocke les données dans le dossier `results/`
@@ -86,7 +46,8 @@ Concernant le code, on a :
 ind = 0 pour choisir la version naïve récursive  
 ind = 1 pour choisir la version naïve itérative  
 ind = 2 pour choisir la version rapide récursive  
-ind = 3 pour choisir la version rapide itérative  
+ind = 3 pour choisir la version rapide itérative
+ - `plot/plot.gp` : trace les graphes
 
 ### verificarlo
 
