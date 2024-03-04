@@ -7,7 +7,7 @@ Il est organisé en plusieurs dossiers :
 ```bash
 ├──Algo&Tests
 ├──Performance
-├──exponentiation_New
+├──exponentiation
 └──verificarlo
 ```
 dont le contenu puis l'utilisation sera détaillé ci-dessous.
@@ -87,13 +87,14 @@ $ open graphe.Rmd
 ``` 
 Puis cliquer sur `Run All`
 
-### exponentiation_New
+### Exponentiation
 
-Pour obtenir les graphes présents dans le dossier `exponentiation_New/plot/` faire :
+Pour obtenir les graphes présents dans le dossier `exponentiation/plot/` faire :
 
 ```bash
-$ cd exponentiation_New
-$ run.sh
+$ make
+$ ./run.sh
+$ ./errSR.sh
 ```
 pour générer les données. 
 
