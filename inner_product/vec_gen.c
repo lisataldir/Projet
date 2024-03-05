@@ -4,16 +4,14 @@
 
 int main(int argc, char** argv)
 {
-    double* a;
-    double* b;
     if (argc != 3)
     {
         fprintf(stderr, "Usage: %s <vector size> <vector file>\n", argv[0]);
         return 1;
     }
     int size = atoi(argv[1]);
-    a = (double*)malloc(size * sizeof(double));
-    b = (double*)malloc(size * sizeof(double));
+    double a[size];
+    double b[size];
     FILE* file = fopen(argv[2], "w");
     if (file == NULL)
     {

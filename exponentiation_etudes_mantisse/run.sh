@@ -26,13 +26,13 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca.so" verific
 echo "# Calculating ref value using naif_iter algo"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ref_main "$x" "$n" "$N" 1 > results/UR.dat
 
-echo "# Creating folders for SR errors ：naif_iter"
+echo "# Creating folders for SR errors: naif_iter"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./erreur "naif_iter" > results/naif_iter/err.dat
-echo "# Creating folders for SR errors ：naif_rec"
+echo "# Creating folders for SR errors: naif_rec"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./erreur "naif_rec" > results/naif_rec/err.dat
-echo "# Creating folders for SR errors ：rapide_iter"
+echo "# Creating folders for SR errors: rapide_iter"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./erreur "rapide_iter" > results/rapide_iter/err.dat
-echo "# Creating folders for SR errors ：rapide_rec"
+echo "# Creating folders for SR errors: rapide_rec"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./erreur "rapide_rec" > results/rapide_rec/err.dat
 
 grep -o '\.[0-9]*' results/naif_rec/err.dat > results/naif_rec/err_mantisse.dat
@@ -56,5 +56,5 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 echo "# Creating folders for rapide_rec stat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat "rapide_rec" "$N" > results/rapide_rec/stat.dat
 
-
-rm -Rf *.o erreur *_main stat
+make clean
+rm -Rf erreur *_main stat
