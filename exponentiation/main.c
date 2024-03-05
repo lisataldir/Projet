@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     int ind = atoi(argv[2]);
     int N = 301;
 
-    for (int n = 0; n < N; n += 10)
+    for (int n = 0; n < N; n += 5)
     {
         double ref = ref_exp(x, n);
         float val;

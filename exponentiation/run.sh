@@ -12,7 +12,7 @@ x=(1.34907566301 1.111 1.20987347)
 
 for k in {0..2}
 do
-for i in {1..50}
+for i in {1..80}
 do
 echo "# Creating folder results1/naif_rec/SR_$i.dat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so" verificarlo/verificarlo ./main "${x[$k]}" 0 > results$k/naif_rec/SR_$i.dat
