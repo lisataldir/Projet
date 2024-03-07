@@ -34,4 +34,5 @@ echo "# Creating folder results/rapide_iter/UR.dat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./main "${x[$k]}" 3 > results$k/rapide_iter/UR.dat
 done
 
+make clean
 
