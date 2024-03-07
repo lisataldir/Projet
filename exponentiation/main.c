@@ -9,11 +9,11 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    float x = atof(argv[1]);
+    double x = atof(argv[1]);
     int ind = atoi(argv[2]);
-    int N = 301;
+    int N = 300;
 
-    for (int n = 0; n < N; n += 5)
+    for (int n = 0; n < N; n++)
     {
         double ref = ref_exp(x, n);
         float val;
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
             break;
         }
 
-        double err = fabs((ref - (double)val) / ref);
+        double err = fabs((ref - (double)val)/ ref);
         printf("%.17f\n", err);
     }
 
