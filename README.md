@@ -8,6 +8,9 @@ Il est organisé en plusieurs dossiers :
 ├──Algo&Tests
 ├──Performance
 ├──exponentiation
+├──exponentiation_etudes_mantisse
+├──inner_product
+├──multiplication
 └──verificarlo
 ```
 dont le contenu puis l'utilisation sera détaillé ci-dessous.
@@ -19,7 +22,7 @@ dont le contenu puis l'utilisation sera détaillé ci-dessous.
 Ce dossier contient : 
 - les algorithmes naïf récursif, itératif et rapide récursif, itératif (dans `algo_lib/`) que nous utiliserons durant tout notre projet
 - les tests unitaires (dans le fichier `test.cpp`) verifiant que nos algorithmes soient valides
-- les valeurs de références (dans `test_data_Yizhi/`) obtenues grace à des fonctions de Python. 
+- les valeurs de références (dans `test_data/`) obtenues grace à des fonctions de Python. 
 
 ### Performance
 
@@ -48,6 +51,12 @@ ind = 1 pour choisir la version naïve itérative
 ind = 2 pour choisir la version rapide récursive  
 ind = 3 pour choisir la version rapide itérative
  - `plot/plot.gp` : trace les graphes
+
+### Exponentiation_etudes_mantisse
+
+### Multiplication
+
+### Inner_product
 
 ### Verificarlo
 
@@ -104,3 +113,9 @@ $ cd plot
 $ gnuplot plot.gp
 ```
 pour générer les graphes.
+
+### Exponentiation_etudes_mantisse
+
+### Multiplication
+
+### Inner_product
