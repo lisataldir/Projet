@@ -1,12 +1,12 @@
 
 
 *******************************************************************************
-Thu Mar  7 09:45:38 2024
+Sat Mar  9 14:11:46 2024
 
 
-FIT:    data read from SR_ni using 0:1
+FIT:    data read from SR_nr using 1:2
         format = x:z
-        #datapoints = 360
+        #datapoints = 60
         residuals are weighted equally (unit weight)
 
 function used for fitting: f(x)
@@ -14,37 +14,37 @@ function used for fitting: f(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   a             b             c            
-   0 1.2288352925e+12   0.00e+00  3.37e+04    1.000000e+00   1.000000e+00   1.000000e+00
-   7 9.2503539408e+05  -1.42e-03  3.37e-03   -3.162690e-03   1.750474e+00  -2.870055e+01
+   0 9.3983507253e+10   0.00e+00  2.28e+04    1.000000e+00   1.000000e+00   1.000000e+00
+   9 5.8219933599e-13  -3.00e-08  2.28e-05    6.703855e-13   8.559632e-09   3.192790e-08
 
-After 7 iterations the fit converged.
-final sum of squares of residuals : 925035
-rel. change during last iteration : -1.42389e-08
+After 9 iterations the fit converged.
+final sum of squares of residuals : 5.82199e-13
+rel. change during last iteration : -3.00044e-13
 
-degrees of freedom    (FIT_NDF)                        : 357
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 50.9032
-variance of residuals (reduced chisquare) = WSSR/ndf   : 2591.14
+degrees of freedom    (FIT_NDF)                        : 57
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.01064e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.0214e-14
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-a               = -0.00316269      +/- 0.0002758    (8.721%)
-b               = 1.75047          +/- 0.1031       (5.888%)
-c               = -28.7006         +/- 8.08         (28.15%)
+a               = 6.70385e-13      +/- 1.946e-12    (290.3%)
+b               = 8.55963e-09      +/- 5.936e-10    (6.935%)
+c               = 3.19279e-08      +/- 3.787e-08    (118.6%)
 
 correlation matrix of the fit parameters:
                 a      b      c      
 a               1.000 
-b              -0.968  1.000 
-c               0.747 -0.867  1.000 
+b              -0.967  1.000 
+c               0.733 -0.858  1.000 
 
 
 *******************************************************************************
-Thu Mar  7 09:45:38 2024
+Sat Mar  9 14:11:46 2024
 
 
-FIT:    data read from SR_ri using 0:1
+FIT:    data read from SR_rr using 1:2
         format = x:z
-        #datapoints = 360
+        #datapoints = 60
         residuals are weighted equally (unit weight)
 
 function used for fitting: fbis(x)
@@ -52,101 +52,25 @@ function used for fitting: fbis(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   a             b             c            
-   0 9.2503539408e+05   0.00e+00  2.37e+02   -3.162690e-03   1.750474e+00  -2.870055e+01
-   1 9.2503539408e+05  -1.26e-11  2.37e+01   -3.162690e-03   1.750474e+00  -2.870055e+01
+   0 2.7516172818e-11   0.00e+00  8.46e-07    6.703855e-13   8.559632e-09   3.192790e-08
+   5 1.0143958746e-11  -8.00e-06  8.46e-12   -1.634499e-11   1.594333e-08  -7.502244e-08
 
-After 1 iterations the fit converged.
-final sum of squares of residuals : 925035
-rel. change during last iteration : -1.2585e-16
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.0144e-11
+rel. change during last iteration : -7.99958e-11
 
-degrees of freedom    (FIT_NDF)                        : 357
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 50.9032
-variance of residuals (reduced chisquare) = WSSR/ndf   : 2591.14
+degrees of freedom    (FIT_NDF)                        : 57
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.21858e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.77964e-13
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-a               = -0.00316269      +/- 0.0002758    (8.721%)
-b               = 1.75047          +/- 0.1031       (5.888%)
-c               = -28.7006         +/- 8.08         (28.15%)
+a               = -1.6345e-11      +/- 8.124e-12    (49.71%)
+b               = 1.59433e-08      +/- 2.478e-09    (15.54%)
+c               = -7.50224e-08     +/- 1.581e-07    (210.7%)
 
 correlation matrix of the fit parameters:
                 a      b      c      
 a               1.000 
-b              -0.968  1.000 
-c               0.747 -0.867  1.000 
-
-
-*******************************************************************************
-Thu Mar  7 09:45:38 2024
-
-
-FIT:    data read from SR_nr using 0:1
-        format = x:z
-        #datapoints = 360
-        residuals are weighted equally (unit weight)
-
-function used for fitting: f(x)
-	f(x) = a*x**2 + b*x + c
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   a             b             c            
-   0 9.2503539408e+05   0.00e+00  2.37e+02   -3.162690e-03   1.750474e+00  -2.870055e+01
-   1 9.2503539408e+05  -1.26e-11  2.37e+01   -3.162690e-03   1.750474e+00  -2.870055e+01
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 925035
-rel. change during last iteration : -1.2585e-16
-
-degrees of freedom    (FIT_NDF)                        : 357
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 50.9032
-variance of residuals (reduced chisquare) = WSSR/ndf   : 2591.14
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-a               = -0.00316269      +/- 0.0002758    (8.721%)
-b               = 1.75047          +/- 0.1031       (5.888%)
-c               = -28.7006         +/- 8.08         (28.15%)
-
-correlation matrix of the fit parameters:
-                a      b      c      
-a               1.000 
-b              -0.968  1.000 
-c               0.747 -0.867  1.000 
-
-
-*******************************************************************************
-Thu Mar  7 09:45:38 2024
-
-
-FIT:    data read from SR_rr using 0:1
-        format = x:z
-        #datapoints = 360
-        residuals are weighted equally (unit weight)
-
-function used for fitting: fbis(x)
-	fbis(x) = a*x**2 + b*x + c
-fitted parameters initialized with current variable values
-
-iter      chisq       delta/lim  lambda   a             b             c            
-   0 9.2503539408e+05   0.00e+00  2.37e+02   -3.162690e-03   1.750474e+00  -2.870055e+01
-   1 9.2503539408e+05   0.00e+00  2.37e+05   -3.162690e-03   1.750474e+00  -2.870055e+01
-
-After 1 iterations the fit converged.
-final sum of squares of residuals : 925035
-rel. change during last iteration : 0
-
-degrees of freedom    (FIT_NDF)                        : 357
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 50.9032
-variance of residuals (reduced chisquare) = WSSR/ndf   : 2591.14
-
-Final set of parameters            Asymptotic Standard Error
-=======================            ==========================
-a               = -0.00316269      +/- 0.0002758    (8.721%)
-b               = 1.75047          +/- 0.1031       (5.888%)
-c               = -28.7006         +/- 8.08         (28.15%)
-
-correlation matrix of the fit parameters:
-                a      b      c      
-a               1.000 
-b              -0.968  1.000 
-c               0.747 -0.867  1.000 
+b              -0.967  1.000 
+c               0.733 -0.858  1.000 
