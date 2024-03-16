@@ -1,6 +1,6 @@
 #! /bin/bash
 
-for k in {0..2}
+for k in {0..5}
 do
 # Numérotation
 awk '{

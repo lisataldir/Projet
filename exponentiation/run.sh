@@ -1,16 +1,16 @@
 #! /bin/bash
 
 echo "# Creating subdirectory results/naif_iter, results/naif_rec, results/rapide_iter and results/rapide_rec"
-for i in {0..2}
+for i in {0..5}
 do
 mkdir -p results$i/naif_iter results$i/naif_rec results$i/rapide_iter results$i/rapide_rec
 done
 
 make 
 
-x=(1.34907566301 1.318974023 1.27987347)
+x=(1.34907566301 1.318974023 1.27987347 1.25 1.3 2)
 
-for k in {0..2}
+for k in {0..5}
 do
 for i in {1..20}
 do
