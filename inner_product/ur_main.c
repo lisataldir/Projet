@@ -13,18 +13,22 @@ int main(int argc, char** argv)
 
     int ind = atoi(argv[1]);
     int size_vec = atoi(argv[2]);
-    double vec1[size_vec];
-    double vec2[size_vec];
-    
+    double* vec1;
+    double* vec2;
+    vec1 = malloc(size_vec * sizeof(double));
+    vec2 = malloc(size_vec * sizeof(double)); 
+
+    FILE* vectors;
+    float val;
 
     switch (ind)
     {
     case 0: // random vectors
-        FILE* vectors = fopen(atoi(argv[3]), "r");
+        vectors = fopen(argv[3], "r");
         for (int i = 0; i < size_vec; i++)
         {
             double v1, v2;
-            fscanf(vectors, "%.17f\t%.17f\n", &v1, &v2);
+            fscanf(vectors, "%lf\t%lf\n", &v1, &v2);
             vec1[i] = (float)v1; // !!!! rounding errors mignt occur here
             vec2[i] = (float)v2;
         }
@@ -32,7 +36,7 @@ int main(int argc, char** argv)
         break;
     
     case 1: // vectors with a constant value
-        float val = atof(argv[3]);
+        val = atof(argv[3]);
         for (int i = 0; i < size_vec; i++)
         {
             vec1[i] = val;
@@ -46,8 +50,8 @@ int main(int argc, char** argv)
     }   
     
 
-    FILE* ref = fopen(atoi(argv[4]), "w");
-    fprintf(ref, "%.17f\n", inner_product(vec1, vec2, size_vec));
+    FILE* ref = fopen(argv[4], "w");
+    fprintf(ref, "%.17lf\n", inner_product((float*)vec1, (float*)vec2, size_vec));
     fclose(ref);
     
     return 0;

@@ -22,7 +22,7 @@ int main(int argc, char ** argv)
     }
 
 
-    while (fscanf(file, "%.17f", &num) == 1) 
+    while (fscanf(file, "%lf", &num) == 1) 
     {
         sum += num;
         sum_squared_diff += num * num;
@@ -34,6 +34,6 @@ int main(int argc, char ** argv)
 
     std_dev = sqrt((sum_squared_diff / count) - (mean * mean));
 
-    printf("%.17f\t%.17f\n", mean, std_dev);
+    printf("%.17lf\t%.17lf\n", mean, std_dev);
     return 0;   
 }

@@ -1,4 +1,3 @@
-#include "algo.h"
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -24,13 +23,13 @@ int main(int argc, char ** argv)
         return 1;
     }
     double res, ref, err;
-    fsacnf(result, "%.17f", &res);
-    fsacnf(reference, "%.17f", &ref);
+    fscanf(result, "%lf", &res);
+    fscanf(reference, "%lf", &ref);
     fclose(result);
     fclose(reference);
 
     err = error(res, ref);
-    printf("%.17f\n", err);
+    printf("%.17lf\n", err);
 
     return 0;
 }
