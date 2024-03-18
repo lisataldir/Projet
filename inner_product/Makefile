@@ -43,7 +43,13 @@ UR_main.o: ur_main.c algo.h
 SR_main.o: sr_main.c algo.h
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
-ref.o: ref.c algo.h
+ref.o: ref_main.c algo.h
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+vec_gen.o: vec_gen.c
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+vec_gen_f.o: vec_gen_f.c
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
 

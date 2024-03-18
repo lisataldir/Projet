@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// write the vector of a fixed value to a file
+
 int main(int argc, char** argv)
 {
     if (argc != 4)
@@ -20,8 +22,8 @@ int main(int argc, char** argv)
     }
     for (int i = 0; i < size; i++)
     {
-        vec[i] = x;
-        fprintf(file, "%lf\t%lf\n", vec[i], vec[i]);
+        vec[i] = x;      
     }
+    fprintf(file, "%lf\n", x);
     return 0;
 }

@@ -3,6 +3,12 @@
 #include <math.h>
 #include <string.h>
 
+
+double error(double result, double reference)
+{
+    return fabs((result - reference)/reference);
+}
+
 int main(int argc, char** argv)
 {
     if (argc != 5)

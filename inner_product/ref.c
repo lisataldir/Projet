@@ -1,27 +1,13 @@
 #include "algo.h"
-#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-int main(int argc, char** argv)
+double ref_inner_product(double* vec1, double* vec2, int size_vec)
 {
-    if (argc != 4)
-    {
-        printf("Usage: %s <vector size> <vectors file> <reference file>\n", argv[0]);
-        return 1;
-    }
-
-    int size_vec = atoi(argv[1]);
-    double vec1[size_vec];
-    double vec2[size_vec];
-    FILE* vectors = fopen(atoi(argv[2]), "r");
+    double result = 0;
     for (int i = 0; i < size_vec; i++)
     {
-        fscanf(vectors, "%lf\t%lf\n", &vec1[i], &vec2[i]);
+        result += vec1[i] * vec2[i];
     }
-    fclose(vectors);
-
-    FILE* ref = fopen(atoi(argv[3]), "w");
-    fprintf(ref, "%lf\n", ref_inner_product(vec1, vec2, size_vec));
-    fclose(ref);
-    
-    return 0;
+    return result;
 }

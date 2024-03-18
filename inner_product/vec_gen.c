@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// write the vector of random values to a file
 
 int main(int argc, char** argv)
 {

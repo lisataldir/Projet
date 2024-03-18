@@ -3,6 +3,10 @@
 #include <math.h>
 #include <string.h>
 
+double error(double result, double reference)
+{
+    return fabs((result - reference)/reference);
+}
 
 int main(int argc, char ** argv)
 {
@@ -20,14 +24,14 @@ int main(int argc, char ** argv)
         fprintf(stderr, "Error opening files\n");
         return 1;
     }
-    double res, ref, err;
+    double res, ref, e;
     fsacnf(result, "%lf", &res);
     fsacnf(reference, "%lf", &ref);
     fclose(result);
     fclose(reference);
 
-    err = error(res, ref);
-    fprintf(err, "%lf\n", err);
+    e = error(res, ref);
+    fprintf(err, "%lf\n", e);
     fclose(err);
 
     return 0;
