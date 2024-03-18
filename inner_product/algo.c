@@ -1,6 +1,4 @@
 #include "algo.h"
-#include <stdlib.h>
-#include <math.h>
 
 float inner_product(float* vec1, float* vec2, int size_vec)
 {

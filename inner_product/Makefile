@@ -1,8 +1,8 @@
 CC = verificarlo-c
-CFLAGS3 = -g -Wall -O1
+CFLAGS3 = -g -Wall -O0
 DOCKER = docker run -v "$(PWD)":/workdir verificarlo/verificarlo
 
-all: vec_gen vec_gen_f SR_main UR_main ref UR_err SR_err stat
+all: vec_gen SR UR ref UR_err SR_err stat
 
 stat: stat.o
 	$(DOCKER) verificarlo-c -o $@ $^
@@ -18,14 +18,11 @@ SR_err: SR_err.o
 
 vec_gen: vec_gen.o
 	$(DOCKER) $(CC) -o $@ $^
-
-vec_gen_f: vec_gen_f.o
-	$(DOCKER) $(CC) -o $@ $^
 	
-UR_main: UR_main.o experience.o
+UR: UR_main.o
 	$(DOCKER) $(CC) -o $@ $^
 
-SR_main: SR_main.o experience.o
+SR: SR_main.o
 	$(DOCKER) $(CC) -o $@ $^
 
 stat.o: stat.c
@@ -47,9 +44,6 @@ ref.o: ref_main.c algo.h
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
 vec_gen.o: vec_gen.c
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
-
-vec_gen_f.o: vec_gen_f.c
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
 

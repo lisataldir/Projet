@@ -25,13 +25,13 @@ int main(int argc, char ** argv)
         return 1;
     }
     double res, ref, e;
-    fsacnf(result, "%lf", &res);
-    fsacnf(reference, "%lf", &ref);
+    fsacnf(result, "%.17f", &res);
+    fsacnf(reference, "%.17f", &ref);
     fclose(result);
     fclose(reference);
 
     e = error(res, ref);
-    fprintf(err, "%lf\n", e);
+    fprintf(err, "%.17f\n", e);
     fclose(err);
 
     return 0;

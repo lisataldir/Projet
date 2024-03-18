@@ -1,6 +1,4 @@
 #include "algo.h"
-#include <stdlib.h>
-#include <math.h>
 
 double ref_inner_product(double* vec1, double* vec2, int size_vec)
 {
