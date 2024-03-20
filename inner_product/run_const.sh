@@ -35,11 +35,11 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_main 1 $i $v UR/UR_$v\_$i.dat
 
 # UR errors
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$x\_$i.dat ref/ref_$x\_$i.dat UR/UR_$x\_$i.err
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$y\_$i.dat ref/ref_$y\_$i.dat UR/UR_$y\_$i.err
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$z\_$i.dat ref/ref_$z\_$i.dat UR/UR_$z\_$i.err
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$w\_$i.dat ref/ref_$w\_$i.dat UR/UR_$w\_$i.err
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$v\_$i.dat ref/ref_$v\_$i.dat UR/UR_$v\_$i.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$x\_$i.dat ref/ref_$x\_$i.dat >> UR/UR_$x.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$y\_$i.dat ref/ref_$y\_$i.dat >> UR/UR_$y.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$z\_$i.dat ref/ref_$z\_$i.dat >> UR/UR_$z.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$w\_$i.dat ref/ref_$w\_$i.dat >> UR/UR_$w.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$v\_$i.dat ref/ref_$v\_$i.dat >> UR/UR_$v.err
 
     for k in {1..30}
     do
@@ -59,11 +59,11 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
     done 
 
 # calculate mean value and standard deviation of the errors
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$x\_$i.err >> SR/SR_$x\_$i.stat
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$y\_$i.err >> SR/SR_$y\_$i.stat
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$z\_$i.err >> SR/SR_$z\_$i.stat
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$w\_$i.err >> SR/SR_$w\_$i.stat
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$v\_$i.err >> SR/SR_$v\_$i.stat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$x\_$i.err >> SR/SR_$x.stat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$y\_$i.err >> SR/SR_$y.stat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$z\_$i.err >> SR/SR_$z.stat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$w\_$i.err >> SR/SR_$w.stat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$v\_$i.err >> SR/SR_$v.stat
 
 i=$((i * 10))
 done

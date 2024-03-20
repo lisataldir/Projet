@@ -9,16 +9,16 @@ double error(double result, double reference)
 
 int main(int argc, char ** argv)
 {
-    if (argc != 4) 
+    if (argc != 3) 
     {
-        fprintf(stderr, "Usage: %s <result file> <reference file> <error file>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <result file> <reference file>\n", argv[0]);
         return 1;
     }
 
     FILE *result = fopen(argv[1], "r");
     FILE *reference = fopen(argv[2], "r");
-    FILE *err = fopen(argv[3], "w");
-    if (result == NULL || reference == NULL || err == NULL) 
+
+    if (result == NULL || reference == NULL) 
     {
         fprintf(stderr, "Error opening files\n");
         return 1;
@@ -30,8 +30,7 @@ int main(int argc, char ** argv)
     fclose(reference);
 
     e = error(res, ref);
-    fprintf(err, "%.17lf\n", e);
-    fclose(err);
+    printf("%.17lf\n", e);
 
     return 0;
 }

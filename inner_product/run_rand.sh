@@ -30,7 +30,7 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 sleep 1
 
 # UR errors
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_r_$i.dat ref/ref_r_$i.dat UR/UR_r_$i.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_r_$i.dat ref/ref_r_$i.dat >> UR/UR_r.err
 sleep 1
 
     for k in {1..30}
@@ -45,7 +45,7 @@ sleep 1
     done 
 
 # calculate mean value and standard deviation of the errors
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_r_$i.err >> SR/SR_r_$i.stat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_r_$i.err >> SR/SR_r.stat
 sleep 1
 
 i=$((i * 10))
