@@ -2,7 +2,7 @@ CC = verificarlo-c
 CFLAGS3 = -g -Wall -O0
 DOCKER = docker run -v "$(PWD)":/workdir verificarlo/verificarlo
 
-all: vec_gen ref_main  ur_main ur_err sr_main sr_err stat
+all: vec_gen ref_main ur_main ur_err sr_main sr_err stat
 
 vec_gen: vec_gen.o
 	$(DOCKER) $(CC) -o $@ $^
@@ -47,7 +47,7 @@ sr_err.o: sr_err.c
 
 
 stat: stat.o
-	$(DOCKER) $(CC) -o $@ $^
+	$(DOCKER) $(CC) -o $@ $^ -lm
 stat.o: stat.c
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 

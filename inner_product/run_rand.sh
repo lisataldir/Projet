@@ -15,7 +15,7 @@ echo "# Creating folder SR"
 sleep 1
 
 i=10
-while [ $i -le 100000000 ]
+while [ $i -le 100000 ]
 do
 # generate random vectors with different sizes
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./vec_gen $i rand_vec/v_$i.dat
@@ -36,11 +36,11 @@ sleep 1
     for k in {1..30}
     do
     # SR results
-    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 0 $i rand_vec/v_$i.dat SR/SR_r_$i_$k.dat
+    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 0 $i rand_vec/v_$i.dat SR/SR_r_$i\_$k.dat
     sleep 1
 
     # SR errors
-    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_r_$i_$k.dat ref/ref_r_$i.dat >> SR/SR_r_$i.err
+    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_r_$i\_$k.dat ref/ref_r_$i.dat >> SR/SR_r_$i.err
     sleep 1
     done 
 
@@ -54,4 +54,4 @@ done
 
 make clean
 
-rm -Rf UR/*.dat SR/*.dat ref/*.dat rand_vec/*.dat SR/*.err
+rm -Rf UR/*.dat SR/*.dat ref rand_vec SR/*.err

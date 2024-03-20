@@ -13,10 +13,15 @@ int main(int argc, char** argv)
 
     int ind = atoi(argv[1]);
     int size_vec = atoi(argv[2]);
-    double vec1[size_vec];
-    double vec2[size_vec];
+    double* vec1;
+    double* vec2;
+
+    vec1 = malloc(size_vec * sizeof(double));
+    vec2 = malloc(size_vec * sizeof(double));
+    
     FILE* vectors;
     double val;
+    double v1, v2;
 
     switch (ind)
     {
@@ -24,7 +29,9 @@ int main(int argc, char** argv)
         vectors = fopen(argv[3], "r");
         for (int i = 0; i < size_vec; i++)
         {
-            fscanf(vectors, "%lf\t%lf\n", &vec1[i], &vec2[i]);
+            fscanf(vectors, "%lf\t%lf\n", &v1, &v2);
+            vec1[i] = v1;
+            vec2[i] = v2;
         }
         fclose(vectors);
         break;
@@ -45,7 +52,7 @@ int main(int argc, char** argv)
     
 
     FILE* ref = fopen(argv[4], "w");
-    fprintf(ref, "%lf\n", ref_inner_product(vec1, vec2, size_vec));
+    fprintf(ref, "%.17lf\n", ref_inner_product(vec1, vec2, size_vec));
     fclose(ref);
     
     return 0;
