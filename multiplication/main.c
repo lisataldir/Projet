@@ -11,9 +11,9 @@ int main(int argc, char **argv)
 
     float x = atof(argv[1]);
     int ind = atoi(argv[2]);
-    int N = 301;
+    int N = 16001;
 
-    for (int n = 0; n < N; n += 5)
+    for (int n = 0; n < N; n += 1000)
     {
         double ref = ref_multi(x, n);
         float val;

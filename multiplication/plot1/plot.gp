@@ -3,41 +3,45 @@ set output 'plot_ni.png'
 
 set size square
 set grid
-set xlabel 'Puissance (n)'        
+set key top left
+set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative' 
 
-plot "../results1/naif_iter/URstat.dat" with points pointsize 1.2 title "NR", \
-     "../results1/naif_iter/SRstat.dat" with points pointsize 1.2 title "SR"
+plot "../results1/naif_iter/URstat.dat" w p ps 1.2 pt 9 lc rgb "black" title "NR", \
+     "../results1/naif_iter/SRstat.dat" w p ps 1.2 pt 7 lc rgb "blue" title "SR"
 
 set terminal png   
 set output 'plot_nr.png'  
 
 set size square
 set grid
-set xlabel 'Puissance (n)'        
+set key top left
+set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative' 
 
-plot "../results1/naif_rec/URstat.dat" with points pointsize 1.2 title "NR", \
-     "../results1/naif_rec/SRstat.dat" with points pointsize 1.2 title "SR"
+plot "../results1/naif_rec/URstat.dat" w p ps 1.2 pt 9 lc rgb "black" title "NR", \
+     "../results1/naif_rec/SRstat.dat" w p ps 1.2 pt 7 lc rgb "blue" title "SR"
 
 set terminal png   
 set output 'plot_ri.png'  
 
 set size square
 set grid
-set xlabel 'Puissance (n)'        
+set key top left
+set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative'  
 
-plot "../results1/rapide_iter/URstat.dat" with points pointsize 1.2 title "NR", \
-     "../results1/rapide_iter/SRstat.dat" with points pointsize 1.2 title "SR"
+plot "../results1/rapide_iter/URstat.dat" w p ps 1.2 pt 9 lc rgb "black" title "NR", \
+     "../results1/rapide_iter/SRstat.dat" w p ps 1.2 pt 7 lc rgb "blue" title "SR"
 
 set terminal png   
 set output 'plot_rr.png'  
 
 set size square
 set grid
-set xlabel 'Puissance (n)'        
+set key top left
+set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative'  
 
-plot "../results1/rapide_rec/URstat.dat" with points pointsize 1.2 title "NR", \
-     "../results1/rapide_rec/SRstat.dat" with points pointsize 1.2 title "SR"
+plot "../results1/rapide_rec/URstat.dat" w p ps 1.2 pt 9 lc rgb "black" title "NR", \
+     "../results1/rapide_rec/SRstat.dat" w p ps 1.2 pt 7 lc rgb "blue" title "SR"
