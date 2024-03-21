@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// write the vector of random values to a file
 
 int main(int argc, char** argv)
 {
@@ -22,7 +23,7 @@ int main(int argc, char** argv)
     {
         a[i] = (double)rand() / (double)RAND_MAX;
         b[i] = (double)rand() / (double)RAND_MAX;
-        fprintf(file, "%lf\t%lf\n", a[i], b[i]);
+        fprintf(file, "%.17lf\t%.17lf\n", a[i], b[i]);
     }
     return 0;
 }

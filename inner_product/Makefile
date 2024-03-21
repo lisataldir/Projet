@@ -1,53 +1,58 @@
 CC = verificarlo-c
-CFLAGS3 = -g -Wall -O1
+CFLAGS3 = -g -Wall -O0
 DOCKER = docker run -v "$(PWD)":/workdir verificarlo/verificarlo
 
-all: vec_gen vec_gen_f SR_main UR_main ref UR_err SR_err stat
-
-stat: stat.o
-	$(DOCKER) verificarlo-c -o $@ $^
-
-ref: ref.o	
-	$(DOCKER) $(CC) -o $@ $^
-
-UR_err: UR_err.o
-	$(DOCKER) $(CC) -o $@ $^
-
-SR_err: SR_err.o
-	$(DOCKER) $(CC) -o $@ $^
+all: vec_gen ref_main ur_main ur_err sr_main sr_err stat
 
 vec_gen: vec_gen.o
 	$(DOCKER) $(CC) -o $@ $^
+vec_gen.o: vec_gen.c
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
-vec_gen_f: vec_gen_f.o
+
+ref_main: ref_main.o ref.o
 	$(DOCKER) $(CC) -o $@ $^
-	
-UR_main: UR_main.o experience.o
-	$(DOCKER) $(CC) -o $@ $^
-
-SR_main: SR_main.o experience.o
-	$(DOCKER) $(CC) -o $@ $^
-
-stat.o: stat.c
+ref_main.o: ref_main.c algo.h
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
-
-UR_err.o: ur_err.c
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
-
-SR_err.o: sr_err.c
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
-
-UR_main.o: ur_main.c algo.h
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
-
-SR_main.o: sr_main.c algo.h
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
-
 ref.o: ref.c algo.h
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
 
+ur_main: ur_main.o prod.o
+	$(DOCKER) $(CC) -o $@ $^
+ur_main.o: ur_main.c algo.h
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+
+sr_main: sr_main.o prod.o
+	$(DOCKER) $(CC) -o $@ $^
+sr_main.o: sr_main.c algo.h
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+
+prod.o: prod.c algo.h
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+
+ur_err: ur_err.o
+	$(DOCKER) $(CC) -o $@ $^
+ur_err.o: ur_err.c
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+
+sr_err: sr_err.o
+	$(DOCKER) $(CC) -o $@ $^
+sr_err.o: sr_err.c
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+
+stat: stat.o
+	$(DOCKER) $(CC) -o $@ $^ -lm
+stat.o: stat.c
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+
+
 clean:
-	rm -f *.o
+	rm -Rf *.o vec_gen ref_main sr_main ur_main ur_err sr_err stat
 
 .PHONY: clean

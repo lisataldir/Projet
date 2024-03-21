@@ -1,31 +1,35 @@
-#include "algo.h"
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
 
-int main(int argc, char** argv)
+double error(double result, double reference)
 {
-    if (argc != 5)
+    return fabs((result - reference)/reference);
+}
+
+int main(int argc, char ** argv)
+{
+    if (argc != 3) 
     {
-        printf("Usage: %s <vector size> <vector file> <result file> <repeat times>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <result file> <reference file>\n", argv[0]);
         return 1;
     }
 
     FILE *result = fopen(argv[1], "r");
     FILE *reference = fopen(argv[2], "r");
-    FILE *err = fopen(argv[3], "w");
-    if (result == NULL || reference == NULL || err == NULL) 
+    if (result == NULL || reference == NULL) 
     {
         fprintf(stderr, "Error opening files\n");
         return 1;
     }
-
-    double ref;
-    fsacnf(reference, "%lf", &ref);
+    double res, ref, err;
+    fscanf(result, "%lf", &res);
+    fscanf(reference, "%lf", &ref);
+    fclose(result);
     fclose(reference);
 
-    
-    
+    err = error(res, ref);
+    printf("%.17lf\n", err);
 
     return 0;
-} 
+}
