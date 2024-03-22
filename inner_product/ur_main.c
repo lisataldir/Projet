@@ -42,7 +42,7 @@ int main(int argc, char** argv)
         {
             vec1[i] = (float)val;
             vec2[i] = (float)val;
-            printf("%.17lf %.17lf\n", vec1[i], vec2[i]);
+            //printf("%.17lf %.17lf\n", vec1[i], vec2[i]);
         }
         break;
 
