@@ -12,7 +12,7 @@ x=(0.1 1.1 1.2)
 
 for k in {0..2}
 do
-for i in {1..80}
+for i in {1..50}
 do
 echo "# Creating folder results1/naif_rec/SR_$i.dat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./main "${x[$k]}" 0 > results$k/naif_rec/SR_$i.dat
@@ -34,4 +34,5 @@ echo "# Creating folder results/rapide_iter/UR.dat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./main "${x[$k]}" 3 > results$k/rapide_iter/UR.dat
 done
 
+make clean
 
