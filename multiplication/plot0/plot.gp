@@ -4,6 +4,7 @@ set output 'plot_ni.png'
 set size square
 set key top left
 set grid
+set xrange [0:16000]
 set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative' 
 
@@ -16,6 +17,7 @@ set output 'plot_nr.png'
 set size square
 set key top left
 set grid
+set xrange [0:16000]
 set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative' 
 
@@ -28,6 +30,7 @@ set output 'plot_ri.png'
 set size square
 set key top left
 set grid
+set xrange [0:16000]
 set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative'  
 
@@ -40,6 +43,7 @@ set output 'plot_rr.png'
 set size square
 set key top left
 set grid
+set xrange [0:16000]
 set xlabel 'Multiplication (n)'        
 set ylabel 'Erreur relative'  
 

@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 
     float x = atof(argv[1]);
     int ind = atoi(argv[2]);
-    int N = 16001;
+    int N = 50001;
 
     for (int n = 0; n < N; n += 1000)
     {
