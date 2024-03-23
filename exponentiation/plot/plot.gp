@@ -15,7 +15,7 @@ x3 = 1.25
 x4 = 1.3
 x5 = 2
 
-plot for [i=0:5] sprintf("../results%d/naif_iter/SRstat.dat", i) with points pointsize 1.2 title sprintf("x = %.11f", value(sprintf("x%d", i)))
+plot for [i=0:5] sprintf("../results%d/naif_iter/SRstat.dat", i) w p ps 1.2 pt 9 title sprintf("x = %.11f", value(sprintf("x%d", i)))
 
 # Comparaison exponentiation rapide par rapport à x
 set terminal png
@@ -34,4 +34,4 @@ x3 = 1.25
 x4 = 1.3
 x5 = 2
 
-plot for [i=0:5] sprintf("../results%d/rapide_iter/SRstat.dat", i) with points pointsize 1.2 title sprintf("x = %.11f", value(sprintf("x%d", i)))
+plot for [i=0:5] sprintf("../results%d/rapide_iter/SRstat.dat", i) w p ps 1.2 pt 9 title sprintf("x = %.11f", value(sprintf("x%d", i)))

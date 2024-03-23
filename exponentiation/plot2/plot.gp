@@ -13,10 +13,10 @@ SR_ni = "../results2/naif_iter/SRstat.dat"
 NR_ri = "../results2/rapide_iter/URstat.dat"
 SR_ri = "../results2/rapide_iter/SRstat.dat"
 
-plot NR_ni with points pointsize 1.2 title "exp naif NR", \
-     SR_ni with points pointsize 1.2 title "exp naif SR", \
-     NR_ri with points pointsize 1.2 title "exp rapide NR", \
-     SR_ri with points pointsize 1.2 title "exp rapide SR"
+plot NR_ni w p ps 1.2 pt 7 title "exp naif NR", \
+     SR_ni w p ps 1.2 pt 9 title "exp naif SR", \
+     NR_ri w p ps 1.2 pt 7 title "exp rapide NR", \
+     SR_ri w p ps 1.2 pt 9 title "exp rapide SR"
 
 # Comparaison méthodes récursives
 set terminal png   
@@ -33,7 +33,7 @@ SR_nr = "../results2/naif_rec/SRstat.dat"
 NR_rr = "../results2/rapide_rec/URstat.dat"
 SR_rr = "../results2/rapide_rec/SRstat.dat"
 
-plot NR_nr with points pointsize 1.2 title "exp naif NR", \
-     SR_nr with points pointsize 1.2 title "exp naif SR", \
-     NR_rr with points pointsize 1.2 title "exp rapide NR", \
-     SR_rr with points pointsize 1.2 title "exp rapide SR"
+plot NR_nr w p ps 1.2 pt 7 title "exp naif NR", \
+     SR_nr w p ps 1.2 pt 9 title "exp naif SR", \
+     NR_rr w p ps 1.2 pt 7 title "exp rapide NR", \
+     SR_rr w p ps 1.2 pt 9 title "exp rapide SR"
