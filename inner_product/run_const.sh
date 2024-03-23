@@ -18,7 +18,7 @@ mkdir -p SR
 echo "# Creating folder SR"
 
 i=10
-while [ $i -le 100000 ]
+while [ $i -le 300 ]
 do
 # references: constant vectors
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ref_main 1 $i $x ref/ref_$x\_$i.dat
@@ -35,10 +35,15 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_main 1 $i $v UR/UR_$v\_$i.dat
 
 # UR errors
+echo -n "$i " >> UR/UR_$x.err
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$x\_$i.dat ref/ref_$x\_$i.dat >> UR/UR_$x.err
+echo -n "$i " >> UR/UR_$y.err
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$y\_$i.dat ref/ref_$y\_$i.dat >> UR/UR_$y.err
+echo -n "$i " >> UR/UR_$z.err
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$z\_$i.dat ref/ref_$z\_$i.dat >> UR/UR_$z.err
+echo -n "$i " >> UR/UR_$w.err
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$w\_$i.dat ref/ref_$w\_$i.dat >> UR/UR_$w.err
+echo -n "$i " >> UR/UR_$v.err
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$v\_$i.dat ref/ref_$v\_$i.dat >> UR/UR_$v.err
 
     for k in {1..30}
@@ -59,13 +64,18 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
     done 
 
 # calculate mean value and standard deviation of the errors
+echo -n "$i " >> SR/SR_$x.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$x\_$i.err >> SR/SR_$x.stat
+echo -n "$i " >> SR/SR_$y.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$y\_$i.err >> SR/SR_$y.stat
+echo -n "$i " >> SR/SR_$z.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$z\_$i.err >> SR/SR_$z.stat
+echo -n "$i " >> SR/SR_$w.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$w\_$i.err >> SR/SR_$w.stat
+echo -n "$i " >> SR/SR_$v.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$v\_$i.err >> SR/SR_$v.stat
 
-i=$((i * 10))
+i=$((i + 10))
 done
 
 make clean
