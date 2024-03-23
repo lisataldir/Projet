@@ -1,5 +1,5 @@
 # Comparaison méthodes itératives
-set terminal png
+set terminal png size 800, 600
 set output 'plot_method_iter.png'
 
 set size square
@@ -13,13 +13,13 @@ SR_ni = "../results0/naif_iter/SRstat.dat"
 NR_ri = "../results0/rapide_iter/URstat.dat"
 SR_ri = "../results0/rapide_iter/SRstat.dat"
 
-plot NR_ni w p ps 1.2 pt 7 title "exp naif NR", \
-     SR_ni w p ps 1.2 pt 9 title "exp naif SR", \
-     NR_ri w p ps 1.2 pt 7 title "exp rapide NR", \
-     SR_ri w p ps 1.2 pt 9 title "exp rapide SR"
+plot NR_ni w l lw 1.7 lc rgb "#333333" title "exp naif NR", \
+     SR_ni w l lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
+     NR_ri w l lw 1.7 lc rgb "#999999" title "exp rapide NR", \
+     SR_ri w l lw 1.7 lc rgb "#9999FF" title "exp rapide SR"
 
 # Comparaison méthodes récursives
-set terminal png   
+set terminal png size 800, 600
 set output 'plot_method_rec.png'  
 
 set size square
@@ -33,7 +33,7 @@ SR_nr = "../results0/naif_rec/SRstat.dat"
 NR_rr = "../results0/rapide_rec/URstat.dat"
 SR_rr = "../results0/rapide_rec/SRstat.dat"
 
-plot NR_nr w p ps 1.2 pt 7 title "exp naif NR", \
-     SR_nr w p ps 1.2 pt 9 title "exp naif SR", \
-     NR_rr w p ps 1.2 pt 7 title "exp rapide NR", \
-     SR_rr w p ps 1.2 pt 9 title "exp rapide SR"
+plot NR_nr w l lw 1.7 lc rgb "#333333" title "exp naif NR", \
+     SR_nr w l lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
+     NR_rr w l lw 1.7 lc rgb "#999999" title "exp rapide NR", \
+     SR_rr w l lw 1.7 lc rgb "#9999FF" title "exp rapide SR"
