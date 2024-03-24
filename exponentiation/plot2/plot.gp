@@ -8,14 +8,14 @@ set key top left
 set xlabel 'Puissance (n)'
 set ylabel 'Erreur relative'
 
-NR_ni = "../results2/naif_iter/URstat.dat"
+RN_ni = "../results2/naif_iter/URstat.dat"
 SR_ni = "../results2/naif_iter/SRstat.dat"
-NR_ri = "../results2/rapide_iter/URstat.dat"
+RN_ri = "../results2/rapide_iter/URstat.dat"
 SR_ri = "../results2/rapide_iter/SRstat.dat"
 
-plot NR_ni w l lw 1.7 lc rgb "#333333" title "exp naif NR", \
+plot RN_ni w l lw 1.7 lc rgb "#333333" title "exp naif RN", \
      SR_ni w l lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
-     NR_ri w l lw 1.7 lc rgb "#999999" title "exp rapide NR", \
+     RN_ri w l lw 1.7 lc rgb "#999999" title "exp rapide RN", \
      SR_ri w l lw 1.7 lc rgb "#9999FF" title "exp rapide SR"
 
 # Comparaison méthodes récursives
@@ -28,12 +28,12 @@ set key top left
 set xlabel 'Puissance (n)'        
 set ylabel 'Erreur relative' 
 
-NR_nr = "../results2/naif_rec/URstat.dat"
-SR_nr = "../results2/naif_rec/SRstat.dat"
-NR_rr = "../results2/rapide_rec/URstat.dat"
+RN_RN = "../results2/naif_rec/URstat.dat"
+SR_RN = "../results2/naif_rec/SRstat.dat"
+RN_rr = "../results2/rapide_rec/URstat.dat"
 SR_rr = "../results2/rapide_rec/SRstat.dat"
 
-plot NR_nr w l lw 1.7 lc rgb "#333333" title "exp naif NR", \
-     SR_nr w l lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
-     NR_rr w l lw 1.7 lc rgb "#999999" title "exp rapide NR", \
+plot RN_RN w l lw 1.7 lc rgb "#333333" title "exp naif RN", \
+     SR_RN w l lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
+     RN_rr w l lw 1.7 lc rgb "#999999" title "exp rapide RN", \
      SR_rr w l lw 1.7 lc rgb "#9999FF" title "exp rapide SR"
