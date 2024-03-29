@@ -11,7 +11,7 @@ make
 
 x=1.1
 n=100
-N=10000
+N=100000
 sleep 3
 
 echo "# Creating folder results//naif_rec/SR_$i.dat"
@@ -56,5 +56,14 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 echo "# Creating folders for rapide_rec stat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat "rapide_rec" "$N" > results/rapide_rec/stat.dat
 
-make clean
-rm -Rf erreur *_main stat
+sleep 3
+
+echo "# Creating folders for naif_iter stat"
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat_sign_bit "naif_iter" "$N" > results/naif_iter/stat_sign_bit.dat
+echo "# Creating folders for naif_rec stat"
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat_sign_bit "naif_rec" "$N" > results/naif_rec/stat_sign_bit.dat
+echo "# Creating folders for rapide_iter stat"
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat_sign_bit "rapide_iter" "$N" > results/rapide_iter/stat_sign_bit.dat
+echo "# Creating folders for rapide_rec stat"
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat_sign_bit "rapide_rec" "$N" > results/rapide_rec/stat_sign_bit.dat
+
