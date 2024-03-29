@@ -20,11 +20,11 @@ int main(int argc, char **argv)
     {
 
         begin = clock();
-        val = multi_ri(x, n);
+        val = multi_ni(x, n);
         end = clock();
 
         double t = (double)((end - begin) * 1000.0 / CLOCKS_PER_SEC);
-        printf("%.17f\n", t);
+        printf("%d %.17f\n", n, t);
     }
 
     return 0;
