@@ -44,3 +44,16 @@ fit f(x) "../results2/SRstat.dat" using 1:2 via a,b,c
 
 plot "../results2/SRstat.dat" w p pt 9 ps 1.2 lc rgb "#1f77b4" title 'SR', \
      f(x) w l lw 2 lc rgb 'black' title 'Droite de régression'
+
+set terminal png size 800, 600
+set output 'SR_sum_all_x.png'
+
+set size square
+set grid
+set key top left
+set xlabel 'Itérations (n)'
+set ylabel 'Erreur relative'
+
+plot "../results2/SRstat.dat" w l lw 2 lc rgb "#add8e6" title 'x=1.2', \
+     "../results1/SRstat.dat" w l lw 2 lc rgb "#4169e1" title 'x=1.1', \
+     "../results0/SRstat.dat" w l lw 2 lc rgb "#00008b" title 'x=0.1'
