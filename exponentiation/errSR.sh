@@ -1,5 +1,7 @@
 #! /bin/bash
 
+NSAMPLES=10
+
 for k in {0..5}
 do
 # Numérotation
@@ -12,7 +14,7 @@ paste "results$k/naif_rec/num.dat" "results$k/rapide_rec/UR.dat" > results$k/rap
 paste "results$k/naif_rec/num.dat" "results$k/rapide_iter/UR.dat" > results$k/rapide_iter/URstat.dat
 
 # Regroupement de toutes nos données SR dans le même fichier
-paste $(for i in {1..20}; do echo -n "results$k/naif_rec/SR_$i.dat "; done) > results$k/naif_rec/SR.dat
+paste $(for i in $(seq 1 $NSAMPLES); do echo -n "results$k/naif_rec/SR_$i.dat "; done) > results$k/naif_rec/SR.dat
 # Calcul de la moyenne
 awk '{
     sum = 0;
@@ -22,9 +24,9 @@ awk '{
     mean = sum / NF;
     print (NR-1)*5, mean;
 }' results$k/naif_rec/SR.dat > results$k/naif_rec/SRstat.dat
-rm -rf results$k/naif_rec/SR_*.dat results$k/naif_rec/SR.dat results$k/naif_rec/UR.dat
+#rm -rf results$k/naif_rec/SR_*.dat results$k/naif_rec/SR.dat results$k/naif_rec/UR.dat
 
-paste $(for i in {1..20}; do echo -n "results$k/naif_iter/SR_$i.dat "; done) > results$k/naif_iter/SR.dat
+paste $(for i in $(seq 1 $NSAMPLES); do echo -n "results$k/naif_iter/SR_$i.dat "; done) > results$k/naif_iter/SR.dat
 awk '{
     sum = 0;
     for (i = 1; i <= NF; i++) {
@@ -33,9 +35,9 @@ awk '{
     mean = sum / NF;
     print (NR-1)*5, mean;
 }' results$k/naif_iter/SR.dat > results$k/naif_iter/SRstat.dat
-rm -rf results$k/naif_iter/SR_*.dat results$k/naif_iter/SR.dat results$k/naif_iter/UR.dat
+#rm -rf results$k/naif_iter/SR_*.dat results$k/naif_iter/SR.dat results$k/naif_iter/UR.dat
 
-paste $(for i in {1..20}; do echo -n "results$k/rapide_rec/SR_$i.dat "; done) > results$k/rapide_rec/SR.dat
+paste $(for i in $(seq 1 $NSAMPLES); do echo -n "results$k/rapide_rec/SR_$i.dat "; done) > results$k/rapide_rec/SR.dat
 awk '{
     sum = 0;
     for (i = 1; i <= NF; i++) {
@@ -44,9 +46,9 @@ awk '{
     mean = sum / NF;
     print (NR-1)*5, mean;
 }' results$k/rapide_rec/SR.dat > results$k/rapide_rec/SRstat.dat
-rm -rf results$k/rapide_rec/SR_*.dat results$k/rapide_rec/SR.dat results$k/rapide_rec/UR.dat
+#rm -rf results$k/rapide_rec/SR_*.dat results$k/rapide_rec/SR.dat results$k/rapide_rec/UR.dat
 
-paste $(for i in {1..20}; do echo -n "results$k/rapide_iter/SR_$i.dat "; done) > results$k/rapide_iter/SR.dat
+paste $(for i in $(seq 1 $NSAMPLES); do echo -n "results$k/rapide_iter/SR_$i.dat "; done) > results$k/rapide_iter/SR.dat
 awk '{
     sum = 0;
     for (i = 1; i <= NF; i++) {
@@ -55,8 +57,8 @@ awk '{
     mean = sum / NF;
     print (NR-1)*5, mean;
 }' results$k/rapide_iter/SR.dat > results$k/rapide_iter/SRstat.dat
-rm -rf results$k/rapide_iter/SR_*.dat results$k/rapide_iter/SR.dat results$k/rapide_iter/UR.dat
+#rm -rf results$k/rapide_iter/SR_*.dat results$k/rapide_iter/SR.dat results$k/rapide_iter/UR.dat
 
-rm -rf results$k/naif_rec/num.dat
+#rm -rf results$k/naif_rec/num.dat
 
 done

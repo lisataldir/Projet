@@ -1,5 +1,6 @@
 #! /bin/bash
 
+NSAMPLES=10
 echo "# Creating subdirectory results/naif_iter, results/naif_rec, results/rapide_iter and results/rapide_rec"
 for i in {0..5}
 do
@@ -12,7 +13,7 @@ x=(1.34907566301 1.318974023 1.27987347 1.25 1.3 2)
 
 for k in {0..5}
 do
-for i in {1..33}
+  for i in $(seq 1 $NSAMPLES)
 do
 echo "# Creating folder results1/naif_rec/SR_$i.dat"
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./main "${x[$k]}" 0 > results$k/naif_rec/SR_$i.dat
