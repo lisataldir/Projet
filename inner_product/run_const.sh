@@ -78,6 +78,8 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 i=$((i + 10))
 done
 
+docker rm $(docker ps -aq)
+
 make clean
 
 rm -Rf UR/*.dat SR/*.dat ref SR/*.err

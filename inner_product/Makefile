@@ -1,6 +1,8 @@
-CC = verificarlo-c
+CC = clang-7
+CC_VERIFICARLO = verificarlo-c
 CFLAGS3 = -g -Wall -O0
 DOCKER = docker run -v "$(PWD)":/workdir verificarlo/verificarlo
+LKFLAGS = -lm
 
 all: vec_gen ref_main ur_main ur_err sr_main sr_err stat
 
@@ -25,9 +27,9 @@ ur_main.o: ur_main.c algo.h
 
 
 sr_main: sr_main.o prod.o
-	$(DOCKER) $(CC) -o $@ $^
+	$(DOCKER) $(CC_VERIFICARLO) -o $@ $^
 sr_main.o: sr_main.c algo.h
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+	$(DOCKER) $(CC_VERIFICARLO) $(CFLAGS3) -c $<
 
 
 prod.o: prod.c algo.h
@@ -47,7 +49,7 @@ sr_err.o: sr_err.c
 
 
 stat: stat.o
-	$(DOCKER) $(CC) -o $@ $^ -lm
+	$(DOCKER) $(CC) -o $@ $^ $(LKFLAGS)
 stat.o: stat.c
 	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 

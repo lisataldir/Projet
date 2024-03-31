@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "__locale": "c",
-    "chrono": "c",
-    "functional": "c"
-  },
-  "C_Cpp_Runner.msvcBatchPath": ""
-}
