@@ -1,6 +1,6 @@
 #! /bin/bash
 
-NSAMPLES=10
+NSAMPLES=33
 echo "# Creating subdirectory results/naif_iter, results/naif_rec, results/rapide_iter and results/rapide_rec"
 for i in {0..5}
 do
