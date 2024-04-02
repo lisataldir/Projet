@@ -1,6 +1,6 @@
 #! /bin/bash
 
-NSAMPLES=10
+NSAMPLES=33
 
 for k in {0..5}
 do
