@@ -33,7 +33,7 @@ start = time.time()
 for i in range(nb_iter):
     r_naif = exp_naif(a.clone(),n)
 end = time.time()
-print(f"naif\t{r_naif}\t{start:.17f}\t{end:.17f}")
+print(f"naif\t{r_naif}\t{start:.17f}\t{end:.17f}") 
 
 r_rapid = 0.0
 start = time.time()
