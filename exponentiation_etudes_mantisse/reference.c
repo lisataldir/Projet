@@ -21,15 +21,11 @@ double ref_exp_nr(double x, int n)
 
 double ref_exp_rr(double x, int n)
 {
-    double tmp;
-    if(n == 0) return 1;
-
+    if(n == 0) return 1.0f;
     if(n % 2 == 0) {
-        tmp = ref_exp_rr(x, n/2);
-        return tmp * tmp;
+        return ref_exp_rr(x*x, n/2);
     } else {
-        tmp = ref_exp_rr(x, (n-1)/2);
-        return x * tmp * tmp;
+        return x*ref_exp_rr(x*x, (n-1)/2);
     }
 }
 
