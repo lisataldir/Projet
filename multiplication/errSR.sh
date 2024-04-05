@@ -6,7 +6,7 @@ for k in {0..2}
 do
 # Numérotation
 awk '{
-    print (NR-1)*1000;
+    print (NR-1)*500;
 }' results$k/UR.dat > results$k/num.dat
 paste "results$k/num.dat" "results$k/UR.dat" > results$k/URstat.dat
 
@@ -18,7 +18,7 @@ awk '{
         sum += $i;
     }
     mean = sum / NF;
-    print (NR-1)*1000, mean;
+    print (NR-1)*500, mean;
 }' results$k/SR.dat > results$k/SRstat.dat
 #rm -rf results$k/SR_*.dat results$k/SR.dat results$k/UR.dat
 
