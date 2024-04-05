@@ -45,6 +45,6 @@ set key top left
 set xlabel 'Itérations (n)'
 set ylabel 'Erreur relative'
 
-plot "../results2/SRstat.dat" w l lw 2 lc rgb "#add8e6" title 'x=1.2', \
-     "../results1/SRstat.dat" w l lw 2 lc rgb "#4169e1" title 'x=1.1', \
-     "../results0/SRstat.dat" w l lw 2 lc rgb "#00008b" title 'x=0.1'
+plot "../results2/SRstat.dat" w lp lw 2 lc rgb "#41d47f" title 'x=1.2', \
+     "../results1/SRstat.dat" w lp lw 2 lc rgb "#84d312" title 'x=1.1', \
+     "../results0/SRstat.dat" w lp lw 2 lc rgb "#d3aa12" title 'x=0.1'
