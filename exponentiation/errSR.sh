@@ -2,7 +2,7 @@
 
 NSAMPLES=33
 
-for k in {0..7}
+for k in {0..5}
 do
 # Numérotation
 awk '{

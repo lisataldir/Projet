@@ -2,16 +2,16 @@
 
 NSAMPLES=33
 echo "# Creating subdirectory results/results/naif_iter, results/results/naif_rec, results/results/rapide_iter and results/results/rapide_rec"
-for i in {0..7}
+for i in {0..5}
 do
 mkdir -p results/results$i/naif_iter results/results$i/naif_rec results/results$i/rapide_iter results/results$i/rapide_rec
 done
 
 make 
 
-x=(0.999999 1.000001 1.000010 1.000011 1.000100 1.000101 1.000111)
+x=(0.999999 1.000001 1.000010 1.000871 1.000129 1.000111)
 
-for k in {0..7}
+for k in {0..5}
 do
   for i in $(seq 1 $NSAMPLES)
 do

@@ -11,12 +11,12 @@ int main(int argc, char **argv)
 
     float x = atof(argv[1]);
     int ind = atoi(argv[2]);
-    int N = 5001;
+    int N = 10001;
 
     double ref, err;
     float val;
 
-    for (int n = 0; n < N; n+=500)
+    for (int n = 0; n < N; n+=751)
     {
         double ref = ref_exp((double)x, n);
         float val;

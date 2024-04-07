@@ -1,6 +1,6 @@
-# Comparaison méthodes itératives
+# Comparaison méthodes itératives plot 0
 set terminal png size 600, 400
-set output 'plot0/plot_method_iter.png'
+set output 'plot0/plot_method_iter_rapide0.png'
 
 set size square
 set grid
@@ -8,34 +8,94 @@ set key top left
 set xlabel 'Puissance (n)'
 set ylabel 'Erreur relative'
 
-RN_ni = "../results/results0/naif_iter/URstat.dat"
-SR_ni = "../results/results0/naif_iter/SRstat.dat"
-RN_ri = "../results/results0/rapide_iter/URstat.dat"
-SR_ri = "../results/results0/rapide_iter/SRstat.dat"
+RN_ni = "../results/results0/rapide_iter/URstat.dat"
+SR_ni = "../results/results0/rapide_iter/SRstat.dat"
 
-plot RN_ni w lp lw 1.7 lc rgb "#333333" title "exp naif RN", \
-     SR_ni w lp lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
-     RN_ri w lp lw 1.7 lc rgb "#999999" title "exp rapide RN", \
-     SR_ri w lp lw 1.7 lc rgb "#9999FF" title "exp rapide SR", \
-     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "#b238cb" title "srqt(n)*u"
+plot RN_ni w p pt 3 ps 2 lc rgb "#129bd3" title "RN", \
+     SR_ni w p pt 9 ps 2 lc rgb "#41d47f" title "SR", \
+     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "black" title "srqt(n)*u"
 
-# Comparaison méthodes récursives
+# plot 1
 set terminal png size 600, 400
-set output 'plot0/plot_method_rec.png'  
+set output 'plot1/plot_method_iter_rapide1.png'
 
 set size square
 set grid
 set key top left
-set xlabel 'Puissance (n)'        
-set ylabel 'Erreur relative' 
+set xlabel 'Puissance (n)'
+set ylabel 'Erreur relative'
 
-RN_RN = "../results/results0/naif_rec/URstat.dat"
-SR_RN = "../results/results0/naif_rec/SRstat.dat"
-RN_rr = "../results/results0/rapide_rec/URstat.dat"
-SR_rr = "../results/results0/rapide_rec/SRstat.dat"
+RN_ni = "../results/results1/rapide_iter/URstat.dat"
+SR_ni = "../results/results1/rapide_iter/SRstat.dat"
 
-plot RN_RN w lp lw 1.7 lc rgb "#333333" title "exp naif RN", \
-     SR_RN w lp lw 1.7 lc rgb "#0000FF" title "exp naif SR", \
-     RN_rr w lp lw 1.7 lc rgb "#999999" title "exp rapide RN", \
-     SR_rr w lp lw 1.7 lc rgb "#9999FF" title "exp rapide SR", \
-     sqrt(x)*(2**(-23)) w l lt 2 lc rgb "#b238cb" title "srqt(n)*u"
+plot RN_ni w p pt 3 ps 2 lc rgb "#129bd3" title "RN", \
+     SR_ni w p pt 9 ps 2 lc rgb "#41d47f" title "SR", \
+     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "black" title "srqt(n)*u"
+
+# plot 2
+set terminal png size 600, 400
+set output 'plot2/plot_method_iter_rapide2.png'
+
+set size square
+set grid
+set key top left
+set xlabel 'Puissance (n)'
+set ylabel 'Erreur relative'
+
+RN_ni = "../results/results2/rapide_iter/URstat.dat"
+SR_ni = "../results/results2/rapide_iter/SRstat.dat"
+
+plot RN_ni w p pt 3 ps 2 lc rgb "#129bd3" title "RN", \
+     SR_ni w p pt 9 ps 2 lc rgb "#41d47f" title "SR", \
+     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "black" title "srqt(n)*u"
+
+# plot 3
+set terminal png size 600, 400
+set output 'plot3/plot_method_iter_rapide3.png'
+
+set size square
+set grid
+set key top left
+set xlabel 'Puissance (n)'
+set ylabel 'Erreur relative'
+
+RN_ni = "../results/results3/rapide_iter/URstat.dat"
+SR_ni = "../results/results3/rapide_iter/SRstat.dat"
+
+plot RN_ni w p pt 3 ps 2 lc rgb "#129bd3" title "RN", \
+     SR_ni w p pt 9 ps 2 lc rgb "#41d47f" title "SR", \
+     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "black" title "srqt(n)*u"
+
+# plot 4
+set terminal png size 600, 400
+set output 'plot4/plot_method_iter_rapide4.png'
+
+set size square
+set grid
+set key top left
+set xlabel 'Puissance (n)'
+set ylabel 'Erreur relative'
+
+RN_ni = "../results/results4/rapide_iter/URstat.dat"
+SR_ni = "../results/results4/rapide_iter/SRstat.dat"
+
+plot RN_ni w p pt 3 ps 2 lc rgb "#129bd3" title "RN", \
+     SR_ni w p pt 9 ps 2 lc rgb "#41d47f" title "SR", \
+     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "black" title "srqt(n)*u"
+
+# plot 5
+set terminal png size 600, 400
+set output 'plot5/plot_method_iter_rapide5.png'
+
+set size square
+set grid
+set key top left
+set xlabel 'Puissance (n)'
+set ylabel 'Erreur relative'
+
+RN_ni = "../results/results5/rapide_iter/URstat.dat"
+SR_ni = "../results/results5/rapide_iter/SRstat.dat"
+
+plot RN_ni w p pt 3 ps 2 lc rgb "#129bd3" title "RN", \
+     SR_ni w p pt 9 ps 2 lc rgb "#41d47f" title "SR", \
+     sqrt(x)*(2**(-23)) w l lt 2 lw 2 lc rgb "black" title "srqt(n)*u"
