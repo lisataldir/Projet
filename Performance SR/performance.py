@@ -35,6 +35,14 @@ def exp_rapid(x, n):
         #xm.mark_step()
     return r
 
+
+r_sum = 0.0
+start = time.time()
+for i in range(nb_iter):
+    r_sum = somme(a.clone(),n)
+end = time.time()
+print(f"naif\t{r_sumf}\t{start:.17f}\t{end:.17f}") 
+
 r_naif = 0.0
 start = time.time()
 for i in range(nb_iter):
