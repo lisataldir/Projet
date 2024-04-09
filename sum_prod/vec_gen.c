@@ -20,7 +20,7 @@ int main(int argc, char** argv)
     }
     for (int i = 0; i < size; i++)
     {
-        a[i] = (double)rand() / (double)RAND_MAX;
+        a[i] = (double)rand() * 2 / (double)RAND_MAX; // random number between 0 and 2: expectancy 1
         fprintf(file, "%.17lf\n", a[i]);
     }
     return 0;

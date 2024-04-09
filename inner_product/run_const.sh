@@ -46,22 +46,27 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 echo -n "$i " >> UR/UR_$v.err
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./ur_err UR/UR_$v\_$i.dat ref/ref_$v\_$i.dat >> UR/UR_$v.err
 
-    for k in {1..30}
+    for k in {1..20}
     do
     # SR results
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $i $x SR/SR_$x\_$i\_$k.dat
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $i $y SR/SR_$y\_$i\_$k.dat
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $i $z SR/SR_$z\_$i\_$k.dat
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $i $w SR/SR_$w\_$i\_$k.dat
-    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $i $v SR/SR_$v\_$i\_$k.dat
-
+    
     # SR errors
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$x\_$i\_$k.dat ref/ref_$x\_$i.dat >> SR/SR_$x\_$i.err
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$y\_$i\_$k.dat ref/ref_$y\_$i.dat >> SR/SR_$y\_$i.err
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$z\_$i\_$k.dat ref/ref_$z\_$i.dat >> SR/SR_$z\_$i.err
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$w\_$i\_$k.dat ref/ref_$w\_$i.dat >> SR/SR_$w\_$i.err
-    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$v\_$i\_$k.dat ref/ref_$v\_$i.dat >> SR/SR_$v\_$i.err
+    
+    rm -Rf UR/*.dat SR/*.dat
+    docker rm $(docker ps -aq)
     done 
+
+# SR for v=2 (only one repeat)
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $i $v SR/SR_$v\_$i\_$k.dat
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$v\_$i\_$k.dat ref/ref_$v\_$i.dat >> SR/SR_$v\_$i.err
 
 # calculate mean value and standard deviation of the errors
 echo -n "$i " >> SR/SR_$x.stat
@@ -82,4 +87,4 @@ docker rm $(docker ps -aq)
 
 make clean
 
-rm -Rf UR/*.dat SR/*.dat ref SR/*.err
+rm -Rf ref SR/*.err
