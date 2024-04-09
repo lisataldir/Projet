@@ -22,15 +22,11 @@ float exp_nr(float x, int n)
 
 float exp_rr(float x, int n)
 {
-    float tmp;
-     if(n == 0) return 1;
-
+    if(n == 0) return 1.0f;
     if(n % 2 == 0) {
-        tmp = exp_rr(x, n/2);
-        return tmp * tmp;
+        return exp_rr(x*x, n/2);
     } else {
-        tmp = exp_rr(x, (n-1)/2);
-        return x * tmp * tmp;
+        return x*exp_rr(x*x, (n-1)/2);
     }
 }
 

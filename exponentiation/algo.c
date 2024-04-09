@@ -4,7 +4,7 @@
 // version float
 float exp_ni(float x, int n)
 {
-    float r = 1;
+    float r = 1.0f;
     for(int i = 0; i < n; i++)
     {
         r *=x;
@@ -16,7 +16,7 @@ float exp_nr(float x, int n)
 {
     if (n==0)
     {
-        return 1;
+        return 1.0f;
     }
     return x * exp_nr(x, n-1);
 }

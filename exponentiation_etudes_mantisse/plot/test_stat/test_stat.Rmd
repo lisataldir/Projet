@@ -1,0 +1,29 @@
+
+```{r}
+data <- read.table("../../results/naif_iter/err_mantisse.dat", header=FALSE)
+short_data <- data[1:5000,1]
+```
+
+
+```{r}
+shapiro.test(short_data)
+```
+
+
+```{r}
+hist(short_data)
+plot(density(short_data))
+qqnorm(short_data)
+qqline(short_data)
+```
+
+```{r}
+library(MASS)
+fit_normal <- fitdistr(short_data, densfun = "normal")
+
+fit_exponential <- fitdistr(short_data, densfun = "exponential")
+
+print(fit_normal)
+print(fit_exponential)
+```
+

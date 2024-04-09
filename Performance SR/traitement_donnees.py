@@ -1,4 +1,7 @@
 import os
+import sys
+
+nb_iter = int(sys.argv[1])
 
 def elaps(file_path):
     print(file_path)
@@ -9,10 +12,10 @@ def elaps(file_path):
     with open(file_path, 'r') as file:
         with open(elaps_path, 'a') as elaps_file:
             for line in file:
-                columns = line.strip().split()
+                columns = line.strip("\t").split()
                 if len(columns) == 4:
                     difference = float(columns[3]) - float(columns[2])
-                    res = difference/1000
+                    res = difference/nb_iter
                     print("Elaps ",res)
                     elaps_file.write(str(res)+"\n")
                 else:
