@@ -1,6 +1,7 @@
 CC = clang-7
 CC_VERIFICARLO = verificarlo-c
 CFLAGS3 = -g -Wall -O0
+CFLAGS2 = -g -Wall -O2
 DOCKER = docker run -v "$(PWD)":/workdir verificarlo/verificarlo
 LKFLAGS = -lm
 
@@ -33,7 +34,7 @@ sr_main.o: sr_main.c algo.h
 
 
 calcul.o: calcul.c algo.h
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+	$(DOCKER) $(CC) $(CFLAGS2) -c $<
 
 
 ur_err: ur_err.o
