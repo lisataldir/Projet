@@ -10,6 +10,13 @@ a = torch.tensor(2, dtype=torch.float64)#.to(device)
 n = 100
 nb_iter = int(sys.argv[1])
 
+def somme(x,n):
+    r =  torch.tensor(0.0, dtype=torch.float64)#.to(device)
+    for i in range(n):
+        r += x
+        #xm.mark_step()
+    return r
+
 def exp_naif(x,n):
     r =  torch.tensor(1.0, dtype=torch.float64)#.to(device)
     for i in range(n):
