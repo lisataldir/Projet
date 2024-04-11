@@ -34,13 +34,9 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $j $i $v SR/SR_$v\_$i\_$j.dat
 
 # SR errors (only one repeat cause 2 shall not involke errors)
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$v\_$i\_$j.dat ref/ref_$v\_$i\_$j.dat >> SR/SR_$v\_$i\_$j.err
+sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_err SR/SR_$v\_$i\_$j.dat ref/ref_$v\_$i\_$j.dat >> SR/SR_$v\_$i\_$j.err
 
-# calculate mean value and standard deviation of the errors
-echo -n "$i " >> SR/SR_$v\_$j.stat
-sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$v\_$i\_$j.err >> SR/SR_$v\_$j.stat
-
-rm -Rf UR/*.dat SR/*.dat SR/*.err
+rm -Rf UR/*.dat SR/*.dat
 docker rm $(docker ps -aq)
 
 j=$((j + 10))

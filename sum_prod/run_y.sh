@@ -44,7 +44,7 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 # calculate mean value and standard deviation of the errors
 echo -n "$i " >> SR/SR_$y\_$j.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$y\_$i\_$j.err >> SR/SR_$y\_$j.stat
-rm -Rf SR/*.err
+# rm -Rf SR/*.err
 
 j=$((j + 1))
 done
@@ -67,7 +67,7 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
     # SR results
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_main 1 $j $i $y SR/SR_$y\_$i\_$j\_$k.dat
     # SR errors
-    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./sr_err SR/SR_$y\_$i\_$j\_$k.dat ref/ref_$y\_$i\_$j.dat >> SR/SR_$y\_$i\_$j.err
+    sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_mca_int.so --mode=rr" verificarlo/verificarlo ./sr_err SR/SR_$y\_$i\_$j\_$k.dat ref/ref_$y\_$i\_$j.dat >> SR/SR_$y\_$i\_$j.err
     
     rm -Rf UR/*.dat SR/*.dat
     docker rm $(docker ps -aq)
@@ -76,7 +76,7 @@ sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verifi
 # calculate mean value and standard deviation of the errors
 echo -n "$i " >> SR/SR_$y\_$j.stat
 sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./stat SR/SR_$y\_$i\_$j.err >> SR/SR_$y\_$j.stat
-rm -Rf SR/*.err
+# rm -Rf SR/*.err
 
 j=$((j * 10))
 done

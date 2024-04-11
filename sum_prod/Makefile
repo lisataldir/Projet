@@ -30,11 +30,11 @@ ur_main.o: ur_main.c algo.h
 sr_main: sr_main.o calcul.o
 	$(DOCKER) $(CC_VERIFICARLO) -o $@ $^
 sr_main.o: sr_main.c algo.h
-	$(DOCKER) $(CC_VERIFICARLO) $(CFLAGS3) -c $<
+	$(DOCKER) $(CC) $(CFLAGS3) -c $<
 
 
 calcul.o: calcul.c algo.h
-	$(DOCKER) $(CC) $(CFLAGS2) -c $<
+	$(DOCKER) $(CC_VERIFICARLO) $(CFLAGS2) -c $<
 
 
 ur_err: ur_err.o
@@ -44,9 +44,9 @@ ur_err.o: ur_err.c
 
 
 sr_err: sr_err.o
-	$(DOCKER) $(CC) -o $@ $^
+	$(DOCKER) $(CC_VERIFICARLO) -o $@ $^
 sr_err.o: sr_err.c
-	$(DOCKER) $(CC) $(CFLAGS3) -c $<
+	$(DOCKER) $(CC_VERIFICARLO) $(CFLAGS3) -c $<
 
 
 stat: stat.o
