@@ -1,7 +1,7 @@
 import os
 import sys
 
-nb_iter = int(sys.argv[1])
+nb_iter = 1000
 
 def elaps(file_path):
     print(file_path)
@@ -23,7 +23,8 @@ def elaps(file_path):
                     return
 
 
-raw_data_paths = ["timing_UR/raw_naif.dat","timing_UR/raw_rapid.dat","timing_SR/raw_naif.dat","timing_SR/raw_rapid.dat"]
+raw_data_paths = ["timing_UR/timing_UR/results_sum.dat","timing_UR/timing_UR/results_naif.dat","timing_UR/timing_UR/results_rapid.dat",
+                  "timing_SR/timing_SR/results_sum.dat","timing_SR/timing_SR/results_naif.dat","timing_SR/timing_SR/results_rapid.dat"]
 
 for raw_path in raw_data_paths :
     elaps(raw_path)
