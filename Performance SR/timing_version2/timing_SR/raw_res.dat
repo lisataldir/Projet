@@ -1,0 +1,1150 @@
+2024-04-12 13:00:45.000559:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:00:45.000560:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:00:45.000566:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:00:45.000566:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:00:45.000705:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:00:45.000706:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.009765625*1000	1712926845.55700325965881348	1712926859.11702752113342285
+2024-04-12 13:00:59.000118:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:00:59.000119:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:00:59.000124:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:00:59.000125:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:00:59.000271:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:00:59.000271:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.009765625^1000	1712926859.11721968650817871	1712926872.82972550392150879
+2024-04-12 13:01:12.000831:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:01:12.000832:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:01:12.000837:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:01:12.000838:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:01:12.000844:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:01:12.000845:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:01:12.000851:  35243  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:01:12.000852:  35243  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.009765625^1000	1712926872.82988142967224121	1712926873.11306500434875488
+2024-04-12 13:02:01.000591:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:01.000592:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:01.000598:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:01.000598:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:01.000737:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:01.000738:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0029296875*1000	1712926921.58898997306823730	1712926935.28788542747497559
+2024-04-12 13:02:15.000289:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:15.000290:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:15.000295:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:15.000296:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:15.000430:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:15.000430:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0029296875^1000	1712926935.28808856010437012	1712926948.96791720390319824
+2024-04-12 13:02:28.000969:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:28.000970:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:28.000975:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:28.000976:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:28.000981:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:28.000982:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:02:28.000989:  35275  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:02:28.000990:  35275  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0029296875^1000	1712926948.96807670593261719	1712926949.25057506561279297
+2024-04-12 13:03:18.000135:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:18.000136:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:18.000142:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:18.000142:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:18.000284:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:18.000285:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.005859375*1000	1712926998.13297653198242188	1712927011.85342431068420410
+2024-04-12 13:03:31.000854:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:31.000855:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:31.000860:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:31.000861:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:31.000995:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:31.000996:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.005859375^1000	1712927011.85362267494201660	1712927025.59307599067687988
+2024-04-12 13:03:45.000594:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:45.000595:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:45.000600:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:45.000601:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:45.000607:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:45.000607:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:03:45.000614:  35304  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:03:45.000615:  35304  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.005859375^1000	1712927025.59325599670410156	1712927025.87217545509338379
+2024-04-12 13:04:42.000103:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:04:42.000104:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:04:42.000109:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:04:42.000110:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:04:42.000248:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:04:42.000249:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0068359375*1000	1712927082.10090184211730957	1712927095.71591758728027344
+2024-04-12 13:04:55.000717:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:04:55.000718:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:04:55.000723:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:04:55.000724:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:04:55.000863:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:04:55.000863:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0068359375^1000	1712927095.71610975265502930	1712927109.44442725181579590
+2024-04-12 13:05:09.000445:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:09.000446:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:05:09.000452:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:09.000453:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:05:09.000458:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:09.000459:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:05:09.000466:  35333  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:09.000467:  35333  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0068359375^1000	1712927109.44460678100585938	1712927109.72799420356750488
+2024-04-12 13:05:58.000647:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:58.000648:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:05:58.000653:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:58.000654:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:05:58.000795:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:05:58.000795:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0068359375*1000	1712927158.64497900009155273	1712927172.32267999649047852
+2024-04-12 13:06:12.000324:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:12.000324:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:06:12.000330:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:12.000331:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:06:12.000470:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:12.000470:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0068359375^1000	1712927172.32289910316467285	1712927186.03880310058593750
+2024-04-12 13:06:26.000040:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:26.000041:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:06:26.000046:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:26.000047:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:06:26.000052:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:26.000053:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:06:26.000060:  35364  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:06:26.000061:  35364  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0068359375^1000	1712927186.03897190093994141	1712927186.32294583320617676
+2024-04-12 13:07:15.000447:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:15.000448:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:15.000453:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:15.000454:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:15.000599:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:15.000599:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712927235.44497489929199219	1712927249.19535374641418457
+2024-04-12 13:07:29.000196:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:29.000197:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:29.000202:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:29.000203:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:29.000343:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:29.000343:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712927249.19555044174194336	1712927262.67327713966369629
+2024-04-12 13:07:42.000674:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:42.000675:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:42.000681:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:42.000681:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:42.000687:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:42.000688:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:07:42.000694:  35393  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:07:42.000695:  35393  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712927262.67344164848327637	1712927262.95675396919250488
+2024-04-12 13:08:31.000991:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:31.000992:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:31.000997:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:31.000998:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:32.000144:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:32.000144:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0048828125*1000	1712927311.98900246620178223	1712927325.49326539039611816
+2024-04-12 13:08:45.000494:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:45.000495:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:45.000500:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:45.000501:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:45.000642:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:45.000643:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0048828125^1000	1712927325.49346446990966797	1712927339.29174947738647461
+2024-04-12 13:08:59.000293:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:59.000294:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:59.000299:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:59.000300:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:59.000305:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:59.000306:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:08:59.000313:  35422  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:08:59.000313:  35422  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0048828125^1000	1712927339.29192137718200684	1712927339.57081699371337891
+2024-04-12 13:09:48.000535:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:09:48.000536:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:09:48.000542:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:09:48.000542:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:09:48.000689:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:09:48.000690:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0068359375*1000	1712927388.53301787376403809	1712927402.28079724311828613
+2024-04-12 13:10:02.000282:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:02.000283:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:10:02.000287:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:02.000288:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:10:02.000429:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:02.000429:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0068359375^1000	1712927402.28099584579467773	1712927415.97235178947448730
+2024-04-12 13:10:15.000973:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:15.000974:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:10:15.000980:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:15.000981:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:10:15.000987:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:15.000987:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:10:15.000994:  35451  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:10:15.000995:  35451  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0068359375^1000	1712927415.97253012657165527	1712927416.25900006294250488
+2024-04-12 13:11:05.000079:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:05.000080:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:05.000085:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:05.000086:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:05.000227:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:05.000228:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712927465.07699680328369141	1712927478.75317025184631348
+2024-04-12 13:11:18.000754:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:18.000755:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:18.000760:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:18.000761:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:18.000901:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:18.000902:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712927478.75339674949645996	1712927492.49065947532653809
+2024-04-12 13:11:32.000492:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:32.000493:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:32.000498:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:32.000499:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:32.000504:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:32.000505:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:11:32.000512:  35482  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:11:32.000513:  35482  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712927492.49082136154174805	1712927492.77613258361816406
+2024-04-12 13:12:21.000879:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:21.000880:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:21.000886:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:21.000886:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:22.000032:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:22.000033:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712927541.87700176239013672	1712927555.48347616195678711
+2024-04-12 13:12:35.000485:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:35.000485:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:35.000491:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:35.000491:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:35.000627:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:35.000628:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712927555.48369812965393066	1712927569.04024553298950195
+2024-04-12 13:12:49.000041:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:49.000042:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:49.000048:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:49.000048:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:49.000054:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:49.000055:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:12:49.000061:  35512  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:12:49.000062:  35512  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712927569.04041028022766113	1712927569.31629395484924316
+2024-04-12 13:13:38.000423:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:13:38.000424:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:13:38.000430:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:13:38.000431:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:13:38.000570:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:13:38.000571:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0048828125*1000	1712927618.42098665237426758	1712927631.97970366477966309
+2024-04-12 13:13:51.000981:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:13:51.000981:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:13:51.000987:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:13:51.000988:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:13:52.000128:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:13:52.000128:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0048828125^1000	1712927631.97988939285278320	1712927645.64374589920043945
+2024-04-12 13:14:05.000645:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:05.000646:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:14:05.000651:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:05.000652:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:14:05.000658:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:05.000658:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:14:05.000665:  35541  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:05.000666:  35541  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0048828125^1000	1712927645.64391493797302246	1712927645.92291450500488281
+2024-04-12 13:14:54.000967:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:54.000968:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:14:54.000974:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:54.000974:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:14:55.000113:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:14:55.000114:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0068359375*1000	1712927694.96497583389282227	1712927708.56845831871032715
+2024-04-12 13:15:08.000569:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:08.000570:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:15:08.000576:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:08.000576:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:15:08.000716:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:08.000716:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0068359375^1000	1712927708.56867527961730957	1712927722.26918172836303711
+2024-04-12 13:15:22.000270:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:22.000271:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:15:22.000277:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:22.000278:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:15:22.000283:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:22.000284:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:15:22.000291:  35570  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:15:22.000292:  35570  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0068359375^1000	1712927722.26935887336730957	1712927722.55355381965637207
+2024-04-12 13:16:11.000511:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:11.000512:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:11.000517:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:11.000518:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:11.000661:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:11.000662:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712927771.50886774063110352	1712927785.24030780792236328
+2024-04-12 13:16:25.000241:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:25.000242:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:25.000247:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:25.000248:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:25.000387:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:25.000388:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712927785.24050688743591309	1712927798.91687369346618652
+2024-04-12 13:16:38.000918:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:38.000919:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:38.000924:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:38.000925:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:38.000930:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:38.000931:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:16:38.000938:  35601  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:16:38.000938:  35601  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712927798.91704082489013672	1712927799.19557309150695801
+2024-04-12 13:17:28.000310:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:28.000311:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:28.000317:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:28.000318:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:28.000458:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:28.000459:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712927848.30843544006347656	1712927861.92705583572387695
+2024-04-12 13:17:41.000928:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:41.000929:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:41.000934:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:41.000935:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:42.000072:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:42.000073:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712927861.92727732658386230	1712927875.65548706054687500
+2024-04-12 13:17:55.000656:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:55.000657:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:55.000663:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:55.000664:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:55.000669:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:55.000670:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:17:55.000677:  35633  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:17:55.000678:  35633  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712927875.65566754341125488	1712927875.93562722206115723
+2024-04-12 13:18:45.000111:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:18:45.000112:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:18:45.000117:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:18:45.000118:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:18:45.000257:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:18:45.000258:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.009765625*1000	1712927925.10894536972045898	1712927938.50174593925476074
+2024-04-12 13:18:58.000503:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:18:58.000504:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:18:58.000509:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:18:58.000510:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:18:58.000647:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:18:58.000648:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.009765625^1000	1712927938.50193834304809570	1712927951.97586297988891602
+2024-04-12 13:19:11.000977:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:19:11.000978:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:19:11.000983:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:19:11.000984:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:19:11.000990:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:19:11.000990:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:19:11.000997:  35665  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:19:11.000998:  35665  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.009765625^1000	1712927951.97602272033691406	1712927952.26251721382141113
+2024-04-12 13:20:01.000143:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:01.000144:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:01.000149:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:01.000150:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:01.000292:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:01.000293:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0087890625*1000	1712928001.14097309112548828	1712928014.68389725685119629
+2024-04-12 13:20:14.000685:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:14.000686:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:14.000691:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:14.000692:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:14.000832:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:14.000833:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0087890625^1000	1712928014.68409872055053711	1712928028.34091496467590332
+2024-04-12 13:20:28.000342:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:28.000343:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:28.000348:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:28.000349:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:28.000354:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:28.000355:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:20:28.000362:  35694  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:20:28.000363:  35694  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0087890625^1000	1712928028.34107947349548340	1712928028.61741209030151367
+2024-04-12 13:21:17.000943:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:17.000944:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:17.000949:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:17.000950:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:18.000092:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:18.000092:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0087890625*1000	1712928077.94101834297180176	1712928091.56427335739135742
+2024-04-12 13:21:31.000565:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:31.000566:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:31.000571:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:31.000572:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:31.000712:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:31.000712:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0087890625^1000	1712928091.56445956230163574	1712928105.26823067665100098
+2024-04-12 13:21:45.000269:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:45.000270:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:45.000276:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:45.000276:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:45.000282:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:45.000283:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:21:45.000290:  35725  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:21:45.000291:  35725  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0087890625^1000	1712928105.26839947700500488	1712928105.54850935935974121
+2024-04-12 13:22:34.000231:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:22:34.000232:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:22:34.000237:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:22:34.000238:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:22:34.000382:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:22:34.000383:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.005859375*1000	1712928154.22901940345764160	1712928167.97436928749084473
+2024-04-12 13:22:47.000975:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:22:47.000976:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:22:47.000981:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:22:47.000982:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:22:48.000122:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:22:48.000122:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.005859375^1000	1712928167.97456622123718262	1712928181.63233208656311035
+2024-04-12 13:23:01.000633:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:01.000634:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:23:01.000640:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:01.000640:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:23:01.000646:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:01.000647:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:23:01.000653:  35754  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:01.000654:  35754  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.005859375^1000	1712928181.63251090049743652	1712928181.91689634323120117
+2024-04-12 13:23:50.000519:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:50.000520:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:23:50.000526:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:50.000526:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:23:50.000673:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:23:50.000673:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712928230.51699471473693848	1712928244.20503520965576172
+2024-04-12 13:24:04.000206:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:04.000207:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:24:04.000212:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:04.000213:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:24:04.000348:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:04.000349:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712928244.20525908470153809	1712928257.79386019706726074
+2024-04-12 13:24:17.000795:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:17.000796:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:24:17.000802:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:17.000802:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:24:17.000808:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:17.000809:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:24:17.000815:  35785  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:24:17.000816:  35785  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712928257.79403877258300781	1712928258.07529711723327637
+2024-04-12 13:25:06.000807:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:06.000808:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:06.000814:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:06.000814:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:06.000956:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:06.000956:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0087890625*1000	1712928306.80502343177795410	1712928320.52788329124450684
+2024-04-12 13:25:20.000529:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:20.000530:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:20.000535:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:20.000536:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:20.000671:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:20.000672:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0087890625^1000	1712928320.52807927131652832	1712928334.21852970123291016
+2024-04-12 13:25:34.000220:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:34.000220:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:34.000226:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:34.000227:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:34.000232:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:34.000233:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:25:34.000240:  35814  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:25:34.000240:  35814  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0087890625^1000	1712928334.21869063377380371	1712928334.49777340888977051
+2024-04-12 13:26:23.000607:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:23.000608:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:23.000614:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:23.000614:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:23.000761:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:23.000762:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0029296875*1000	1712928383.60498046875000000	1712928397.36842989921569824
+2024-04-12 13:26:37.000369:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:37.000370:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:37.000376:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:37.000376:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:37.000522:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:37.000522:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0029296875^1000	1712928397.36864686012268066	1712928411.17032599449157715
+2024-04-12 13:26:51.000171:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:51.000172:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:51.000178:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:51.000178:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:51.000184:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:51.000184:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:26:51.000191:  35845  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:26:51.000192:  35845  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0029296875^1000	1712928411.17049169540405273	1712928411.44801259040832520
+2024-04-12 13:27:40.000151:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:27:40.000152:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:27:40.000157:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:27:40.000158:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:27:40.000293:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:27:40.000293:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0087890625*1000	1712928460.14882135391235352	1712928473.77733683586120605
+2024-04-12 13:27:53.000778:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:27:53.000779:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:27:53.000784:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:27:53.000785:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:27:53.000925:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:27:53.000925:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0087890625^1000	1712928473.77753448486328125	1712928487.39568877220153809
+2024-04-12 13:28:07.000397:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:07.000398:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:28:07.000403:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:07.000404:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:28:07.000409:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:07.000410:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:28:07.000417:  35874  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:07.000417:  35874  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0087890625^1000	1712928487.39580988883972168	1712928487.68033456802368164
+2024-04-12 13:28:56.000439:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:56.000440:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:28:56.000445:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:56.000446:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:28:56.000588:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:28:56.000589:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0029296875*1000	1712928536.43686223030090332	1712928550.11888790130615234
+2024-04-12 13:29:10.000120:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:10.000121:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:29:10.000126:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:10.000127:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:29:10.000269:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:10.000270:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0029296875^1000	1712928550.11908531188964844	1712928563.72346067428588867
+2024-04-12 13:29:23.000724:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:23.000725:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:29:23.000731:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:23.000732:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:29:23.000737:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:23.000738:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:29:23.000744:  35904  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:29:23.000745:  35904  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0029296875^1000	1712928563.72362256050109863	1712928564.00305128097534180
+2024-04-12 13:30:12.000727:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:12.000728:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:12.000733:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:12.000734:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:12.000874:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:12.000875:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712928612.72490096092224121	1712928626.34934139251708984
+2024-04-12 13:30:26.000350:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:26.000351:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:26.000356:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:26.000357:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:26.000496:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:26.000497:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712928626.34956240653991699	1712928640.04765486717224121
+2024-04-12 13:30:40.000049:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:40.000049:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:40.000055:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:40.000056:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:40.000061:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:40.000062:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:30:40.000069:  35933  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:30:40.000069:  35933  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712928640.04777765274047852	1712928640.33120274543762207
+2024-04-12 13:31:29.000271:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:29.000272:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:29.000278:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:29.000278:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:29.000418:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:29.000418:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.009765625*1000	1712928689.26895260810852051	1712928702.83270096778869629
+2024-04-12 13:31:42.000834:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:42.000834:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:42.000839:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:42.000840:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:42.000981:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:42.000982:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.009765625^1000	1712928702.83289790153503418	1712928716.51526904106140137
+2024-04-12 13:31:56.000516:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:56.000517:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:56.000523:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:56.000523:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:56.000529:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:56.000530:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:31:56.000536:  35964  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:31:56.000537:  35964  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.009765625^1000	1712928716.51543092727661133	1712928716.79539537429809570
+2024-04-12 13:32:45.000559:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:32:45.000560:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:32:45.000565:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:32:45.000566:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:32:45.000715:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:32:45.000716:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712928765.55697822570800781	1712928779.02663874626159668
+2024-04-12 13:32:59.000028:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:32:59.000028:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:32:59.000034:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:32:59.000034:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:32:59.000174:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:32:59.000174:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712928779.02683901786804199	1712928792.51638984680175781
+2024-04-12 13:33:12.000517:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:33:12.000518:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:33:12.000524:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:33:12.000524:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:33:12.000530:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:33:12.000531:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:33:12.000537:  35993  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:33:12.000538:  35993  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712928792.51655745506286621	1712928792.79400944709777832
+2024-04-12 13:34:01.000847:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:01.000848:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:01.000853:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:01.000854:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:01.000995:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:01.000996:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0068359375*1000	1712928841.84501862525939941	1712928855.62943410873413086
+2024-04-12 13:34:15.000630:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:15.000631:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:15.000637:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:15.000637:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:15.000777:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:15.000777:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0068359375^1000	1712928855.62963151931762695	1712928869.30664706230163574
+2024-04-12 13:34:29.000308:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:29.000309:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:29.000314:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:29.000315:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:29.000320:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:29.000321:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:34:29.000328:  36022  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:34:29.000329:  36022  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0068359375^1000	1712928869.30682659149169922	1712928869.59087872505187988
+2024-04-12 13:35:25.000815:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:25.000816:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:25.000822:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:25.000822:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:25.000964:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:25.000964:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.001953125*1000	1712928925.81299281120300293	1712928939.48593735694885254
+2024-04-12 13:35:39.000487:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:39.000488:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:39.000493:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:39.000494:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:39.000628:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:39.000628:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.001953125^1000	1712928939.48613429069519043	1712928952.86843705177307129
+2024-04-12 13:35:52.000869:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:52.000870:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:52.000876:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:52.000876:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:52.000882:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:52.000882:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:35:52.000889:  36051  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:35:52.000890:  36051  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.001953125^1000	1712928952.86859178543090820	1712928953.15184426307678223
+2024-04-12 13:36:41.000847:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:36:41.000848:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:36:41.000854:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:36:41.000854:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:36:41.000995:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:36:41.000996:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0029296875*1000	1712929001.84499669075012207	1712929015.43726086616516113
+2024-04-12 13:36:55.000438:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:36:55.000439:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:36:55.000444:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:36:55.000445:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:36:55.000588:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:36:55.000588:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0029296875^1000	1712929015.43748331069946289	1712929029.14274001121520996
+2024-04-12 13:37:09.000144:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:09.000145:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:37:09.000150:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:09.000151:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:37:09.000156:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:09.000157:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:37:09.000164:  36082  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:09.000164:  36082  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0029296875^1000	1712929029.14290237426757812	1712929029.42730641365051270
+2024-04-12 13:37:58.000391:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:58.000392:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:37:58.000398:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:58.000399:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:37:58.000537:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:37:58.000537:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0068359375*1000	1712929078.38895273208618164	1712929092.08368134498596191
+2024-04-12 13:38:12.000085:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:12.000085:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:38:12.000090:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:12.000091:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:38:12.000234:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:12.000235:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0068359375^1000	1712929092.08386278152465820	1712929105.79018092155456543
+2024-04-12 13:38:25.000791:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:25.000792:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:38:25.000798:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:25.000799:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:38:25.000804:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:25.000805:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:38:25.000811:  36112  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:38:25.000812:  36112  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0068359375^1000	1712929105.79036021232604980	1712929106.07717561721801758
+2024-04-12 13:39:14.000935:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:14.000936:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:14.000941:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:14.000942:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:15.000085:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:15.000086:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712929154.93285655975341797	1712929168.61119341850280762
+2024-04-12 13:39:28.000612:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:28.000613:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:28.000618:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:28.000619:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:28.000759:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:28.000760:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712929168.61138772964477539	1712929182.23857665061950684
+2024-04-12 13:39:42.000240:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:42.000240:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:42.000246:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:42.000247:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:42.000252:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:42.000253:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:39:42.000260:  36141  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:39:42.000261:  36141  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712929182.23873686790466309	1712929182.51587986946105957
+2024-04-12 13:40:31.000223:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:31.000224:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:31.000229:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:31.000230:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:31.000376:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:31.000376:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712929231.22070050239562988	1712929244.87872266769409180
+2024-04-12 13:40:44.000880:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:44.000880:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:44.000886:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:44.000887:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:45.000027:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:45.000027:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712929244.87892460823059082	1712929258.71539759635925293
+2024-04-12 13:40:58.000716:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:58.000717:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:58.000723:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:58.000724:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:58.000729:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:58.000730:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:40:58.000737:  36170  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:40:58.000737:  36170  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712929258.71555995941162109	1712929258.99714493751525879
+2024-04-12 13:41:47.000767:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:41:47.000768:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:41:47.000773:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:41:47.000774:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:41:47.000917:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:41:47.000917:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.009765625*1000	1712929307.76471614837646484	1712929321.35523533821105957
+2024-04-12 13:42:01.000356:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:01.000357:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:42:01.000362:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:01.000363:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:42:01.000497:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:01.000498:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.009765625^1000	1712929321.35544061660766602	1712929334.84202957153320312
+2024-04-12 13:42:14.000843:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:14.000844:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:42:14.000849:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:14.000850:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:42:14.000856:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:14.000856:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:42:14.000863:  36201  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:42:14.000864:  36201  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.009765625^1000	1712929334.84221816062927246	1712929335.12893176078796387
+2024-04-12 13:43:04.000311:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:04.000312:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:04.000317:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:04.000318:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:04.000456:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:04.000457:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712929384.30900549888610840	1712929397.74838829040527344
+2024-04-12 13:43:17.000749:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:17.000750:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:17.000755:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:17.000756:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:17.000895:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:17.000896:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712929397.74858403205871582	1712929411.28554606437683105
+2024-04-12 13:43:31.000287:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:31.000287:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:31.000293:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:31.000294:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:31.000299:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:31.000300:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:43:31.000306:  36230  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:43:31.000307:  36230  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712929411.28570318222045898	1712929411.56788229942321777
+2024-04-12 13:44:20.000599:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:20.000600:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:20.000605:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:20.000606:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:20.000750:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:20.000750:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.005859375*1000	1712929460.59700894355773926	1712929474.24230909347534180
+2024-04-12 13:44:34.000243:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:34.000244:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:34.000249:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:34.000250:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:34.000385:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:34.000385:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.005859375^1000	1712929474.24251127243041992	1712929487.87887310981750488
+2024-04-12 13:44:47.000880:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:47.000881:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:47.000887:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:47.000887:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:47.000893:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:47.000894:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:44:47.000900:  36259  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:44:47.000901:  36259  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.005859375^1000	1712929487.87903571128845215	1712929488.16443204879760742
+2024-04-12 13:45:36.000887:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:45:36.000888:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:45:36.000894:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:45:36.000894:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:45:37.000030:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:45:37.000031:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.001953125*1000	1712929536.88503074645996094	1712929550.54840803146362305
+2024-04-12 13:45:50.000549:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:45:50.000550:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:45:50.000555:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:45:50.000556:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:45:50.000696:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:45:50.000696:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.001953125^1000	1712929550.54860806465148926	1712929564.19804382324218750
+2024-04-12 13:46:04.000199:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:04.000200:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:46:04.000206:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:04.000207:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:46:04.000212:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:04.000213:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:46:04.000220:  36289  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:04.000220:  36289  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.001953125^1000	1712929564.19821000099182129	1712929564.47682332992553711
+2024-04-12 13:46:53.000175:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:53.000176:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:46:53.000182:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:53.000182:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:46:53.000327:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:46:53.000328:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712929613.17304658889770508	1712929626.95894765853881836
+2024-04-12 13:47:06.000960:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:06.000961:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:47:06.000966:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:06.000967:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:47:07.000106:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:07.000106:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712929626.95917129516601562	1712929640.70011806488037109
+2024-04-12 13:47:20.000701:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:20.000702:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:47:20.000707:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:20.000708:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:47:20.000713:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:20.000714:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:47:20.000721:  36320  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:47:20.000722:  36320  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712929640.70027875900268555	1712929640.98510336875915527
+2024-04-12 13:48:09.000719:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:09.000720:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:09.000725:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:09.000726:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:09.000868:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:09.000869:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712929689.71694898605346680	1712929703.43126153945922852
+2024-04-12 13:48:23.000432:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:23.000433:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:23.000438:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:23.000439:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:23.000579:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:23.000580:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712929703.43148589134216309	1712929717.14179611206054688
+2024-04-12 13:48:37.000143:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:37.000144:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:37.000149:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:37.000150:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:37.000155:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:37.000156:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:48:37.000163:  36349  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:48:37.000164:  36349  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712929717.14195537567138672	1712929717.42227339744567871
+2024-04-12 13:49:26.000775:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:26.000776:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:26.000782:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:26.000782:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:26.000924:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:26.000925:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712929766.77299332618713379	1712929780.40563273429870605
+2024-04-12 13:49:40.000407:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:40.000407:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:40.000413:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:40.000414:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:40.000555:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:40.000555:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712929780.40583062171936035	1712929793.87926244735717773
+2024-04-12 13:49:53.000880:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:53.000881:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:53.000887:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:53.000888:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:53.000893:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:53.000894:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:49:53.000900:  36378  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:49:53.000901:  36378  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712929793.87942290306091309	1712929794.15933465957641602
+2024-04-12 13:50:43.000319:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:50:43.000320:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:50:43.000326:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:50:43.000326:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:50:43.000462:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:50:43.000464:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712929843.31682658195495605	1712929856.83972239494323730
+2024-04-12 13:50:56.000841:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:50:56.000841:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:50:56.000847:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:50:56.000848:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:50:56.000981:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:50:56.000982:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712929856.83992719650268555	1712929870.36453819274902344
+2024-04-12 13:51:10.000366:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:51:10.000366:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:51:10.000372:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:51:10.000373:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:51:10.000378:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:51:10.000379:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:51:10.000386:  36408  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:51:10.000387:  36408  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712929870.36470198631286621	1712929870.64433002471923828
+2024-04-12 13:52:00.000375:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:00.000376:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:00.000381:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:00.000382:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:00.000530:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:00.000531:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0029296875*1000	1712929920.37285852432250977	1712929934.13020110130310059
+2024-04-12 13:52:14.000131:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:14.000132:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:14.000137:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:14.000138:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:14.000272:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:14.000273:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0029296875^1000	1712929934.13041019439697266	1712929947.66716361045837402
+2024-04-12 13:52:27.000668:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:27.000669:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:27.000674:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:27.000675:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:27.000681:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:27.000681:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:52:27.000688:  37299  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:52:27.000689:  37299  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0029296875^1000	1712929947.66734051704406738	1712929947.95513916015625000
+2024-04-12 13:53:16.000919:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:16.000920:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:16.000925:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:16.000926:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:17.000071:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:17.000072:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0048828125*1000	1712929996.91695427894592285	1712930010.33393526077270508
+2024-04-12 13:53:30.000335:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:30.000336:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:30.000341:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:30.000342:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:30.000484:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:30.000485:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0048828125^1000	1712930010.33413720130920410	1712930023.88986349105834961
+2024-04-12 13:53:43.000891:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:43.000892:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:43.000897:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:43.000898:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:43.000903:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:43.000904:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:53:43.000911:  37329  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:53:43.000912:  37329  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0048828125^1000	1712930023.89002633094787598	1712930024.17692112922668457
+2024-04-12 13:54:32.000951:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:54:32.000952:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:54:32.000957:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:54:32.000958:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:54:33.000104:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:54:33.000105:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.009765625*1000	1712930072.94896459579467773	1712930086.58813285827636719
+2024-04-12 13:54:46.000589:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:54:46.000590:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:54:46.000595:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:54:46.000596:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:54:46.000730:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:54:46.000731:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.009765625^1000	1712930086.58833336830139160	1712930100.17718911170959473
+2024-04-12 13:55:00.000178:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:00.000179:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:55:00.000185:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:00.000185:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:55:00.000191:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:00.000191:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:55:00.000198:  37358  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:00.000199:  37358  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.009765625^1000	1712930100.17735219001770020	1712930100.45625925064086914
+2024-04-12 13:55:48.000983:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:48.000984:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:55:48.000990:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:48.000990:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:55:49.000131:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:55:49.000131:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712930148.98095178604125977	1712930162.58173322677612305
+2024-04-12 13:56:02.000583:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:02.000583:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:56:02.000588:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:02.000589:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:56:02.000728:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:02.000729:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712930162.58192920684814453	1712930176.18452835083007812
+2024-04-12 13:56:16.000185:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:16.000186:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:56:16.000192:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:16.000193:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:56:16.000199:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:16.000200:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:56:16.000206:  37388  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:56:16.000207:  37388  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712930176.18470072746276855	1712930176.46870613098144531
+2024-04-12 13:57:05.000271:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:05.000272:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:05.000278:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:05.000278:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:05.000420:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:05.000421:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.005859375*1000	1712930225.26900053024291992	1712930238.86397647857666016
+2024-04-12 13:57:18.000865:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:18.000866:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:18.000871:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:18.000872:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:19.000012:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:19.000012:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.005859375^1000	1712930238.86417388916015625	1712930252.37587380409240723
+2024-04-12 13:57:32.000377:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:32.000378:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:32.000383:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:32.000384:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:32.000390:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:32.000391:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:57:32.000398:  37418  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:57:32.000398:  37418  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.005859375^1000	1712930252.37604093551635742	1712930252.65903377532958984
+2024-04-12 13:58:21.000559:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:21.000559:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:21.000565:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:21.000566:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:21.000707:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:21.000708:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712930301.55666804313659668	1712930315.24920439720153809
+2024-04-12 13:58:35.000250:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:35.000251:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:35.000256:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:35.000257:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:35.000395:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:35.000396:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712930315.24940490722656250	1712930328.72064685821533203
+2024-04-12 13:58:48.000722:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:48.000723:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:48.000728:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:48.000729:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:48.000734:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:48.000735:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:58:48.000742:  37447  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:58:48.000743:  37447  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712930328.72081565856933594	1712930328.99776673316955566
+2024-04-12 13:59:38.000359:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:59:38.000360:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:59:38.000366:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:59:38.000367:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:59:38.000511:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:59:38.000512:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0078125*1000	1712930378.35703754425048828	1712930392.02723860740661621
+2024-04-12 13:59:52.000028:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:59:52.000029:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:59:52.000034:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:59:52.000035:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 13:59:52.000181:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 13:59:52.000181:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0078125^1000	1712930392.02743458747863770	1712930405.70805358886718750
+2024-04-12 14:00:05.000709:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:05.000710:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:00:05.000715:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:05.000716:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:00:05.000722:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:05.000722:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:00:05.000729:  37476  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:05.000730:  37476  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0078125^1000	1712930405.70821332931518555	1712930405.99406361579895020
+2024-04-12 14:00:55.000159:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:55.000160:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:00:55.000165:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:55.000166:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:00:55.000306:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:00:55.000306:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.005859375*1000	1712930455.15698456764221191	1712930468.75678491592407227
+2024-04-12 14:01:08.000758:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:08.000758:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:01:08.000764:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:08.000765:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:01:08.000904:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:08.000904:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.005859375^1000	1712930468.75698089599609375	1712930482.47247099876403809
+2024-04-12 14:01:22.000473:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:22.000474:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:01:22.000480:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:22.000481:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:01:22.000486:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:22.000487:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:01:22.000493:  37507  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:01:22.000494:  37507  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.005859375^1000	1712930482.47264170646667480	1712930482.74941277503967285
+2024-04-12 14:02:11.000447:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:11.000448:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:11.000454:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:11.000454:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:11.000601:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:11.000602:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.0009765625*1000	1712930531.44498276710510254	1712930545.38399815559387207
+2024-04-12 14:02:25.000385:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:25.000386:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:25.000391:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:25.000392:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:25.000532:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:25.000532:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.0009765625^1000	1712930545.38419818878173828	1712930558.94920849800109863
+2024-04-12 14:02:38.000950:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:38.000951:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:38.000957:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:38.000957:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:38.000963:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:38.000964:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:02:38.000970:  37537  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:02:38.000971:  37537  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.0009765625^1000	1712930558.94937610626220703	1712930559.22903156280517578
+2024-04-12 14:03:27.000991:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:27.000992:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_3078968855782972069+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:27.000998:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:27.000998:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12024529636132504109+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:28.000143:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:28.000143:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_5640020780512548351+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+sum	1.00390625*1000	1712930607.98896503448486328	1712930621.68331670761108398
+2024-04-12 14:03:41.000684:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:41.000685:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_12220175131460625296+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:41.000691:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:41.000691:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8382095832476045991+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:41.000831:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:41.000832:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_17345525719143295333+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+naif	1.00390625^1000	1712930621.68351435661315918	1712930635.26801609992980957
+2024-04-12 14:03:55.000269:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:55.000270:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_15367797815034115936+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:55.000276:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:55.000276:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_7306483050581468457+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:55.000282:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:55.000283:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_8219372296532091742+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+2024-04-12 14:03:55.000289:  37566  INFO ||NEURON_CACHE||: Compile cache path: /var/tmp/neuron-compile-cache
+2024-04-12 14:03:55.000290:  37566  INFO ||NEURON_CC_WRAPPER||: Using a cached neff at /var/tmp/neuron-compile-cache/neuronxcc-2.13.68.0+6dfecc895/MODULE_14459236414349438631+d41d8cd9/model.neff. Exiting with a successfully compiled graph.
+rapid	1.00390625^1000	1712930635.26818919181823730	1712930635.54716253280639648
