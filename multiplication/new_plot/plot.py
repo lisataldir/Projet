@@ -35,10 +35,10 @@ for n in range(3):
 
         ax[i].plot(tab_num, rn, linestyle= '--', color='#1446aa', marker='o', markerfacecolor='none', label='RN')
         ax[i].plot(x, np.sqrt(x)*(2**(-23)), linestyle='-.', color='#727a88', label='$\sqrt{n}u$')
-        ax[i].fill_between(tab_num, sr_range[:, 0], sr_range[:, 1], color='#cb3717', alpha=0.2, label='SR range')
+        ax[i].plot(tab_num, sr_mean, marker='*', color='#cb3717', label='SR average')
         if (i==1) : 
             ax[i].plot(x, x*(2**(-23)), 'k--',label='$nu$') 
-        ax[i].plot(tab_num, sr_mean, marker='*', color='#cb3717', label='SR average')
+        ax[i].fill_between(tab_num, sr_range[:, 0], sr_range[:, 1], color='#cb3717', alpha=0.2, label='SR range')
 
         ax[i].grid(True, which='both', linestyle='-', alpha=0.5)
         ax[i].set_xlabel('$n$')
