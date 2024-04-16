@@ -29,18 +29,20 @@ for n in range(3):
         
 
     # Plots
-    fig, ax = plt.subplots(1,2, figsize=(8, 4))
+    fig, ax = plt.subplots(1,2, figsize=(9, 4))
 
     for i in range(2):
 
-        ax[i].fill_between(tab_num, sr_range[:, 0], sr_range[:, 1], color='#cb3717', alpha=0.2, label='SR range') 
-        ax[i].plot(tab_num, sr_mean, marker='*', color='#cb3717', label='SR average')
         ax[i].plot(tab_num, rn, linestyle= '--', color='#1446aa', marker='o', markerfacecolor='none', label='RN')
         ax[i].plot(x, np.sqrt(x)*(2**(-23)), linestyle='-.', color='#727a88', label='$\sqrt{n}u$')
+        ax[i].fill_between(tab_num, sr_range[:, 0], sr_range[:, 1], color='#cb3717', alpha=0.2, label='SR range')
+        if (i==1) : 
+            ax[i].plot(x, x*(2**(-23)), 'k--',label='$nu$') 
+        ax[i].plot(tab_num, sr_mean, marker='*', color='#cb3717', label='SR average')
 
         ax[i].grid(True, which='both', linestyle='-', alpha=0.5)
         ax[i].set_xlabel('$n$')
-        ax[i].set_ylabel('$Forward$ $error$')
+        ax[i].set_ylabel('Forward error')
 
 
     # Paramètres supplémentaires pour le 1e plot
@@ -49,14 +51,14 @@ for n in range(3):
     ax[0].set_title('$(a)$')
 
     # Paramètres supplémentaires pour le 2e plot
-    ax[1].plot(x, x*(2**(-23)), 'k--',label='$nu$')
     ax[1].set_yscale('log')
     ax[1].set_title('$(b)$')
 
 
     # Légendes communes
-    plt.legend(bbox_to_anchor=(0, -0.5), loc='lower center', ncol=3)
-    plt.subplots_adjust(bottom=0.2)
-    plt.tight_layout()
+    plt.legend(loc = 'lower center', ncol=3, bbox_to_anchor = (0.05, -0.01, 1, 1),
+           bbox_transform = plt.gcf().transFigure, edgecolor='black')
+    plt.subplots_adjust(bottom=0.3)
+    fig.tight_layout()
 
     plt.savefig(f'plot_sum_{n}.png')
