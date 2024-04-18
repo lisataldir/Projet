@@ -59,7 +59,6 @@ for n in range(10001):
 
     print(f"sum {np.median(tmp):.17f}")
 
-    r_naif = torch.tensor(0.0).half().to(device)
     for i in range(nb_iter):
         start = time.time()
         r_naif = exp_naif(x,n)
