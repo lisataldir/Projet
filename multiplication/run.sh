@@ -21,7 +21,10 @@ do
     done
     echo "# Creating folder results/UR.dat"
     sudo docker run -v "$PWD":/workdir -e VFC_BACKENDS="libinterflop_ieee.so" verificarlo/verificarlo ./main "${x[$k]}" > results$k/UR.dat
+
+    paste $(for i in $(seq 1 $NSAMPLES); do echo -n "results$k/SR_$i.dat "; done) > results$k/SR.dat
 done
 
 make clean
+
 

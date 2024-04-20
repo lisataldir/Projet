@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     double ref, err;
     float val;
 
-    for (int n = 0; n < N; n+=751)
+    for (int n = 10; n < N; n+=750)
     {
         double ref = ref_exp((double)x, n);
         float val;

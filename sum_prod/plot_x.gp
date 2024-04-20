@@ -23,7 +23,7 @@ UR = "./UR/UR_1.000001_1.err"
 
 f(x) = a * x ** 0.5
 
-plot SR using 1:2:3 with linespoits title 'SR' lc rgb(72, 124, 109), \
+plot SR using 1:2:3 with linespoints title 'SR' lc rgb(72, 124, 109), \
      SR using 1:2:3 with yerrorbars title 'SR error bar' lc rgb(72, 124, 109), \
      SR_1000 using (k1):1 with points pointsize 1.2 lc rgb(48,87, 48), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(48,87, 48), \
@@ -52,7 +52,7 @@ UR = "./UR/UR_1.000001_2.err"
 
 f(x) = a * (x * 2) ** 0.5
 
-plot SR using 1:2:3 with linespoits title 'SR' lc rgb(72, 124, 109), \
+plot SR using 1:2:3 with linespoints title 'SR' lc rgb(72, 124, 109), \
      SR using 1:2:3 with yerrorbars title 'SR error bar' lc rgb(72, 124, 109), \
      SR_1000 using (k1):1 with points pointsize 1.2 lc rgb(48,87, 48), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(48,87, 48), \
@@ -81,7 +81,7 @@ UR = "./UR/UR_1.000001_1000.err"
 
 f(x) = a * (x * 1000) ** 0.5
 
-plot SR using 1:2:3 with linespoits title 'SR' lc rgb(72, 124, 109), \
+plot SR using 1:2:3 with linespoints title 'SR' lc rgb(72, 124, 109), \
      SR using 1:2:3 with yerrorbars title 'SR error bar' lc rgb(72, 124, 109), \
      SR_1000 using (k1):1 with points pointsize 1.2 lc rgb(48,87, 48), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(48,87, 48), \
@@ -110,7 +110,7 @@ UR = "./UR/UR_1.000001_10000.err"
 
 f(x) = a * (x * 10000) ** 0.5
 
-plot SR using 1:2:3 with linespoits title 'SR' lc rgb(72, 124, 109), \
+plot SR using 1:2:3 with linespoints title 'SR' lc rgb(72, 124, 109), \
      SR using 1:2:3 with yerrorbars title 'SR error bar' lc rgb(72, 124, 109), \
      SR_1000 using (k1):1 with points pointsize 1.2 lc rgb(48,87, 48), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(48,87, 48), \
@@ -140,7 +140,7 @@ UR = "./UR/UR_1.000001_100000.err"
 
 f(x) = a * (x * 100000) ** 0.5
 
-plot SR using 1:2:3 with linespoits title 'SR' lc rgb(72, 124, 109), \
+plot SR using 1:2:3 with linespoints title 'SR' lc rgb(72, 124, 109), \
      SR using 1:2:3 with yerrorbars title 'SR error bar' lc rgb(72, 124, 109), \
      SR_1000 using (k1):1 with points pointsize 1.2 lc rgb(48,87, 48), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(48,87, 48), \
@@ -169,7 +169,7 @@ UR = "./UR/UR_1.000001_1000000.err"
 
 f(x) = a * (x * 1000000) ** 0.5
 
-plot SR using 1:2:3 with linespoits title 'SR' lc rgb(72, 124, 109), \
+plot SR using 1:2:3 with linespoints title 'SR' lc rgb(72, 124, 109), \
      SR using 1:2:3 with yerrorbars title 'SR error bar' lc rgb(72, 124, 109), \
      SR_1000 using (k1):1 with points pointsize 1.2 lc rgb(48,87, 48), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(48,87, 48), \

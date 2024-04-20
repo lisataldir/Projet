@@ -1,0 +1,1133 @@
+2024-04-12T14:16:19Z INFO 37838 [root]: /home/ubuntu/aws_neuron_venv_pytorch/bin/neuronx-cc compile --target=trn1 --framework=XLA /tmp/ubuntu/neuroncc_compile_workdir/c997b9c5-c7d9-4683-8b38-3380b20956e1/model.MODULE_4868840414222590002+d41d8cd9.hlo_module.pb --output /tmp/ubuntu/neuroncc_compile_workdir/c997b9c5-c7d9-4683-8b38-3380b20956e1/model.MODULE_4868840414222590002+d41d8cd9.neff --verbose=35
+2024-04-12T14:16:19Z INFO 37845 [root]: XLA detected
+2024-04-12T14:16:19Z INFO 37845 [root]: Pipeline: Frontend HHChecker WalrusDriver BIRLinker Kelper
+2024-04-12T14:16:19Z INFO 37845 [root]: Intermediate files stored in /home/ubuntu/Projet/Performance SR/neuronxcc-ciavjjhh, output in /home/ubuntu/Projet/Performance SR
+2024-04-12T14:16:19Z INFO 37845 [pipeline.Pipeline.0]: Job Pipeline len(in_states) 1
+2024-04-12T14:16:19Z INFO 37845 [pipeline.Pipeline.0]: Processing input #0
+2024-04-12T14:16:19Z INFO 37845 [pipeline.Pipeline.0]: Running pipeline Pipeline.0
+2024-04-12T14:16:19Z INFO 37845 [pipeline.Pipeline.0]: Starting job job.Frontend.0
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: Job Frontend len(in_states) 1
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: Processing input #0
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: Start model loading
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: IR signature: 569e806543676313bcc2105091813c877effe56daa0290ba52c72bcd3050aff6 for model.MODULE_4868840414222590002+d41d8cd9.hlo_module.pb
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: Executing: /home/ubuntu/aws_neuron_venv_pytorch/lib/python3.10/site-packages/neuronxcc/starfish/bin/hlo2penguin --input /tmp/ubuntu/neuroncc_compile_workdir/c997b9c5-c7d9-4683-8b38-3380b20956e1/model.MODULE_4868840414222590002+d41d8cd9.hlo_module.pb --out-dir ./ --output penguin.py --layers-per-module=1 --coalesce-all-gathers=false --coalesce-reduce-scatters=false --coalesce-all-reduces=false --emit-tensor-level-dropout-ops --emit-tensor-level-rng-ops
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: DEBUG: needsModular? No. macCnt 0
+INFO: Switching to single-module compile. PrePartitionPipe skipped.
+INFO: Found memory bound graph
+Replaced 0 dropout sequences with OffloadedDropout
+INFO: HloMacCount has found 0
+INFO: Traffic has found 4
+INFO: AIF 0
+HLO Ops used in computation: parameter tuple 
+Invoking RemoveOptimizationBarriers pass
+
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: Start tensorization
+2024-04-12T14:16:19Z WARNING 37845 [job.Frontend.0]: TVM not detected.
+2024-04-12T14:16:19Z INFO 37845 [job.Frontend.0]: Num parallel jobs: 1
+2024-04-12T14:16:19Z INFO 37845 [root/Tensorizer/All]: Enter time region
+2024-04-12T14:16:19Z INFO 37845 [Tensorizer]: Frontend found a single CU. Switching to flat flow.
+2024-04-12T14:16:19Z INFO 37845 [Tensorizer]: Building model from Penguin script "penguin.py"...
+2024-04-12T14:16:19Z INFO 37845 [Tensorizer]: Tensorizer options: --disable-bitcasted-transpose --dont-verify-after-all --fp32-cast=matmult-bf16 --mm-transpose-type=fp32 --disable-expensive-checks --disable-max-stride-tiling --enable-replication --max-local-tensor-tile-size-in-bytes=32768 --tensor-layout-p-order=0 --tensor-layout-b-order=1 --enable-advanced-delinearization --weight-coalescing-threshold=512 --enable-bir-converter=enable --sunda-batchnorm --enable-tritium-loopfusion --keep-remat-dma-transpose --enable-softmax-kernel
+2024-04-12T14:16:19Z INFO 37845 [Tensorizer]: Building model from Penguin script "penguin.py"...
+2024-04-12T14:16:19Z INFO 37845 [Tensorizer]: Successfully built model.
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/DoNothing]: Running DoNothing
+2024-04-12T14:16:19Z INFO 37845 [DoNothing]: Finished (changed=True)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/DoNothing]: DoNothing finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AliasDependencyInduction]: Running AliasDependencyInduction
+2024-04-12T14:16:19Z INFO 37845 [AliasDependencyInduction]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AliasDependencyInduction]: AliasDependencyInduction finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CanonicalizeIR]: Running CanonicalizeIR
+2024-04-12T14:16:19Z INFO 37845 [CanonicalizeIR]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CanonicalizeIR]: CanonicalizeIR finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LegalizeCCOpLayout]: Running LegalizeCCOpLayout
+2024-04-12T14:16:19Z INFO 37845 [LegalizeCCOpLayout]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LegalizeCCOpLayout]: LegalizeCCOpLayout finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ResolveComplicatePredicates]: Running ResolveComplicatePredicates
+2024-04-12T14:16:19Z INFO 37845 [ResolveComplicatePredicates]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ResolveComplicatePredicates]: ResolveComplicatePredicates finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AffinePredicateResolution]: Running AffinePredicateResolution
+2024-04-12T14:16:19Z INFO 37845 [AffinePredicateResolution]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AffinePredicateResolution]: AffinePredicateResolution finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/EliminateDivs]: Running EliminateDivs
+2024-04-12T14:16:19Z INFO 37845 [EliminateDivs]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/EliminateDivs]: EliminateDivs finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/PerfectLoopNest]: Running PerfectLoopNest
+2024-04-12T14:16:19Z INFO 37845 [PerfectLoopNest]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/PerfectLoopNest]: PerfectLoopNest finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Running Simplifier
+2024-04-12T14:16:19Z INFO 37845 [Simplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Simplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: Running GenericAccessSimplifier
+2024-04-12T14:16:19Z INFO 37845 [GenericAccessSimplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: GenericAccessSimplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TCTransform]: Running TCTransform
+2024-04-12T14:16:19Z INFO 37845 [TCTransform]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TCTransform]: TCTransform finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CommuteConcat]: Running CommuteConcat
+2024-04-12T14:16:19Z INFO 37845 [CommuteConcat]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CommuteConcat]: CommuteConcat finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LowerTensorOp]: Running LowerTensorOp
+2024-04-12T14:16:19Z INFO 37845 [LowerTensorOp]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LowerTensorOp]: LowerTensorOp finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ExpandBatchNorm]: Running ExpandBatchNorm
+2024-04-12T14:16:19Z INFO 37845 [ExpandBatchNorm]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ExpandBatchNorm]: ExpandBatchNorm finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TCTransform]: Running TCTransform
+2024-04-12T14:16:19Z INFO 37845 [TCTransform]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TCTransform]: TCTransform finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/EliminateDivs]: Running EliminateDivs
+2024-04-12T14:16:19Z INFO 37845 [EliminateDivs]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/EliminateDivs]: EliminateDivs finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: Running GenericAccessSimplifier
+2024-04-12T14:16:19Z INFO 37845 [GenericAccessSimplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: GenericAccessSimplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CanonicalizeIR]: Running CanonicalizeIR
+2024-04-12T14:16:19Z INFO 37845 [CanonicalizeIR]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CanonicalizeIR]: CanonicalizeIR finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TensorOpFusion]: Running TensorOpFusion
+2024-04-12T14:16:19Z INFO 37845 [TensorOpFusion]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TensorOpFusion]: TensorOpFusion finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TensorOpTransform]: Running TensorOpTransform
+2024-04-12T14:16:19Z INFO 37845 [TensorOpTransform]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TensorOpTransform]: TensorOpTransform finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LateLowerTensorOp]: Running LateLowerTensorOp
+2024-04-12T14:16:19Z INFO 37845 [LateLowerTensorOp]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LateLowerTensorOp]: LateLowerTensorOp finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/MemcpyElimination]: Running MemcpyElimination
+2024-04-12T14:16:19Z INFO 37845 [MemcpyElimination]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/MemcpyElimination]: MemcpyElimination finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LoopFusion]: Running LoopFusion
+2024-04-12T14:16:19Z INFO 37845 [LoopFusion]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LoopFusion]: LoopFusion finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Running Simplifier
+2024-04-12T14:16:19Z INFO 37845 [Simplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Simplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Delinearization]: Running Delinearization
+2024-04-12T14:16:19Z INFO 37845 [Delinearization]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Delinearization]: Delinearization finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AliasDependencyElimination]: Running AliasDependencyElimination
+2024-04-12T14:16:19Z INFO 37845 [AliasDependencyElimination]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AliasDependencyElimination]: AliasDependencyElimination finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/DeadStoreElimination]: Running DeadStoreElimination
+2024-04-12T14:16:19Z INFO 37845 [DeadStoreElimination]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/DeadStoreElimination]: DeadStoreElimination finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AliasDependencyInduction]: Running AliasDependencyInduction
+2024-04-12T14:16:19Z INFO 37845 [AliasDependencyInduction]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/AliasDependencyInduction]: AliasDependencyInduction finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Running Simplifier
+2024-04-12T14:16:19Z INFO 37845 [Simplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Simplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:19Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Delinearization]: Running Delinearization
+2024-04-12T14:16:19Z INFO 37845 [Delinearization]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Delinearization]: Delinearization finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LoopFusion]: Running LoopFusion
+2024-04-12T14:16:19Z INFO 37845 [LoopFusion]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LoopFusion]: LoopFusion finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/SimplifySlice]: Running SimplifySlice
+2024-04-12T14:16:19Z INFO 37845 [SimplifySlice]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/SimplifySlice]: SimplifySlice finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:19Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Running Simplifier
+2024-04-12T14:16:19Z INFO 37845 [Simplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Simplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ValueNumbering]: Running ValueNumbering
+2024-04-12T14:16:19Z INFO 37845 [ValueNumbering]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ValueNumbering]: ValueNumbering finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:19Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/PadElimination]: Running PadElimination
+2024-04-12T14:16:19Z INFO 37845 [PadElimination]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/PadElimination]: PadElimination finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Delinearization]: Running Delinearization
+2024-04-12T14:16:19Z INFO 37845 [Delinearization]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Delinearization]: Delinearization finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LoopFusion]: Running LoopFusion
+2024-04-12T14:16:19Z INFO 37845 [LoopFusion]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LoopFusion]: LoopFusion finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: Running GenericAccessSimplifier
+2024-04-12T14:16:19Z INFO 37845 [GenericAccessSimplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: GenericAccessSimplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Running Simplifier
+2024-04-12T14:16:19Z INFO 37845 [Simplifier]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/Simplifier]: Simplifier finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:19Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ValueNumbering]: Running ValueNumbering
+2024-04-12T14:16:19Z INFO 37845 [ValueNumbering]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/ValueNumbering]: ValueNumbering finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TCTransform]: Running TCTransform
+2024-04-12T14:16:19Z INFO 37845 [TCTransform]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/TCTransform]: TCTransform finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CommuteConcat]: Running CommuteConcat
+2024-04-12T14:16:19Z INFO 37845 [CommuteConcat]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/CommuteConcat]: CommuteConcat finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/RecognizeOpIdiom]: Running RecognizeOpIdiom
+2024-04-12T14:16:19Z INFO 37845 [RecognizeOpIdiom]: Finished (changed=False)
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/RecognizeOpIdiom]: RecognizeOpIdiom finished after 0.000 seconds
+2024-04-12T14:16:19Z USER 37845 [sg0000/Tensorizer/MaskPropagation]: Running MaskPropagation
+2024-04-12T14:16:20Z INFO 37845 [MaskPropagation]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/MaskPropagation]: MaskPropagation finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/Recompute]: Running Recompute
+2024-04-12T14:16:20Z INFO 37845 [Recompute]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/Recompute]: Recompute finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DeadCodeElimination]: Running DeadCodeElimination
+2024-04-12T14:16:20Z INFO 37845 [DeadCodeElimination]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DeadCodeElimination]: DeadCodeElimination finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37845 [Tensorizer]: After optimization: 1 statements
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DoNothing]: Running DoNothing
+2024-04-12T14:16:20Z INFO 37845 [DoNothing]: Finished (changed=True)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DoNothing]: DoNothing finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/MutateDataType]: Running MutateDataType
+2024-04-12T14:16:20Z INFO 37845 [MutateDataType]: Finished (changed=True)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/MutateDataType]: MutateDataType finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/AutoCastTCInputs]: Running AutoCastTCInputs
+2024-04-12T14:16:20Z INFO 37845 [AutoCastTCInputs]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/AutoCastTCInputs]: AutoCastTCInputs finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: Running GenericAccessSimplifier
+2024-04-12T14:16:20Z INFO 37845 [GenericAccessSimplifier]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/GenericAccessSimplifier]: GenericAccessSimplifier finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/Simplifier]: Running Simplifier
+2024-04-12T14:16:20Z INFO 37845 [Simplifier]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/Simplifier]: Simplifier finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/AliasDependencyElimination]: Running AliasDependencyElimination
+2024-04-12T14:16:20Z INFO 37845 [AliasDependencyElimination]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/AliasDependencyElimination]: AliasDependencyElimination finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DelinearIndices]: Running DelinearIndices
+2024-04-12T14:16:20Z INFO 37845 [DelinearIndices]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DelinearIndices]: DelinearIndices finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/Delinearization]: Running Delinearization
+2024-04-12T14:16:20Z INFO 37845 [Delinearization]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/Delinearization]: Delinearization finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DelinearIndices]: Running DelinearIndices
+2024-04-12T14:16:20Z INFO 37845 [DelinearIndices]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DelinearIndices]: DelinearIndices finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DeadCodeElimination]: Running DeadCodeElimination
+2024-04-12T14:16:20Z INFO 37845 [DeadCodeElimination]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DeadCodeElimination]: DeadCodeElimination finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferIntrinsicOnCC]: Running InferIntrinsicOnCC
+2024-04-12T14:16:20Z INFO 37845 [InferIntrinsicOnCC]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferIntrinsicOnCC]: InferIntrinsicOnCC finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/ResolveAccessConflict]: Running ResolveAccessConflict
+2024-04-12T14:16:20Z INFO 37845 [ResolveAccessConflict]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/ResolveAccessConflict]: ResolveAccessConflict finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:20Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LocalLayoutOpt]: Running LocalLayoutOpt
+2024-04-12T14:16:20Z INFO 37845 [LocalLayoutOpt]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LocalLayoutOpt]: LocalLayoutOpt finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DelinearIndices]: Running DelinearIndices
+2024-04-12T14:16:20Z INFO 37845 [DelinearIndices]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DelinearIndices]: DelinearIndices finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/OrigLayoutTilingPipeline]: Running OrigLayoutTilingPipeline
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/GlobalLayoutOpt]: Running GlobalLayoutOpt
+2024-04-12T14:16:20Z INFO 37845 [GlobalLayoutOpt]: Finished (changed=True)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/GlobalLayoutOpt]: GlobalLayoutOpt finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/CanonicalizeDAG]: Running CanonicalizeDAG
+2024-04-12T14:16:20Z INFO 37845 [CanonicalizeDAG]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/CanonicalizeDAG]: CanonicalizeDAG finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenAxesForTiling]: Running FlattenAxesForTiling
+2024-04-12T14:16:20Z INFO 37845 [FlattenAxesForTiling]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenAxesForTiling]: FlattenAxesForTiling finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SundaSizeTiling]: Running SundaSizeTiling
+2024-04-12T14:16:20Z INFO 37845 [SundaSizeTiling]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SundaSizeTiling]: SundaSizeTiling finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/OrigLayoutTilingPipeline]: OrigLayoutTilingPipeline finished after 0.016 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/TilingProfiler]: Running TilingProfiler
+2024-04-12T14:16:20Z INFO 37845 [TilingProfiler]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/TilingProfiler]: TilingProfiler finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: Running FlattenMacroLoop
+2024-04-12T14:16:20Z INFO 37845 [FlattenMacroLoop]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: FlattenMacroLoop finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferNeuronTensor]: Running InferNeuronTensor
+2024-04-12T14:16:20Z INFO 37845 [InferNeuronTensor]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferNeuronTensor]: InferNeuronTensor finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: Running NeuronSimplifier
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifier]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: NeuronSimplifier finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:20Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/RewriteReplicationMatmul]: Running RewriteReplicationMatmul
+2024-04-12T14:16:20Z INFO 37845 [RewriteReplicationMatmul]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/RewriteReplicationMatmul]: RewriteReplicationMatmul finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: Running FlattenMacroLoop
+2024-04-12T14:16:20Z INFO 37845 [FlattenMacroLoop]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: FlattenMacroLoop finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyMacroPredicates]: Running SimplifyMacroPredicates
+2024-04-12T14:16:20Z INFO 37845 [SimplifyMacroPredicates]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyMacroPredicates]: SimplifyMacroPredicates finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DataLocalityOpt]: Running DataLocalityOpt
+2024-04-12T14:16:20Z INFO 37845 [DataLocalityOpt]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DataLocalityOpt]: DataLocalityOpt finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DMATilingProfiler]: Running DMATilingProfiler
+2024-04-12T14:16:20Z INFO 37845 [DMATilingProfiler]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DMATilingProfiler]: DMATilingProfiler finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: Running NeuronSimplifier
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifier]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: NeuronSimplifier finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizeSundaMacro]: Running LegalizeSundaMacro
+2024-04-12T14:16:20Z INFO 37845 [LegalizeSundaMacro]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizeSundaMacro]: LegalizeSundaMacro finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: Running NeuronSimplifier
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifier]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: NeuronSimplifier finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PerfectLoopNest]: Running PerfectLoopNest
+2024-04-12T14:16:20Z INFO 37845 [PerfectLoopNest]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PerfectLoopNest]: PerfectLoopNest finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: Running FlattenMacroLoop
+2024-04-12T14:16:20Z INFO 37845 [FlattenMacroLoop]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: FlattenMacroLoop finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/RewriteWeights]: Running RewriteWeights
+2024-04-12T14:16:20Z INFO 37845 [RewriteWeights]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/RewriteWeights]: RewriteWeights finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/ReshapeWeights]: Running ReshapeWeights
+2024-04-12T14:16:20Z INFO 37845 [ReshapeWeights]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/ReshapeWeights]: ReshapeWeights finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: Running FlattenMacroLoop
+2024-04-12T14:16:20Z INFO 37845 [FlattenMacroLoop]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FlattenMacroLoop]: FlattenMacroLoop finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyMacroPredicates]: Running SimplifyMacroPredicates
+2024-04-12T14:16:20Z INFO 37845 [SimplifyMacroPredicates]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyMacroPredicates]: SimplifyMacroPredicates finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferInitValue]: Running InferInitValue
+2024-04-12T14:16:20Z INFO 37845 [InferInitValue]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferInitValue]: InferInitValue finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: Running NeuronSimplifier
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifier]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifier]: NeuronSimplifier finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyTensor]: Running SimplifyTensor
+2024-04-12T14:16:20Z INFO 37845 [SimplifyTensor]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyTensor]: SimplifyTensor finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LICM]: Running LICM
+2024-04-12T14:16:20Z INFO 37845 [LICM]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LICM]: LICM finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SundaISel]: Running SundaISel
+2024-04-12T14:16:20Z INFO 37845 [SundaISel]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SundaISel]: SundaISel finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PreprocessNkiKernels]: Running PreprocessNkiKernels
+2024-04-12T14:16:20Z INFO 37845 [PreprocessNkiKernels]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PreprocessNkiKernels]: PreprocessNkiKernels finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLoopInterchange]: Running NeuronLoopInterchange
+2024-04-12T14:16:20Z INFO 37845 [NeuronLoopInterchange]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLoopInterchange]: NeuronLoopInterchange finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifyPredicates]: Running NeuronSimplifyPredicates
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifyPredicates]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifyPredicates]: NeuronSimplifyPredicates finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLoopFusion]: Running NeuronLoopFusion
+2024-04-12T14:16:20Z INFO 37845 [NeuronLoopFusion]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLoopFusion]: NeuronLoopFusion finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLoopInterchange]: Running NeuronLoopInterchange
+2024-04-12T14:16:20Z INFO 37845 [NeuronLoopInterchange]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLoopInterchange]: NeuronLoopInterchange finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLICM]: Running NeuronLICM
+2024-04-12T14:16:20Z INFO 37845 [NeuronLICM]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLICM]: NeuronLICM finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FactorizeBlkDims]: Running FactorizeBlkDims
+2024-04-12T14:16:20Z INFO 37845 [FactorizeBlkDims]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/FactorizeBlkDims]: FactorizeBlkDims finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronInstComb]: Running NeuronInstComb
+2024-04-12T14:16:20Z INFO 37845 [NeuronInstComb]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronInstComb]: NeuronInstComb finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronValueNumbering]: Running NeuronValueNumbering
+2024-04-12T14:16:20Z INFO 37845 [NeuronValueNumbering]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronValueNumbering]: NeuronValueNumbering finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronInstComb]: Running NeuronInstComb
+2024-04-12T14:16:20Z INFO 37845 [NeuronInstComb]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronInstComb]: NeuronInstComb finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/VectorizeDMA]: Running VectorizeDMA
+2024-04-12T14:16:20Z INFO 37845 [VectorizeDMA]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/VectorizeDMA]: VectorizeDMA finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifyPredicates]: Running NeuronSimplifyPredicates
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifyPredicates]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifyPredicates]: NeuronSimplifyPredicates finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizePartitionReduce]: Running LegalizePartitionReduce
+2024-04-12T14:16:20Z INFO 37845 [LegalizePartitionReduce]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizePartitionReduce]: LegalizePartitionReduce finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DeConcat]: Running DeConcat
+2024-04-12T14:16:20Z INFO 37845 [DeConcat]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DeConcat]: DeConcat finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PartialSimdFusion]: Running PartialSimdFusion
+2024-04-12T14:16:20Z INFO 37845 [PartialSimdFusion]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PartialSimdFusion]: PartialSimdFusion finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/TritiumFusion]: Running TritiumFusion
+2024-04-12T14:16:20Z INFO 37845 [TritiumFusion]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/TritiumFusion]: TritiumFusion finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/CCOpFusion]: Running CCOpFusion
+2024-04-12T14:16:20Z INFO 37845 [CCOpFusion]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/CCOpFusion]: CCOpFusion finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/VectorizeMatMult]: Running VectorizeMatMult
+2024-04-12T14:16:20Z INFO 37845 [VectorizeMatMult]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/VectorizeMatMult]: VectorizeMatMult finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PartialLoopFusion]: Running PartialLoopFusion
+2024-04-12T14:16:20Z INFO 37845 [PartialLoopFusion]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/PartialLoopFusion]: PartialLoopFusion finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLICM]: Running NeuronLICM
+2024-04-12T14:16:20Z INFO 37845 [NeuronLICM]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLICM]: NeuronLICM finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LowerTranspose]: Running LowerTranspose
+2024-04-12T14:16:20Z INFO 37845 [LowerTranspose]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LowerTranspose]: LowerTranspose finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LateNeuronInstComb]: Running LateNeuronInstComb
+2024-04-12T14:16:20Z INFO 37845 [LateNeuronInstComb]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LateNeuronInstComb]: LateNeuronInstComb finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SplitAccGrp]: Running SplitAccGrp
+2024-04-12T14:16:20Z INFO 37845 [SplitAccGrp]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SplitAccGrp]: SplitAccGrp finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SpillPSum]: Running SpillPSum
+2024-04-12T14:16:20Z INFO 37845 [SpillPSum]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SpillPSum]: SpillPSum finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LowerIntrinsics]: Running LowerIntrinsics
+2024-04-12T14:16:20Z INFO 37845 [LowerIntrinsics]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LowerIntrinsics]: LowerIntrinsics finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizeType]: Running LegalizeType
+2024-04-12T14:16:20Z INFO 37845 [LegalizeType]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizeType]: LegalizeType finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLICM]: Running NeuronLICM
+2024-04-12T14:16:20Z INFO 37845 [NeuronLICM]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronLICM]: NeuronLICM finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferPSumTensor]: Running InferPSumTensor
+2024-04-12T14:16:20Z INFO 37845 [InferPSumTensor]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/InferPSumTensor]: InferPSumTensor finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/WeightCoalescing]: Running WeightCoalescing
+2024-04-12T14:16:20Z INFO 37845 [WeightCoalescing]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/WeightCoalescing]: WeightCoalescing finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizeSundaAccess]: Running LegalizeSundaAccess
+2024-04-12T14:16:20Z INFO 37845 [LegalizeSundaAccess]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LegalizeSundaAccess]: LegalizeSundaAccess finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/RelaxPredicates]: Running RelaxPredicates
+2024-04-12T14:16:20Z INFO 37845 [RelaxPredicates]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/RelaxPredicates]: RelaxPredicates finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/TensorInitialization]: Running TensorInitialization
+2024-04-12T14:16:20Z INFO 37845 [TensorInitialization]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/TensorInitialization]: TensorInitialization finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifyPredicates]: Running NeuronSimplifyPredicates
+2024-04-12T14:16:20Z INFO 37845 [NeuronSimplifyPredicates]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/NeuronSimplifyPredicates]: NeuronSimplifyPredicates finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/ExpandISAMacro]: Running ExpandISAMacro
+2024-04-12T14:16:20Z INFO 37845 [ExpandISAMacro]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/ExpandISAMacro]: ExpandISAMacro finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyNeuronTensor]: Running SimplifyNeuronTensor
+2024-04-12T14:16:20Z INFO 37845 [SimplifyNeuronTensor]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimplifyNeuronTensor]: SimplifyNeuronTensor finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DMALocalityOpt]: Running DMALocalityOpt
+2024-04-12T14:16:20Z INFO 37845 [DMALocalityOpt]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DMALocalityOpt]: DMALocalityOpt finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DataStreaming]: Running DataStreaming
+2024-04-12T14:16:20Z INFO 37845 [DataStreaming]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DataStreaming]: DataStreaming finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SFKVectorizer]: Running SFKVectorizer
+2024-04-12T14:16:20Z INFO 37845 [SFKVectorizer]: Finished (changed=True)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SFKVectorizer]: SFKVectorizer finished after 0.001 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LateLegalizeInst]: Running LateLegalizeInst
+2024-04-12T14:16:20Z INFO 37845 [LateLegalizeInst]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/LateLegalizeInst]: LateLegalizeInst finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/CoalesceCCOp]: Running CoalesceCCOp
+2024-04-12T14:16:20Z INFO 37845 [CoalesceCCOp]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/CoalesceCCOp]: CoalesceCCOp finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimpleAllReduceTiling]: Running SimpleAllReduceTiling
+2024-04-12T14:16:20Z INFO 37845 [SimpleAllReduceTiling]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SimpleAllReduceTiling]: SimpleAllReduceTiling finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/StaticProfiler]: Running StaticProfiler
+2024-04-12T14:16:20Z INFO 37845 [StaticProfiler]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/StaticProfiler]: StaticProfiler finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SplitAPUnionSets]: Running SplitAPUnionSets
+2024-04-12T14:16:20Z INFO 37845 [SplitAPUnionSets]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/SplitAPUnionSets]: SplitAPUnionSets finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DumpGraphAndMetadata]: Running DumpGraphAndMetadata
+2024-04-12T14:16:20Z INFO 37845 [DumpGraphAndMetadata]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/DumpGraphAndMetadata]: DumpGraphAndMetadata finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/BirCodeGenLoop]: Running BirCodeGenLoop
+2024-04-12T14:16:20Z INFO 37845 [BirCodeGenLoop]: Finished (changed=False)
+2024-04-12T14:16:20Z USER 37845 [sg0000/Tensorizer/BirCodeGenLoop]: BirCodeGenLoop finished after 0.001 seconds
+2024-04-12T14:16:20Z INFO 37845 [Tensorizer]: BirCodeGen estimate #instances=1 in sg0000
+2024-04-12T14:16:20Z INFO 37845 [Tensorizer]: IR signature: 82afbd8ddfdb51b034fd45e53b38cb03e23f9392b6a84bbef0647bb512446692 for sg0000/Tensorizer
+2024-04-12T14:16:20Z INFO 37845 [Tensorizer]: Weights total number of bytes: 0
+2024-04-12T14:16:20Z INFO 37845 [root/Tensorizer/All]: Exit time region: delta=0.547s
+2024-04-12T14:16:20Z INFO 37845 [job.Frontend.0]: End tensorization
+2024-04-12T14:16:20Z INFO 37845 [job.Frontend.0]: Network input: input0
+2024-04-12T14:16:20Z INFO 37845 [job.Frontend.0]: wrote bir.json
+2024-04-12T14:16:20Z INFO 37845 [job.Frontend.0]: wrote tensor_map.json
+2024-04-12T14:16:20Z INFO 37845 [job.Frontend.0]: Job #0 finished
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Finished job job.Frontend.0
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Starting job job.HHChecker.0
+2024-04-12T14:16:20Z INFO 37845 [job.HHChecker.0]: Job HHChecker len(in_states) 1
+2024-04-12T14:16:20Z INFO 37845 [job.HHChecker.0]: Processing input #0
+2024-04-12T14:16:20Z INFO 37845 [job.HHChecker.0]: Job #0 finished
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Finished job job.HHChecker.0
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Starting job job.WalrusDriver.0
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: BackendDriver has 1 states
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: BackendDriver: no partitions found. Switching to flat flow.
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: Job WalrusDriver len(in_states) 1
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: Processing input #0
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: BackendDriver in_state.num_states 1
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: Executing /home/ubuntu/aws_neuron_venv_pytorch/lib/python3.10/site-packages/neuronxcc/starfish/bin/walrus_driver --optlevel 2 --allocator coloring --verbose 35 --logfile-verbose 20 --logfile '/home/ubuntu/Projet/Performance SR/log-neuron-cc.txt' --sync-pool-dve -i bir.json --min_split_size 10240 --skip_split_vns '' --no_split_dram --split_huge_dram_tensor 1.0 --preprocessing_only --max_tensorizer_distance 64 --pack_same_shape_only --instruction_fetch_latency 511 --max-partitions 1 --policy 3 --auxflag 0 --interleave none --schedule-delayed-latency 1 --postsched-mm-accum-reorder=false --max-load-lower-bound 0.14 --allreduce-buffer-size 500 --dram-page-size 512 --dram-rotation-size -1 --allreduce-rotation-dis 8 --repeat-load-thres 4 --save-len-thres 512 --save-dma-cnt-thres 32 --relaxed-order=true --enable-anti-dependence-reduction=false --num-semaphores-per-queue 16 --numcores 1 --act-root-json /home/ubuntu/aws_neuron_venv_pytorch/lib/python3.10/site-packages/neuronxcc/pwp/pwp_bin_trainium/act_info.json --dve-root-json /home/ubuntu/aws_neuron_venv_pytorch/lib/python3.10/site-packages/neuronxcc/dve/dve_bin/dve_info.json --unified-backend-and-legacy-codegen --tensor-map tensor_map.json --enable-verifier=true --enable-birsim=false --enable-birsim-sync-only=false --enable-data-race-checker=true --enable-new-backend=true --inject-error=NONE --neff-output-filename /tmp/ubuntu/neuroncc_compile_workdir/c997b9c5-c7d9-4683-8b38-3380b20956e1/model.MODULE_4868840414222590002+d41d8cd9.neff
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: Working directory is /home/ubuntu/Projet/Performance SR/neuronxcc-ciavjjhh/sg00
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: use_logger=False
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: max_allowed_parallelism=4
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Backend driver mtBackend: false numModules: 1 Cwd: "/home/ubuntu/Projet/Performance SR/neuronxcc-ciavjjhh/sg00"
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running mod_parallel_pass
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to mod_parallel_pass: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running rewrite_matmult_sparse
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to rewrite_matmult_sparse: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: rewrite_matmult_sparse finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running birverifier
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to birverifier: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: birverifier finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running expand_replication
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to expand_replication: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [ExpandReplication]: Found 0 replicated matmults
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: expand_replication finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running unroll
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to unroll: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [Unroll]: INFO (Unroll) Start unrolling at Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [Unroll]: INFO (Unroll) adjusting parallelfor 
+2024-04-12T14:16:20Z INFO 37849 [Unroll]: INFO (Unroll) DONE unrolling Fri Apr 12 14:16:20 2024
+
+2024-04-12T14:16:20Z INFO 37849 [Unroll]: sg0000 Instruction count after Unroll: 
+2024-04-12T14:16:20Z INFO 37849 [Unroll]: Total count: 1
+2024-04-12T14:16:20Z INFO 37849 [Unroll]: DMACopy: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: unroll finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running psum_legalization
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to psum_legalization: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: psum_legalization finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running error_injector
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to error_injector: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z WARNING 37849 [ErrorInjector]: Unrecognized injected error value "0"
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: error_injector finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running constant_propagate
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to constant_propagate: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [ConstantPropagate]: [Constant_propagate for select] directly remove instruction number: 0
+2024-04-12T14:16:20Z INFO 37849 [ConstantPropagate]: [Constant_propagate for Affineselect] directly remove instruction number: 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: constant_propagate finished after 0.001 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running vn_splitter
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to vn_splitter: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [VNSplitter]: INFO (VNSplitter) Collected all the internal vnodes: size = 0
+2024-04-12T14:16:20Z INFO 37849 [VNSplitter]: INFO (VNSplitter) Done with analyze and splitting: total dead nodes = 0
+2024-04-12T14:16:20Z INFO 37849 [PerformanceProfiler]: number of tensorizer non-local-tensor caused reload left 0
+2024-04-12T14:16:20Z INFO 37849 [PerformanceProfiler]: number of tensorizer non-local-tensor caused spill left 0
+2024-04-12T14:16:20Z INFO 37849 [VNSplitterPass]: INFO (VNSplitter) Time: 0 seconds
+2024-04-12T14:16:20Z INFO 37849 [VNSplitterPass]: INFO (VerticalFusion) Time: 0 seconds
+2024-04-12T14:16:20Z INFO 37849 [VNSplitterPass]: INFO (ShrinkDN) Time: 0 seconds
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: vn_splitter finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running lower_ac
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to lower_ac: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [LowerAC]: INFO (LowerAC) Lowered 0 loads, 0 saves, 0 copies.
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: lower_ac finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running input_dma_coalescing
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to input_dma_coalescing: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DMA input Coalescing combined 0 input loads
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: input_dma_coalescing finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running early_peephole_opts
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to early_peephole_opts: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [EarlyPeepholeOpts]: PeepholeOpts enabled? ActivationAccumulate: true
+2024-04-12T14:16:20Z INFO 37849 [EarlyPeepholeOpts]: Activation Accumulate: 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: early_peephole_opts finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  26mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running pre_sched
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to pre_sched: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: Start PRE scheduling 2 cores:  1 at: Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [LayerSpiller]: LayerSpill: Start...
+2024-04-12T14:16:20Z INFO 37849 [LayerSpiller]: LayerSpill: Found 0 Splits CCs
+2024-04-12T14:16:20Z INFO 37849 [LayerSpiller]: Grouped CCs to 0 clusters.
+2024-04-12T14:16:20Z INFO 37849 [LayerSpiller]: LayerSpill: To Spill 0 multi-layer tensors
+2024-04-12T14:16:20Z INFO 37849 [LayerSpiller]: LayerSpill: set uninit flag on 0 insts
+2024-04-12T14:16:20Z INFO 37849 [LayerSpiller]: LayerSpill: Done.
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: Start split live ranges Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: No split opportunities: 
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: End split live ranges Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: Strt remove redundncies Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: remove_redundant_memsets
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: remove_redundant_memsets: 0
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: remove_redundant_loads
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: remove_redundant_loads: 0
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: End remove redundncies Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: Start DCE Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: End DCE Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: Start build flow dependencies Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Start build fdeps. Invocation: 1Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Allocs: 2 instructions: 1
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Build fdeps inserted 0 edges 
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Done build fdeps 0 Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: End build flow dependencies Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: Start remove useless insts Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: remove_useless_insts
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: remove Useless Instructions: 0
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: End remove useless insts Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [PreSched]: DONE PRE scheduling Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: pre_sched finished after 0.001 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running tensor_copy_elim
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to tensor_copy_elim: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [TensorCopyElim]: Tensor CP elimination: 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: tensor_copy_elim finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running mm_packing
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to mm_packing: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [MMPacking]: INFO (MMPack) Running the preprocessing step.
+2024-04-12T14:16:20Z INFO 37849 [MMPacking]: INFO (MMPack) Early exit: the input BIR has no Matmults (mNumMMs = 0) or all the MMs' sizes are too big to pack ( true).
+2024-04-12T14:16:20Z INFO 37849 [MMPackingPass]: INFO (MMPacking) Time: 0 seconds
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: mm_packing finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running coloring_allocator_psum
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to coloring_allocator_psum: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes DMACopyed 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average DMACopyed DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: Allocating functions
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]:   linearize and check
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:   allocating PSUM
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:     main loop
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:     renumber locations
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         size = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]: build_no_bitmap start
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]: 0% PSUM demand before spilling
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:           PSUM high-water mark = 0 tensors
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         found 0 edges
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         mean: -nan
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         median: 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         adjacency vectors require 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]: build_no_bitmap done
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:       find costs
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:       best-of-n loop, heuristic = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         simplify interference graph
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:           initialize low and high
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:             lo = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:             hi = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:             inf = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:             total = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:           simplify
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:             new candidates = 0
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         select ranges
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:           no more spills
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]:         PSUM score = 0 (lower is better)
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]: spilling from PSUM cost about 0 cycles
+2024-04-12T14:16:20Z INFO 37849 [PSUM_Allocator]: 0% PSUM utilization after allocation
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes DMACopyed 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average DMACopyed DMA size 0 bytes
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: coloring_allocator_psum finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running dma_optimization_psum
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to dma_optimization_psum: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [psum spill optimization]: removed 0 spill/reload instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [psum spill optimization]: removed 0 spill/reload memory locations
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: dma_optimization_psum finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running address_rotation_psum
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to address_rotation_psum: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: PSUM Rotation rotated 0 PSUM Banks
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: PSUM Rotation rotated 0 PSUM Banks
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: PSUM Rotation rotated 0 PSUM Banks
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: address_rotation_psum finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running coloring_allocator_sb
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to coloring_allocator_sb: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes DMACopyed 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average DMACopyed DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: Allocating functions
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]:   linearize and check
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:   allocating SB
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:     main loop
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       renumber locations
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         size = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       find partners
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         found 0 accumulation groups
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       expanding partners
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       find first defs
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       find loads
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         0 pin count
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         0 remat count
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       build interference graph
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         pass 1 int-tree
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:            Num intervals 0 Num locations 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:            IntervalTree Build Done
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:            info.neighbors init Done
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:            info.neighbors partners Done
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:            IntervalTree readback Done
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         edge: 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         mean: -nan
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         median: 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       find costs
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:       best-of-n loop, heuristic = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         simplify interference graph
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:           initialize safe & unsafe
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               safe = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:             unsafe = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:                inf = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:              total = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:           simplify
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]: simplify_step3_sorted2 #Unsafe 0 #Pinned 0 #Safe 0 minCost 1.79769e+308 maxCost 2.22507e-308 locations 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:             new candidates = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         select ranges
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:           Total: 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:             Spilled: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:             Allocated: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Rover zone: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Pre-rover zone: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Post-rover zone: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Slice zone: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Blocks nothing: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Blocks medium: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:               Blocks tall: -nan (0)
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:           Success
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:           SB spills = 0 tensors
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:                size = 0 bytes/partition
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:              remats = 0 tensors
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:            unpinned = 0 tensors
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:                size = 0 bytes/partition
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]:         SB score = 0
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]: spilling from SB cost about 0 cycles
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]: 0 bytes/partition (0%) successfully pinned
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]: pinning saved approximately 0 cycles
+2024-04-12T14:16:20Z INFO 37849 [SB_Allocator]: 0% SB utilization after allocation
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes DMACopyed 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average DMACopyed DMA size 0 bytes
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: coloring_allocator_sb finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running address_rotation_sb
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to address_rotation_sb: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: address_rotation_sb finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running dma_optimization_sb
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to dma_optimization_sb: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DMA optimization In bytes loaded or saved 0, -nan% input load, -nan% output write, -nan% spill/reload [sg0000]
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: removed 0 identical load 
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Load Merging]: removed 0 remat/cloned instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Load shrink]: shrinked 0 GCA remat/cloned instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Load Merging + Load shrink] reduced input/const loading DMA traffic 0, -nan% out of total dma traffic(0)
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [DMA optimization]Reload_just_for_save Optimization removed 0 memlocs
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [spill optimization round 0]: removed 0 spill/reload instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [spill optimization round 0]: removed 0 spill/reload memory locations
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Spill Optimization] reduced DMA traffic 0, -nan% out of total spill/reload dma traffic
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Allocation optimization]: removed 0 spill/reload instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Allocation optimization]: removed 0 spill/reload memory locations
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Re-allocation Optimization] reduced DMA traffic 0, -nan% out of total spill/reload dma traffic
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [DMA optimization]Reload_just_for_save Optimization removed 0 memlocs
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [spill optimization round 0]: removed 0 spill/reload instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [spill optimization round 0]: removed 0 spill/reload memory locations
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Spill Optimization] reduced DMA traffic 0, -nan% out of total spill/reload dma traffic
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [remove extra save] removed 0 memlocs and 0 instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [remove_memset_spill]: removed 0 spill/reload instructions
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [remove_memset_spill]: removed 0 spill/reload memory locations
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DMA SpillSave Coalescing Round 0 combined 0 SpillSaves and Reloads
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]:  average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]:  average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA coalescing DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA coalescing average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA coalescing DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA coalescing average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [DMA optimization]Reload_just_for_save Optimization removed 0 memlocs
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [Experiment partial DMA access] reduced DMA traffic 0, -nan% out of total spill/reload dma traffic
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: [DMA optimization] reduced DMA traffic 0, -nan% out of total dma traffic
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DMA optimization Out bytes loaded or saved 0, -nan% input load, -nan% output write, -nan% spill/reload [sg0000]
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization DRAM bytes DMAcopyed 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization average DMAcopyed DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Post DMA optimization average DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: INFO: Finished set_spill_canreadUninit(module);
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DMA optimization re-enable optimization
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: dma_optimization_sb finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running address_rotation_sb
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to address_rotation_sb: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: address_rotation_sb finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running coloring_allocator_dram
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to coloring_allocator_dram: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Pre GCA average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes DMACopyed 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average DMACopyed DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: Allocating functions
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]:   linearize and check
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:   allocating spills in DRAM pre_link mode
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:     reserved space = 4 bytes
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:     spill space = 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:     aligned spill space = 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:     dram space = 107374182400 bytes
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:     renumber locations
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:         size = 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:       find first defs
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:            Num intervals 0 Num locations 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:            IntervalTree Build Done
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:            info.neighbors init Done
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:            IntervalTree readback Done
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:         simplify interference graph
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:           initialize low and high
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:             lo = 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:             hi = 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:             total = 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:           simplify
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:             new candidates = 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]:         select ranges
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]: CC buffer size limit 524288000
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]: allreduce_dram_hwm 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]: Real CC buffer size 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]: DRAM hwm after allocation: 0
+2024-04-12T14:16:20Z INFO 37849 [DRAM_Allocator]: DRAM allocation successful
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes loaded 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average loaded DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes saved 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average saved DMA size 0 bytes
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA DRAM bytes DMACopyed 0
+2024-04-12T14:16:20Z INFO 37849 [ColoringAllocator::Rep]: INFO: Post GCA average DMACopyed DMA size 0 bytes
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: coloring_allocator_dram finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running address_rotation_dram
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to address_rotation_dram: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: Runtime page size at 512MB
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DRAM hwm before rotation 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: allreduce buffer size 524288000
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: allreduce hwm 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: Real CC buffer size 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DRAM hwm after rotation 0
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: DRAM Rotation rotated 0 Dram address
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: address_rotation_dram finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running tensorcopy_accel
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to tensorcopy_accel: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [TensorCopyAccel::Impl]: Running peephole optimization pass
+2024-04-12T14:16:20Z INFO 37849 [TensorCopyAccel::Impl]: Accelerated 0 out of 0 tensorcopy in Function: sg0000 average acceleration factor: -nan
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: tensorcopy_accel finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running peephole_opts
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to peephole_opts: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [PeepholeOpts]: PeepholeOpts enabled? Recip: true Tsp: true Tc: true SplitSelect: true
+2024-04-12T14:16:20Z INFO 37849 [PeepholeOpts]: Split Select: 0
+2024-04-12T14:16:20Z INFO 37849 [PeepholeOpts]: TSP -> ACT: 0
+2024-04-12T14:16:20Z INFO 37849 [PeepholeOpts]: COPY -> ACT: 0
+2024-04-12T14:16:20Z INFO 37849 [PeepholeOpts]: RECIPROCAL -> ACT: 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: peephole_opts finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running lower_kernel
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to lower_kernel: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [LowerKernel]: Started running LowerKernel
+2024-04-12T14:16:20Z INFO 37849 [LowerKernel]: Start of kernel lowering pass, number of insts: 1, number of allocs: 2
+2024-04-12T14:16:20Z INFO 37849 [LowerKernel]: Scan BKs time (s): 2.6e-05
+2024-04-12T14:16:20Z INFO 37849 [LowerKernel]: Lower BKs time (s): 1e-06
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: lower_kernel finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running build_fdeps
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to build_fdeps: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Start build fdeps. Invocation: 2Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Allocs: 2 instructions: 1
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Build fdeps inserted 0 edges 
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Done build fdeps 0 Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: build_fdeps finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running remove_redundancies
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to remove_redundancies: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [RemoveRedundancies]: remove_clobbered_writes
+2024-04-12T14:16:20Z INFO 37849 [RemoveRedundancies]: remove_clobbered_writes: 0
+2024-04-12T14:16:20Z INFO 37849 [RemoveRedundancies]: remove_useless_insts
+2024-04-12T14:16:20Z INFO 37849 [RemoveRedundancies]: remove Useless Instructions: 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: remove_redundancies finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running anti_dependency_analyzer
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to anti_dependency_analyzer: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [AntiDependencyAnalyzer]: Batch size: 1000
+2024-04-12T14:16:20Z INFO 37849 [AntiDependencyAnalyzer]: Analysis types: {DRAM,ALIAS,PSUM,SB}
+2024-04-12T14:16:20Z INFO 37849 [AntiDependencyAnalyzer-DRAM]: Finished analyzing 0 access patterns a mean/median -nan/0 intervals per access pattern and mean/median -nan/0 intersections per interval.
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: anti_dependency_analyzer finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running tensor_copy_elim
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to tensor_copy_elim: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [TensorCopyElim]: Tensor CP elimination: 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: tensor_copy_elim finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running post_sched
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to post_sched: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [post_scheduler]: Start PosT ScheD 3 sunda Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [post_scheduler]: Time-aware hwm post-sched
+2024-04-12T14:16:20Z INFO 37849 [post_scheduler]: Time-aware simulation time: 1300
+2024-04-12T14:16:20Z INFO 37849 [post_scheduler]: Done  PosT ScheD Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: post_sched finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running address_rotation_sb
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to address_rotation_sb: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: PSUM Rotation rotated 0 PSUM Banks
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: PSUM Rotation rotated 0 PSUM Banks
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: PSUM Rotation rotated 0 PSUM Banks
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z INFO 37849 [DMAOptimizationBase]: SB Rotation rotated 0 Sb address
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: address_rotation_sb finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running anti_dependency_analyzer
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to anti_dependency_analyzer: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [AntiDependencyAnalyzer]: Batch size: 1000
+2024-04-12T14:16:20Z INFO 37849 [AntiDependencyAnalyzer]: Analysis types: {DRAM,ALIAS,PSUM,SB}
+2024-04-12T14:16:20Z INFO 37849 [AntiDependencyAnalyzer-DRAM]: Finished analyzing 0 access patterns a mean/median -nan/0 intervals per access pattern and mean/median -nan/0 intersections per interval.
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: anti_dependency_analyzer finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running dep_opt
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to dep_opt: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Start build fdeps. Invocation: 3Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Allocs: 2 instructions: 1
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Build fdeps inserted 0 edges 
+2024-04-12T14:16:20Z INFO 37849 [build_flow_deps]: Done build fdeps 0 Fri Apr 12 14:16:20 2024
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: dep_opt finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running report_stats
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to report_stats: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [ReportStats]: Data Movement Statistics: sg0000
+┌─────────────┬─────────────────────────────────┬───────┬───────┐
+│ Instruction │ Kind                            │ Count │ Bytes │
+├─────────────┼─────────────────────────────────┼───────┼───────┤
+│ DMACopy     │ ExternalInput -> ExternalOutput │ 1     │ 4     │
+└─────────────┴─────────────────────────────────┴───────┴───────┘
+
+2024-04-12T14:16:20Z INFO 37849 [ReportStats]: 
+┌─────────────────────┬───────┐
+│ Bytes per partition │ Count │
+├─────────────────────┼───────┤
+│ 2                   │ 2     │
+└─────────────────────┴───────┘
+
+2024-04-12T14:16:20Z INFO 37849 [ReportStats]: MM Stats: #MatMults 0 #MatMult-Transposes 0
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: report_stats finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running assign_trigger_engine
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to assign_trigger_engine: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [AssignTriggerEngine]: Assigned trigger engine for 0 DMA instructions
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: assign_trigger_engine finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: Running alloc_queues
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Inputs to alloc_queues: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [ModuleForkPass]: alloc_queues finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [ModuleForkPass]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: mod_parallel_pass finished after 0.006 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running dep_reduction
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to dep_reduction: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Start Dependency Reduction
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Processing async instrs...
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Processing secondary edges per engine...
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Processing secondary edges per engine, Done. Num edges removed 0
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Processing redundant descendants...
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Processing redundant descendants, Done. Num edges removed 0
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Processing async instrs, Done. Num edges removed 0
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Num Async removed: 0
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Finished dependency reduction: 0 removed, new total 0
+2024-04-12T14:16:20Z INFO 37849 [DepReduction]: Finished Dependency Reduction
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: dep_reduction finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running bir_racecheck
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to bir_racecheck: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: bir_racecheck finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 1 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running lower_dma
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to lower_dma: modules=1 functions=1 allocs=2 blocks=1 instructions=1 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: lower_dma finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running coalesce_dma_blocks
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to coalesce_dma_blocks: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [CoalesceDmaBlocks]: Coaleseced 0 DMA triggers
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: coalesce_dma_blocks finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running alloc_semaphores
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to alloc_semaphores: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: alloc_semaphores finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running expand_inst_late
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to expand_inst_late: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: expand_inst_late finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running lower_sync
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to lower_sync: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: lower_sync finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running lower_act
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to lower_act: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: lower_act finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running lower_dve
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to lower_dve: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [LowerDVE]: Loading DVE opcodes table dve_info.json from /home/ubuntu/aws_neuron_venv_pytorch/lib/python3.10/site-packages/neuronxcc/dve/dve_bin/dve_info.json
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: lower_dve finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running lower_ap
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to lower_ap: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: lower_ap finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running alloc_regs
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to alloc_regs: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [AllocRegs]:   allocating REG
+2024-04-12T14:16:20Z INFO 37849 [AllocRegs]:     main loop iteration 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: alloc_regs finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running birverifier
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to birverifier: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: birverifier finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  28mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running codegen
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to codegen: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Total compiler allocated DRAM tensors: 0 GB
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Total un-allocated DRAM tensors by kind: 
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: 
+┌────────────────┬─────────────┐
+│ TensorKind     │ Size (GB)   │
+├────────────────┼─────────────┤
+│ ExternalInput  │ 1.86265e-09 │
+│ ExternalOutput │ 1.86265e-09 │
+└────────────────┴─────────────┘
+
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Total runtime managed DRAM tensors: 3.72529e-09 GB
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Instruction Stats: 
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: 
+┌────────────────────┬───────┐
+│ Opcode             │ Count │
+├────────────────────┼───────┤
+│ NOP                │ 1     │
+│ PSEUDO_DMA_TRIGGER │ 1     │
+└────────────────────┴───────┘
+
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: 
+┌────────────┬───────┐
+│ Engine     │ Count │
+├────────────┼───────┤
+│ Unassigned │ 0     │
+│ Pool       │ 1     │
+│ Activation │ 1     │
+│ PE         │ 1     │
+│ DMA        │ 0     │
+│ DVE        │ 1     │
+│ SP         │ 3     │
+└────────────┴───────┘
+
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Total instructions: 7 (4.17233e-07 GB)
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Total Dynamic DMA instruction count: 0
+2024-04-12T14:16:20Z USER 37849 [Codegen]: isa_gen finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Number of DMA descriptors on each queue:
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: 
+┌────────┬───────┐
+│ Queue  │ Count │
+├────────┼───────┤
+│ qSPIO0 │ 2     │
+└────────┴───────┘
+
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Total descriptors: 2 (2.98023e-08 GB)
+2024-04-12T14:16:20Z USER 37849 [Codegen]: dma_desc_gen finished after 0.000 seconds
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Estimated peak DRAM usage: 4.5076e-07 GB
+2024-04-12T14:16:20Z INFO 37849 [Codegen]: Generating debug info
+2024-04-12T14:16:20Z USER 37849 [Codegen]: debug_info_gen finished after 0.000 seconds
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: codegen finished after 0.001 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  30mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: Running neff_packager
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Inputs to neff_packager: modules=1 functions=1 allocs=2 blocks=1 instructions=2 Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37849 [NeffFileWriter]: IR signature: 38ba7ca2bccef1aef8da1e6c403571f9 for neff artifacts
+2024-04-12T14:16:20Z USER 37849 [BackendDriver]: neff_packager finished after 0.002 seconds
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: curr_vmrss:  30mb, ru_maxrss:  157mb (delta=0mb)
+2024-04-12T14:16:20Z INFO 37849 [BackendDriver]: Output has 1 module(s), 1 function(s), 2 memory location(s), 1 block(s), and 2 instruction(s). Max writers: 1 Max Readers: 1
+2024-04-12T14:16:20Z INFO 37845 [job.WalrusDriver.0]: Job #0 finished
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Finished job job.WalrusDriver.0
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Starting job job.BIRLinker.0
+2024-04-12T14:16:20Z INFO 37845 [job.BIRLinker.0]: Replay this job by calling: /home/ubuntu/aws_neuron_venv_pytorch/bin/neuronx-cc compile --framework XLA --state '{"model": ["/tmp/ubuntu/neuroncc_compile_workdir/c997b9c5-c7d9-4683-8b38-3380b20956e1/model.MODULE_4868840414222590002+d41d8cd9.hlo_module.pb"], "tensormap": "tensor_map.json", "bir": "bir.json", "lorean_sg_key": null, "input_name_map": null, "output_name_map": null, "constant_tensors": null, "state_dir": "/home/ubuntu/Projet/Performance SR/neuronxcc-ciavjjhh/sg00", "state_id": "sg00"}' --pipeline BIRLinker
+2024-04-12T14:16:20Z INFO 37845 [job.BIRLinker.0]: BIRLinker cwd: /home/ubuntu/Projet/Performance SR/neuronxcc-ciavjjhh
+2024-04-12T14:16:20Z INFO 37845 [job.BIRLinker.0]: Linking not needed. Netlist doesnt exist
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Finished job job.BIRLinker.0
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Starting job job.Kelper.0
+2024-04-12T14:16:20Z INFO 37845 [job.Kelper.0]: Skipping neff generation which was already performed by neff_packager
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Finished job job.Kelper.0
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Finished pipeline Pipeline
+2024-04-12T14:16:20Z INFO 37845 [pipeline.Pipeline.0]: Job #0 finished
+2024-04-12T14:16:20Z INFO 37838 [root]: Subcommand returned with exitcode=0

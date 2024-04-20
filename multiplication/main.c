@@ -1,4 +1,5 @@
 #include "algo.h"
+#include <math.h>
 
 int main(int argc, char **argv)
 {
@@ -10,14 +11,14 @@ int main(int argc, char **argv)
     }
 
     float x = atof(argv[1]);
-    int N = 8000;
+    int N = 11011;
 
-    for (int n = 0; n < N; n += 500)
+    for (int n = 10; n < N; n += 1100)
     {
         double ref = ref_multi(x, n);
         float val = multi_ni(x, n);
         double err = fabs((ref - (double)val) / ref);
-        printf("%.17f\n", err);
+        printf("%.17f\n", fmax(err, 0.0));
     }
 
     return 0;
