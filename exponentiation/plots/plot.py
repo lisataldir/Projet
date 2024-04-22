@@ -57,10 +57,10 @@ for n in range(10):
         ax[i].plot(x, x*(2**(-23)), 'k--',label='$nu$') 
         ax[i].fill_between(tab_num, globals()['sr_range_' + m[i]][:, 0], globals()['sr_range_' + m[i]][:, 1], color='#cb3717', alpha=0.2, label='SR range')
 
-        ax[i].grid(True, which='both', linestyle='-', alpha=0.5)
         ax[i].set_xlabel('$n$')
         ax[i].set_ylabel('Forward error')
         ax[i].set_yscale('log')
+        ax[i].grid(True, which='both', linestyle='-', alpha=0.5)
 
 
     # Paramètres supplémentaires pour le 1e plot
