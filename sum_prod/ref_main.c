@@ -5,9 +5,9 @@
 
 int main(int argc, char** argv)
 {
-    if (argc != 6)
+    if (argc != 5)
     {
-        printf("Usage: %s <mode> <vector number> <vector size> <vectors> <reference>\n", argv[0]);
+        printf("Usage: %s <mode> <vector number> <vector size> <vectors>\n", argv[0]);
         return 1;
     }
 
@@ -15,15 +15,10 @@ int main(int argc, char** argv)
     int vec_nb = atoi(argv[2]);
     int size_vec = atoi(argv[3]);
     
-    float* vecf = malloc(size_vec * sizeof(float));
-    double ref_result;
+    double* vecd = malloc(size_vec * sizeof(double));
+    
     FILE* vectors;
-    FILE* ref;
     float val;
-
-    ref = fopen(argv[5], "r");
-    fscanf(ref, "%lf\n", &ref_result);
-    fclose(ref);
 
     switch (ind)
     {
@@ -32,7 +27,7 @@ int main(int argc, char** argv)
         for (int i = 0; i < size_vec; i++)
         {
             fscanf(vectors, "%f\n", &val);
-            vecf[i] = val;
+            vecd[i] = (double)val;
         }
         fclose(vectors);
         break;
@@ -41,7 +36,7 @@ int main(int argc, char** argv)
         val = atof(argv[4]);
         for (int i = 0; i < size_vec; i++)
         {
-            vecf[i] = val;
+            vecd[i] = (double)val;
         }
         break;
 
@@ -49,11 +44,8 @@ int main(int argc, char** argv)
         printf("Invalid mode\n");        
         return 1;
     }   
-    
-    float result = sum_prod(vecf, vec_nb, size_vec);
-    //printf("%.17lf\n", result);
-    double err = (double)fabs(((double)result - ref_result) / ref_result);
-    printf("%.17lf\n", err);
+
+    printf("%.17lf\n", ref_sum_prod(vecd, vec_nb, size_vec));
       
     return 0;
 }
