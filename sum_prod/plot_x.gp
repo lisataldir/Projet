@@ -4,8 +4,12 @@ k2 = 10000
 k3 = 100000
 k4 = 1000000
 
-
 set terminal png
+set key left
+set format y '%.0t × 10^%T'
+set format x '%.0t × 10^%T'
+
+
 set output 'plot/1.000001_multi.png'
 set title 'multiplication with value 1.000001' 
 
@@ -34,7 +38,6 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
-set terminal png
 set output 'plot/1.000001_inner_product.png'
 set title 'inner product with vectors value 1.000001' 
 
@@ -63,7 +66,6 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
-set terminal png
 set output 'plot/1.000001_1000.png'
 set title 'sum-product 1000 with vectors value 1.000001' 
 
@@ -92,7 +94,6 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
-set terminal png
 set output 'plot/1.000001_10000.png'
 set title 'sum-product 10000 with vectors value 1.000001' 
 
@@ -122,7 +123,6 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
 
 
 
-set terminal png
 set output 'plot/1.000001_100000.png'
 set title 'sum-product 100000 with vectors value 1.000001' 
 
@@ -151,7 +151,6 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
-set terminal png
 set output 'plot/1.000001_1000000.png'
 set title 'sum-product 1000000 with vectors value 1.000001' 
 
