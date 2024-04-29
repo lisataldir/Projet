@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 // write the vector of random values to a file
-
 int main(int argc, char** argv)
 {
     if (argc != 3)
@@ -11,16 +10,20 @@ int main(int argc, char** argv)
         return 1;
     }
     int size = atoi(argv[1]);
-    double a[size];
+    float a[size];
     FILE* file = fopen(argv[2], "w");
     if (file == NULL)
     {
         fprintf(stderr, "Error opening file\n");
         return 1;
     }
+    srand(time(NULL));
+    float lb = 0.9998f;
+    float e = 0.0004f;
     for (int i = 0; i < size; i++)
     {
-        a[i] = (double)rand() * 2 / (double)RAND_MAX; // random number between 0 and 2: expectancy 1
+        a[i] = lb + (float)rand() / RAND_MAX * e; 
+        // random number between 0.9998 and 1.0002: expectancy 1
         fprintf(file, "%.17lf\n", a[i]);
     }
     return 0;
