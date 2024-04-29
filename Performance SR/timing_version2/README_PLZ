@@ -1,4 +1,0 @@
-Version 2.1
-
-On fait test complètement different que version 1.x, on fait entrer time() dans la boucle.
-Comme proposé par Lisa :)
