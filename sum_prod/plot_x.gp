@@ -8,7 +8,7 @@ set terminal png
 set key left
 set format y '%.0t × 10^%T'
 set format x '%.0t × 10^%T'
-
+set xrange [1000:1000000]
 
 set output 'plot/1.000001_multi.png'
 set title 'multiplication with value 1.000001' 
@@ -34,7 +34,7 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_100000 using (k3):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_1000000 using (k4):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
-     UR with linespoints title 'UR' lc rgb(137, 173, 234), \
+     UR with linespoints title 'UR' lc rgb 'violet', \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
@@ -62,7 +62,7 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_100000 using (k3):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_1000000 using (k4):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
-     UR with linespoints title 'UR' lc rgb(137, 173, 234), \
+     UR with linespoints title 'UR' lc rgb 'violet', \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
@@ -90,7 +90,7 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_100000 using (k3):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_1000000 using (k4):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
-     UR with linespoints title 'UR' lc rgb(137, 173, 234), \
+     UR with linespoints title 'UR' lc rgb 'violet', \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
@@ -118,7 +118,7 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_100000 using (k3):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_1000000 using (k4):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
-     UR with linespoints title 'UR' lc rgb(137, 173, 234), \
+     UR with linespoints title 'UR' lc rgb 'violet', \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
@@ -147,7 +147,7 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_100000 using (k3):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_1000000 using (k4):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
-     UR with linespoints title 'UR' lc rgb(137, 173, 234), \
+     UR with linespoints title 'UR' lc rgb 'violet', \
      f(x) with lines title 'upper bound' lc rgb 'red' 
 
 
@@ -175,5 +175,5 @@ plot SR using 1:2:3 with linespoints title 'SR' lc rgb(0, 153, 153), \
      SR_10000 using (k2):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_100000 using (k3):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
      SR_1000000 using (k4):1 with points pointsize 1.2 lc rgb(128, 128, 128) notitle, \
-     UR with linespoints title 'UR' lc rgb(137, 173, 234), \
+     UR with linespoints title 'UR' lc rgb 'violet', \
      f(x) with lines title 'upper bound' lc rgb 'red' 
