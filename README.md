@@ -1,70 +1,39 @@
-# PPN : Arrondi stochastique pour le calcul scientifique
+# PPN - Arrondi stochastique pour le calcul scientifique
 
 
-Ce projet a été réalisé par Yutai Zhao, Lisa Taldir, Chun Qi et Yizhi Yang.
-Il est organisé en plusieurs dossiers : 
+Ce projet a été réalisé par Yutai Zhao, Lisa Taldir, Chun Qi et Yizhi Yang dans le cadre du Master Calcul Haute Performance et Simulation de l'université Versailles St-Quentin-en-Yvelines.
+
+Nous comparerons ici les résultats expérimentaux obtenus en utilisant l’arrondi stochastique avec ceux obtenus en utilisant l’arrondi déterministe au plus près, pour différents algorithmes.
+
+Pour cela, nous avons organisé ce dépot en plusieurs dossiers: 
 
 ```bash
 ├──Algo&Tests
-├──Performance
-├──exponentiation
-├──exponentiation_etudes_mantisse
-├──inner_product
-├──multiplication
-└──verificarlo
+├──Exponentiation
+├──Exponentiation_etudes_mantisse
+├──Lorenz
+├──Performance 1er_semestre
+├──Performance AWS
+├──Performance Verificarlo
+├──Sommation
+└──Sum_prod
 ```
-dont le contenu puis l'utilisation sera détaillé ci-dessous.
+dont le contenu et l'utilisation sera détaillé ci-dessous.
 
-## Organisation 
+## Prérequis
 
-### Algo&Tests
+Installer [Vérificarlo]([https://github.com/verificarlo/verificarlo]) et python avec les librairies numpy et matplotlib.
+
+## Algo&Tests
+
+### Organisation 
 
 Ce dossier contient : 
 - les algorithmes naïf récursif, itératif et rapide récursif, itératif (dans `algo_lib/`) que nous utiliserons durant tout notre projet
 - les tests unitaires (dans le fichier `test.cpp`) verifiant que nos algorithmes soient valides
-- les valeurs de références (dans `test_data/`) obtenues grace à des fonctions de Python. 
+- les valeurs de références (dans `test_data/`) obtenues grace à des fonctions de Python.
 
-### Performance
-
-Ce dossier contient : 
-- les algorithmes dont les performances sont à évaluer (dans `kernels.h`)
-- le programme principal et une fonction benchmark pour l'évaluation et l'affichage des performances (dans `main.c`)
-- les définitions de quelques fonctions utilisées dans le programme principal (dans `tools.c`)
-- les définitions des types de valeurs exprimés autrement (dans `types.h`) 
-- les résultats des performances des 4 algorithmes, les résultats sont obtenus en faisant varier les compilateurs gcc (dans `gcc/`) clang (dans `clang/`).
-- les scripts : un script pour la generation des resultats de performance (`exe.sh`), un script pour trier les resultats (`pars.sh`), un script pour la réalisation des graphes (dans `graphe/graphee.Rmd`).
-
-
-### Exponentiation
-
-Ce dossier contient nos travaux autour de l'algorithme d'exponentation (i.e calcul de $x^{n}$ pour n allant de 0 à 300 et trois valeurs différentes de x comprises entre 1 et 2).
-Il est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
-
-Concernant le code, on a :
- - `run.sh` : exécute le main sur 50 itérations pour une valeur de x fixée et stocke les données dans le dossier `results/`
- - `errSR.sh` : calcule la moyenne des résultats obtenus après `run.sh`
- - `algo.c` : fonctions calculant $x^{n}$ en simple précision
- - `reference.c` : fonction calculant $x^{n}$ en double précision (on a choisi de garder l'algorithme naïf itératif comme référence pour nos calculs d'erreurs)
- - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs, prenant en arguments, dans l'ordre, [x] : valeur pour laquelle on va calculer $x^{n}$ et [ind] : indicateur pour savoir quelle version de la fonction d'exponentiation exécuter.  
-ind = 0 pour choisir la version naïve récursive  
-ind = 1 pour choisir la version naïve itérative  
-ind = 2 pour choisir la version rapide récursive  
-ind = 3 pour choisir la version rapide itérative
- - `plot/plot.gp` : trace les graphes
-
-### Exponentiation_etudes_mantisse
-
-### Multiplication
-
-### Inner_product
-
-### Verificarlo
-
-Ce dossier contient tous les fichiers du dépot github de verificarlo.
-
-## Usage
-
-### Algo&Tests
+### Usage
 
 Assurer d'abord que : 
 1. le répertoire `Algo&Tests/build/` soit vide 
@@ -78,7 +47,66 @@ $ make
 $ ./algo [x] [n]
 ```
 
-### Performance
+## Exponentiation
+
+### Organisation
+
+Ce dossier contient nos travaux autour de l'algorithme d'exponentation (i.e calcul de $x^{n}$ pour n allant de 0 à 10000 et 10 valeurs différentes de x proches de 1).
+Il est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plots/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
+
+Concernant le code, on a :
+ - `run.sh` : exécute le main sur 33 itérations pour une valeur de x fixée et stocke les données dans le dossier `results/`
+ - `algo.c` : regroupe les algorithmes calculant $x^{n}$ en simple précision
+ - `reference.c` : contient un algorithme calculant $x^{n}$ en double précision (on a choisi de garder l'algorithme naïf itératif comme référence pour nos calculs d'erreurs)
+ - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs, prenant en arguments, dans l'ordre, [x] : valeur pour laquelle on va calculer $x^{n}$ et [ind] : indicateur pour savoir quelle version de la fonction d'exponentiation exécuter.  
+ind = 0 pour choisir la version naïve récursive  
+ind = 1 pour choisir la version naïve itérative  
+ind = 2 pour choisir la version rapide récursive  
+ind = 3 pour choisir la version rapide itérative
+ - `plots/plot.py` : trace les graphes
+
+### Usage
+
+Pour obtenir les graphes présents dans le dossier `Exponentiation/plots/` faire, en se plaçant dans le répertoire `Exponentiation/`:
+
+```bash
+$ ./run.sh
+```
+pour générer les données (cela prend quelques minutes), qui seront ensuite stockées dans le dossier `results/`. 
+
+Puis faire :
+
+```bash
+$ cd plots
+$ python3 plot.py
+```
+pour générer les graphes.
+
+## Exponentiation_etudes_mantisse
+
+### Organisation
+
+### Usage
+
+## Lorenz
+
+### Organisation
+
+### Usage
+
+## Performance 1er_semestre
+
+### Organisation
+
+Ce dossier contient : 
+- les algorithmes dont les performances sont à évaluer (dans `kernels.h`)
+- le programme principal et une fonction benchmark pour l'évaluation et l'affichage des performances (dans `main.c`)
+- les définitions de quelques fonctions utilisées dans le programme principal (dans `tools.c`)
+- les définitions des types de valeurs exprimés autrement (dans `types.h`) 
+- les résultats des performances des 4 algorithmes, les résultats sont obtenus en faisant varier les compilateurs gcc (dans `gcc/`) clang (dans `clang/`).
+- les scripts : un script pour la generation des resultats de performance (`exe.sh`), un script pour trier les resultats (`pars.sh`), un script pour la réalisation des graphes (dans `graphe/graphee.Rmd`).
+
+### Usage
 
 Pour obtenir les resultats présents dans les dossiers `gcc/` et `clang/` faire :
 
@@ -96,26 +124,60 @@ $ open graphe.Rmd
 ``` 
 Puis cliquer sur `Run All`
 
-### Exponentiation
+## Performance AWS
 
-Pour obtenir les graphes présents dans le dossier `exponentiation/plot/` faire, en se plaçant dans le répertoire `exponentiation/`:
+### Organisation
+
+### Usage
+
+
+## Sommation
+
+### Organisation
+
+Ce dossier contient nos travaux autour de l'algorithme de sommation (i.e calcul de $n * x$ pour n allant de 0 à 11000 et 3 valeurs différentes de x : 0.1, 1.1 et 1.2).
+Il est organisé en trois parties : une partie principale où l'on retrouve notre code, un dossier (`plot/`) contenant les graphes obtenus et un dossier (`results/`) contenant les résultats bruts.
+
+Concernant le code, on a :
+ - `run.sh` : exécute le main sur 33 itérations pour une valeur de x fixée et stocke les données dans le dossier `results/`
+ - `algo.c` : contient un algorithme calculant $n * x$ en simple précision
+ - `reference.c` : contient un algorithme calculant $n * x$ en double précision
+ - `main.c` : fichier principal dans lequel on retrouve nos calculs d'erreurs, prenant en argument [x] : valeur pour laquelle on va calculer $n * x$.
+ - `plot/plot.py` : trace les graphes
+
+### Usage
+
+Pour obtenir les graphes présents dans le dossier `Sommation/plot/` faire, en se plaçant dans le répertoire `Sommation/`:
 
 ```bash
 $ ./run.sh
-$ ./errSR.sh
 ```
-pour générer les données. 
+pour générer les données, qui seront ensuite stockées dans le dossier `results/`. 
 
 Puis faire :
 
 ```bash
 $ cd plot
-$ gnuplot plot.gp
+$ python3 plot.py
 ```
 pour générer les graphes.
 
-### Exponentiation_etudes_mantisse
+## Sum_prod
 
-### Multiplication
+### Organisation
 
-### Inner_product
+### Usage
+
+## Auteurs
+
+[Yizhi Yang]([https://github.com/yizhi0129])
+
+[Yutai Zhao]([https://github.com/yutaizhao])
+
+[Chun Qi]([https://github.com/nanki520])
+
+[Lisa Taldir]([https://github.com/lisataldir])
+
+## Remerciments
+
+Merci à [Pablo De Oliveira Castro]([https://github.com/pablooliveira]), El-Mehdi El-Arar et Devan Sohier pour leurs conseils et leur encadrement.
