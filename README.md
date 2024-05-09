@@ -22,7 +22,7 @@ dont le contenu et l'utilisation sera détaillé ci-dessous.
 
 ## Prérequis
 
-Installer [Vérificarlo]([https://github.com/verificarlo/verificarlo]) et python avec les librairies numpy et matplotlib.
+Installer [Vérificarlo](https://github.com/verificarlo/verificarlo) et python avec les librairies numpy et matplotlib.
 
 ## Algo&Tests
 
@@ -170,14 +170,11 @@ pour générer les graphes.
 
 ## Auteurs
 
-[Yizhi Yang]([https://github.com/yizhi0129])
-
-[Yutai Zhao]([https://github.com/yutaizhao])
-
-[Chun Qi]([https://github.com/nanki520])
-
-[Lisa Taldir]([https://github.com/lisataldir])
+[Yizhi Yang](https://github.com/yizhi0129)  
+[Yutai Zhao](https://github.com/yutaizhao)  
+[Chun Qi](https://github.com/nanki520)  
+[Lisa Taldir](https://github.com/lisataldir)  
 
 ## Remerciments
 
-Merci à [Pablo De Oliveira Castro]([https://github.com/pablooliveira]), El-Mehdi El-Arar et Devan Sohier pour leurs conseils et leur encadrement.
+Merci à [Pablo De Oliveira Castro](https://github.com/pablooliveira), El-Mehdi El-Arar et Devan Sohier pour leurs conseils et leur encadrement.
