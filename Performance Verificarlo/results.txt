@@ -1,0 +1,30 @@
+SR naif n = 60
+Minimum: 11.00000
+Max: 12.00000
+Median: 12.00000
+Stddev: 4.15740e+01
+SR rapide n = 60
+Minimum: 3.00000
+Max: 5.00000
+Median: 4.00000
+Stddev: 8.16497e+01
+SR somme n = 60
+Minimum: 13.00000
+Max: 17.00000
+Median: 14.00000
+Stddev: 1.22726e+02
+SR naif n = 10000
+Minimum: 930.00000
+Max: 1492.00000
+Median: 993.00000
+Stddev: 1.99372e+04
+SR rapide n = 10000
+Minimum: 4.00000
+Max: 6.00000
+Median: 5.00000
+Stddev: 4.71405e+01
+SR somme n = 10000
+Minimum: 904.00000
+Max: 1295.00000
+Median: 980.00000
+Stddev: 1.20363e+04
