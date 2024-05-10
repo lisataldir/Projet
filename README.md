@@ -166,7 +166,27 @@ pour générer les graphes.
 
 ### Organisation
 
+Ce dossier contient les fichiers utiles pour les études d'une fonction définie comme une analogie du produit scalalre de deux vecteurs : $\sum_{i=1}^n x_i^k$
+
+On distinque deux cas : $x_i$ sont constantes de valeurs 1.000001, 0.99999987654321, 1.00010002, ou $x_i$ sont aléatoirement générés par le fichier `vec_gen.c`.
+
+- `algo.h`, `calcul.c` et `ref.c` contiennent l'algorithme en précision floattante que l'on veut étudier (et la référence en précision double).
+- `main.c` le fichier principal pour calculer les erreurs relatives en arrondi au plus près ou en arrondi stochastique.
+- `stat.c` pour calculer la moyenne et l'écart-type des différentes répétitions.
+- `*.sh` les scripts pour lancer le programme. On utilise `run_v.sh` pour valider nos codes car lorsque $x=2$, il n'y aura pas d'erreur. `run_x.sh`, `run_y.sh` et `run_z.sh` représentent respectivement les valeurs fixes 1.000001, 0.99999987654321 et 1.00010002, puis `run_r.sh` pour les vecteurs aléatoires.
+- `*.gp` pour tracer les courbes avec les résultats obtenus.
+
+- `UR/` et `SR/` contiennent les résultats.
+- `plot/` contient les figures tracées.
+
 ### Usage
+
+Remplacer 'a' par 'v', 'x', 'y', 'z' ou 'r' : 
+```bash
+$ cd suM_prod
+$ ./run_a.sh
+$ gnuplot plot_a.sh
+```
 
 ## Auteurs
 
