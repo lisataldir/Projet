@@ -112,13 +112,13 @@ $ cd Exponentiation_etudes_mantisse
 $ ./run.sh
 ```
 
-Pour obtenir les graphes faire, en choisissant le script souhaité:
+Pour obtenir les graphes faire, en choisissant le script `.gp` souhaité:
 
 ```bash
 $ cd Exponentiation_etudes_mantisse/plot
-$ gnuplot ./plot.gp
-$ gnuplot ./plot_dist.gp
-$ gnuplot ./plot_sig.gp
+$ gnuplot plot.gp
+$ gnuplot plot_dist.gp
+$ gnuplot plot_sig.gp
 ``` 
 
 ## Lorenz
@@ -134,7 +134,7 @@ Ce dossier contient :
 
 ### Usage
 
-Pour obtenir les resultats présents dans les dossiers `results/` et les graphes faire :
+Pour obtenir les résultats présents dans le dossier `results/` et les graphes faire :
 
 ```bash
 $ cd Lorenz
@@ -186,10 +186,10 @@ Ce dossier contient :
 Chaque dossier `timing_version*/` contient : 
 - `README_PLZ` : Une note dédiée pour chaque version
 - `timing_UR/` et `timing_SR/` : Les résultats de performance
-- `performance.py` : Faire les calculs, mesurer les temps du début et de la fin de chaque calcul, afficher les résultat
-- `traitement_donnees.py` : Calculer les temps d'exécutions à partir des temps debut/fin
+- `performance.py` : Faire les calculs, mesurer les temps du début et de la fin de chaque calcul, afficher les résultats
+- `traitement_donnees.py` : Calculer les temps d'exécutions à partir des temps début/fin
 - `calcul.sh` : Exécuter `performance.py` avec les variables d'environnement adéquates et enregistrer les résultats affichés
-- `tri.sh` : Garder que les messages d'affichage interressés (temps debut/fin) et exécuter `traitement_donnees.py`
+- `tri.sh` : Garder que les messages d'affichage interessés (temps début/fin) et exécuter `traitement_donnees.py`
 - `script.py` : Calculer les min/max/moyenne/mediane/stddev des temps d'exécutions
 
 ### Usage
