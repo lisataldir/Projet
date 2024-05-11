@@ -92,7 +92,22 @@ pour générer les graphes.
 
 ### Organisation
 
+Ce dossier contient : 
+- la résolution du système de Lorenz en float32 (dans `lorenz_32.c` ) et en float64 (dans `lorenz_64.c`)
+- `Makefile` pour compiler le programme 
+- `run.sh` le scirpt pour compiler et executer le programme 
+- `plot.gp` le script pour dessiner les solutions
+- Les résultats bruts dans `results\` et les graphes en `.png`
+
 ### Usage
+
+Pour obtenir les resultats présents dans les dossiers `results/` et les graphes faire :
+
+```bash
+$ cd Lorenz
+$ ./run.sh
+$ gnuplot plot.gp
+```
 
 ## Performance 1er_semestre
 
@@ -128,8 +143,37 @@ Puis cliquer sur `Run All`
 
 ### Organisation
 
+Ce dossier contient : 
+- `log de AWS\` : contenant les messages affichés sur le terminal de Amazon EC2
+- `timing_version1_1\` : Performance mesurée avec n=60 et x = 1.01~1.19 avec 50 exécutions et 500 repétitions, en prennant le temps moyen de ces repétitions par exécution
+- `timing_version1_2\` : Performance mesurée avec n=1000 et x = 1.0001~1.01 avec 50 exécutions et 100 repétitions, en prennant le temps moyen de ces repétitions par exécution
+- `timing_version2\` : Performance mesurée avec n=1000 et x = 1.0001~1.01 avec 33 exécutions et 22 repétitions, en prennant le temps de chaque repétition par exécution
+- `timing_version3\` : NON utilisé. A completer.
+
+Chaque dossier `timing_version*\` contient : 
+- `README_PLZ` : Une note dédiée pour chaque version
+- `timing_UR\` et `timing_SR\` : Les résultats de performance
+- `performance.py` : Faire les calculs, mesurer les temps du début et de la fin de chaque calcul, afficher les résultat
+- `traitement_donnees.py` : Calculer les temps d'exécutions à partir des temps debut/fin
+- `calcul.sh` : Exécuter `performance.py` avec les variables d'environnement adéquates et enregistrer les résultats affichés
+- `tri.sh` : Garder que les messages d'affichage interressés (temps debut/fin) et exécuter `traitement_donnees.py`
+- `script.py` : Calculer les min/max/moyenne/mediane/stddev des temps d'exécutions
+
 ### Usage
 
+Pour obtenir les temps d'exécutions faire :
+
+```bash
+$ cd 'Performance AWS'/[Une version souhaitée sauf la 3]/
+$ ./calcul.sh
+$ ./tri.sh
+```
+
+Pour obtenir les mesures significatifs faire ensuite :
+
+```bash
+$ ./script.py
+```
 
 ## Sommation
 
