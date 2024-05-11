@@ -84,9 +84,42 @@ pour générer les graphes.
 
 ## Exponentiation_etudes_mantisse
 
+ATTENTION : LES RESULTATS DE CE DOSSIER NE SONT NI VERIFIES PAR LES ENCADRANTS NI INCLUS DANS LE RAPPORT
+
 ### Organisation
 
+Ce dossier contient : 
+- `Makefile` : pour faciliter la compilation du programme 
+- `SR_main.c` et `UR_main.c` : les fonctions principales (main) qui font les calculs en float32
+- `ref_main.c` : la fonction principale qui font les calculs en float64
+- `experience.c` et `reference.c` : les algorithmes de l'exponentiation en float32 et float64
+- `erreur.c` : pour calculer les erreurs
+- `stat.c` : pour calculer la fonction de densité des mantisses des erreurs
+- `stat_distribution.c` : pour calculer la distribution des mantisses des erreurs
+- `stat_sign_bit.c` : pour calculer la fonction de densité des mantisses significatives des erreurs
+- `run.sh` : le scirpt pour calculer les erreurs, puis pour ne garder que la mantisse de chaque erreur afin de calculer les fonctions de densité et les distributions. 
+- `plot/plot.gp` : le script pour visualiser les résultats issus de `stat.c`
+- `plot/plot_dist.gp` : le script pour visualiser les résultats issus de `stat_distribution.c`
+- `plot/plot_sig.gp` : le script pour visualiser les résultats issus de `stat_sign_bit.c`
+- Les résultats bruts dans `results/` et les graphes dans `plot/`
+
 ### Usage
+
+Pour obtenir les resultats présents dans le dossier `results/` faire :
+
+```bash
+$ cd Exponentiation_etudes_mantisse
+$ ./run.sh
+```
+
+Pour obtenir les graphes faire, en choisissant le script souhaité:
+
+```bash
+$ cd Exponentiation_etudes_mantisse/plot
+$ gnuplot ./plot.gp
+$ gnuplot ./plot_dist.gp
+$ gnuplot ./plot_sig.gp
+``` 
 
 ## Lorenz
 
@@ -94,10 +127,10 @@ pour générer les graphes.
 
 Ce dossier contient : 
 - la résolution du système de Lorenz en float32 (dans `lorenz_32.c` ) et en float64 (dans `lorenz_64.c`)
-- `Makefile` pour compiler le programme 
-- `run.sh` le scirpt pour compiler et executer le programme 
-- `plot.gp` le script pour dessiner les solutions
-- Les résultats bruts dans `results\` et les graphes en `.png`
+- `Makefile` : pour faciliter la compilation 
+- `run.sh` : le scirpt pour compiler et executer le programme résolvant le système de Lorenz
+- `plot.gp` : le script pour dessiner les solutions
+- Les résultats bruts dans `results/` et les graphes en `.png`
 
 ### Usage
 
@@ -144,15 +177,15 @@ Puis cliquer sur `Run All`
 ### Organisation
 
 Ce dossier contient : 
-- `log de AWS\` : contenant les messages affichés sur le terminal de Amazon EC2
-- `timing_version1_1\` : Performance mesurée avec n=60 et x = 1.01~1.19 avec 50 exécutions et 500 repétitions, en prennant le temps moyen de ces repétitions par exécution
-- `timing_version1_2\` : Performance mesurée avec n=1000 et x = 1.0001~1.01 avec 50 exécutions et 100 repétitions, en prennant le temps moyen de ces repétitions par exécution
-- `timing_version2\` : Performance mesurée avec n=1000 et x = 1.0001~1.01 avec 33 exécutions et 22 repétitions, en prennant le temps de chaque repétition par exécution
-- `timing_version3\` : NON utilisé. A completer.
+- `log de AWS/` : contenant les messages affichés sur le terminal de Amazon EC2
+- `timing_version1_1/` : Performance mesurée avec n=60 et x = 1.01~1.19 avec 50 exécutions et 500 repétitions, en prennant le temps moyen de ces repétitions par exécution
+- `timing_version1_2/` : Performance mesurée avec n=1000 et x = 1.0001~1.01 avec 50 exécutions et 100 repétitions, en prennant le temps moyen de ces repétitions par exécution
+- `timing_version2/` : Performance mesurée avec n=1000 et x = 1.0001~1.01 avec 33 exécutions et 22 repétitions, en prennant le temps de chaque repétition par exécution
+- `timing_version3/` : NON utilisé. A completer.
 
-Chaque dossier `timing_version*\` contient : 
+Chaque dossier `timing_version*/` contient : 
 - `README_PLZ` : Une note dédiée pour chaque version
-- `timing_UR\` et `timing_SR\` : Les résultats de performance
+- `timing_UR/` et `timing_SR/` : Les résultats de performance
 - `performance.py` : Faire les calculs, mesurer les temps du début et de la fin de chaque calcul, afficher les résultat
 - `traitement_donnees.py` : Calculer les temps d'exécutions à partir des temps debut/fin
 - `calcul.sh` : Exécuter `performance.py` avec les variables d'environnement adéquates et enregistrer les résultats affichés
@@ -169,7 +202,7 @@ $ ./calcul.sh
 $ ./tri.sh
 ```
 
-Pour obtenir les mesures significatifs faire ensuite :
+Pour obtenir les mesures faire ensuite :
 
 ```bash
 $ ./script.py
