@@ -14,7 +14,6 @@ Pour cela, nous avons organisé ce dépot en plusieurs dossiers:
 ├──Lorenz
 ├──Performance 1er_semestre
 ├──Performance AWS
-├──Performance Verificarlo
 ├──Sommation
 └──Sum_prod
 ```
